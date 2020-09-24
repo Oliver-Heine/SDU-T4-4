@@ -1,0 +1,297 @@
+﻿Logbog for Uge 39 
+
+
+Tirsdag d. 22/9 
+    
+    Første dag hvor gruppen gik i gang. 
+    Vi mødte klokken 10:00 og tog hjem efter vejledermødet 19:00.
+    
+    Der blev udarbejdet en samarbejdsaftale samt en vejlederaftale, begge sendt til vejleder for nermere godkendelse. Filerne blev sendt af Oliver
+    og gruppens Microsoft teams email blev sat på som CC. 
+    
+    Gruppen diskuterede hvordan vi overordnet så os selv, vores roller i gruppen. Dog valgte vi, som gruppe, ikke at nedskrive dem, ide vi har den forståelse, 
+    at indskærpe medlemmerne i gruppen i bestemte roller, kan på længere sigt sætte en større begræsning for medlemmet, end hvis vi undlader.
+    Derfor blev der istedet italesat hvert medlems egen erfaringer, med Belbins rollemodel som udgangspunkt, dog blev der ikke fastslået nogle bestemte roller
+    til gruppens syv medlemmer. 
+    
+    Der blev i gruppen diskuteret hvilket af de 17 verdensmål fra FN, vi ville beskæftige og med i gennem projektet. Der blev valgt verdensmål nr. 3, <i>Sundhed & Trivsel</i>
+    
+    Det blev i gruppen aftalt, efter vejledermødet, at vi til torsdag skulle undersøge nærmere på verdensmål nr. 3, mere dybtegående. Det blev konkretiseret til, 
+    at der skulle undersøges hvorledes udviklingen af ensomhed og depression har påvirket mennesket igennem Corona-tiden. 
+    Det blev valgt på baggrund af gruppens fælles forståelse for, at Corona-Pandimien har haft stor indflydelse på hvordan mennekset har det socialt, 
+    altså menneskets sociale sundhed og trivsel. 
+    
+    Ydermere blev det aftalt, at Oliver ville lave et GitHub repository, hvor der ville blive tilføjet gruppens logbøger.  
+ 
+
+
+
+
+
+Onsdag d. 23/9
+
+    - Oliver
+        En logbogs mappe er udarbejdet, hvor alle logbøger til uge 51, hvor projektet skal afleveres, er oprettet som en individuel fil. For hver fil 
+        er der specifiseret hvilken uge logbogen gælder for, ydermere er der specifiseret de enkelte dage i ugen med dato for den respektive dag i den uge.
+    
+    - Daniel
+        Problemformulering eksempel: https://docs.google.com/document/d/1y9h_R9WeRvgGt84QHPqK3NM7d-TwcvjQ7jLtbdzE3tQ/edit?usp=sharing
+
+    - Casper:
+        Har påbegyndt udkast af 1. forsøg på en problemanalyse / problemformulering.
+
+    
+    Der skulle findes relevante studier, som underbyggede vores tankegang for vores projekts problemformulering. Det skulle gøres, så der kunne udarbejdes en 
+    sammenfattede problemformulering. 
+    For de relevante studier, vil studiets link blive indsat i logbogen, og der vil blive skrevet et par centrale pointer fra hvert studie. I løbet af Torsdagne vil 
+    Casper sammenfatte de centrale pointer til en mulig problemformulering. De resterende gruppemedlemmer skal godkende den opstillede problemformulering, hvorefter
+    den vil blive sendt til vejleder senest Fredag. 
+    
+    - Oliver
+        Link til studie "The impact of the COVID-19 pandemic on suicide rates" LINK: "https://www.sciencedirect.com/science/article/pii/S0165178120331231"
+
+            Vigtige pointer:     
+                "Mental health consequences of the COVID-19 crisis including suicidal behavior are likely to be present for a long time and peak later than the actual pandemic. 
+                To reduce suicides during the COVID-19 crisis, it is imperative to decrease stress, anxiety, fears and loneliness in the general population. 
+                There should be traditional and social media campaigns to promote mental health and reduce distress. Active outreach is necessary, 
+                especially for people with a history of psychiatric disorders, COVID-19 survivors and older adults."
+
+                "We found that higher restrictions due to lockdown measures, a greater reduction of social contacts and greater perceived changes in life 
+                were associated with higher mental health impairments. Importantly, a subjectively assumed but not an officially announced stay-at-home order 
+                was associated with poorer mental health. Our findings underscore the importance of adequate risk communication and targeted mental health recommendations 
+                especially for vulnerable groups during these challenging times."
+
+                "Moreover, people are faced with the risk of a potentially life-threatening COVID-19 infection, which may trigger feelings of 
+                uncertainty, fear, anxiety and even result into social isolation"
+
+                "In the present study, 31.1% of the sample exceeded the cutoff score for a potential depression diagnosis (PHQ-9 ≥ 10), 
+                21.2 % exceeded the cutoff score for a potential anxiety disorder diagnosis (GAD-7 ≥ 10), 
+                29.4 % exceeded the cutoff score for health anxiety (WI-7 ≥ 3), 
+                55.2 % reported to be lonely (Loneliness ≥ 6), 
+                41.4% of the sample reported mild psychosocial distress (PHQ stress module scores ranging between 5 and 9), 
+                while 26.5 % reported moderate to severe psychosocial distress (PHQ stress module ≥ 10). 
+                13.1 % of the sample reported having experienced a fearful spell during the last 4 weeks. The mean score of life-satisfaction was 6.42 (SD = 2.31)."
+
+                "Female sex, younger age, a lower educational level, being unemployed, being single, living alone, living without underage children and a current or past 
+                psychotherapeutic or psychiatric treatment were associated with higher depressive symptomatology. Female sex, younger age, a lower educational level, 
+                being unemployed, living alone, as well as current or past psychotherapeutic or psychiatric treatment were associated with higher anxiety symptomatology. 
+                Being unemployed or not working and current or past psychotherapeutic or psychiatric treatment was associated with higher health anxiety. 
+                Younger age, lower educational level, being unemployed, living alone and current or past psychotherapeutic or psychiatric treatment were associated 
+                with higher loneliness. Female sex, younger age, lower educational level, living together in a relationship, living with underage children and 
+                a current or past psychotherapeutic or psychiatric treatment were associated with higher psychosocial distress.
+                <b>Interessant næste stykke </b>
+                    Female sex, older age, a higher educational level, being employed, cohabiting with a partner, cohabiting with children, 
+                    no current or past psychotherapeutic or psychiatric treatment were associated with higher life-satisfaction"
+                <b>Læg mærke til det ofte er yngere mennesker, som oplever problemer</b>
+
+                "For example, lockdown measures have been associated with increased psychological distress and loneliness (...)
+                Moreover, it might be helpful to develop and implement interventions or prevention programs including positive reappraisal or reframing and 
+                recommendations to maintain social contacts (e.g., via social media, video calls) in the face of physical distancing and contact restrictions to mitigate 
+                the negative effect of public health measures on mental health." 
+                <b>Fundet som det sidste i studiet - Kan måske være med til, at sætte nogle tanker i gang, til udforming af projektet</b>
+
+                Opsummering:
+                    Det frygtes at Covid-pandemien vil have en længerevarende påvirkning af den mentale sundhed. Ligeledes frygtes det, at påvirkningen på den mentale sundhed
+                    først rigtigt vil vise sig, et stykke efter pandemien. Det blev diskuteret, hvorvidt kampangier på sociale media burde implemneteres, så en bedre 
+                    forståelse for den mentale sundhed opnås gennem befolkningen. Studiet peger på, at det højest sandsynligt kræver en aktiv indsats, at nå til et punkt 
+                    hvor man kan skabe en større forståelse. På den måde forsøger man at formindske de påvirkninger pandemien har på den mentale sundhed, stress, angst, frygt, 
+                    ensomhed i den generelle offentlighed, hvilke alle er vigtige faktorer inde for den mentale sundhed. 
+                    
+                    Det blev i studiet påvist, at qua selve landenes lockdown har den generelle mentale sundhed været i stor last. Det gør sig i sær gældende for udsatte 
+                    grupper i disse usædvanlige tider, hvilke studie særligt henviser til, at de bliver oplyst omkring den mentale sundhed. 
+                    
+                    Studiet viser, at det særligt er kvinder i den yngre alder har svært ved at opretholde en god mental sundhed. Hvilket står i kontrast til kvinder i en 
+                    højre alder med højre uddannelse, som viste at klare sig bedre. 
+                    
+                    Studiet lægger op til, at en mulig implementering af forbuggelses programmer, som indeholder positive revaluering eller gendannelse og anbefalinger 
+                    for den mentale sundhed, kan have en positiv effekt på den generelle offentlighed, selv i tider, hvor man skal holde afstand og tage forbehold. 
+                    
+
+    - Daniel
+    "Prevalence of Depression Symptoms in US Adults Before and During the COVID-19 Pandemic" LINK: https://jamanetwork.com/journals/jamanetworkopen/fullarticle/2770146
+            
+            “In this survey study that included 1441 respondents from during the COVID-19 pandemic and 5065 respondents from before the pandemic, 
+            depression symptom prevalence was more than 3-fold higher during the COVID-19 pandemic than before. Lower income, having less than $5000 in savings, 
+            and having exposure to more stressors were associated with greater risk of depression symptoms during COVID-19.”
+
+            “These findings suggest that there is a high burden of depression symptoms in the US associated with the COVID-19 pandemic and that this burden
+            falls disproportionately on individuals who are already at increased risk.”
+
+            “The survey was distributed by NORC at the University of Chicago from March 31, 2020, through April 13, 2020, assessing COVID-19 exposure, 
+            stressors, and mental health using the COVID-19 and Life Stressors Impact on Mental Health and Well-being (CLIMB) study questionnaire.”
+
+            “Individuals with lower social resources, lower economic resources, and greater exposure to stressors (eg, job loss) reported a greater burden of depression symptoms.”
+                Bestemte befolkningsgrupper bliver ramt hårdere end andre.
+
+            “For example, before and during COVID-19, women were more likely to have depression symptoms than men
+            (before: 277 women [10.1%] vs 181 men [6.9%]; during: 233 women [33.3%] vs 149 men [21.9%]).”
+                Der er noget som tyder på at kvinder er mere påvirket end mænd.
+            
+            “This survey study found that prevalence of depression symptoms in the US increased more than 3-fold during the COVID-19 pandemic, 
+            from 8.5% before COVID-19 to 27.8% during COVID-19.”
+            Studiet er med til at påvise, at der er en ændring under covid-19, og at forskellige befolkningsgrupper er påvirket i forskelligt omfang.
+                
+                Opsummering:
+                    Rapport som konkluderer at antallet med depression symptomer, ud fra deres undersøgelse, er tre gange højere under Corona krisen, end den var før. 
+                    Der er samtidigt data, som viser at de udsatte, i samfundet, er mere påvirket af Corona krisen, og at kvinder generelt er mere påvirket end mænd. 
+     
+    - Oliver
+    "Social distancing in COVID-19: what are the mental health implications?" LINK: "https://www.bmj.com/content/368/bmj.m1089/rr-9"
+    
+        "In recent pandemics (SARS and MERS), more extreme forms of social distancing such as isolation and quarantine have precipitated symptoms of depression, 
+        post-traumatic stress disorder (PTSD) and anxiety. (...) Mitigating these potential mental health effects of social distancing requires a concerted effort 
+        from the public, policymakers and healthcare professionals. For the general public, adopting daily routines incorporating a healthy lifestyle (balanced diet, 
+        regular exercise and good sleep hygiene), engaging in hobbies, virtual social interactions and mindfulness are recommended. Government, media and 
+        healthcare professionals should aim to communicate clear, informative and accurate messages regarding enacted measures and their rationale."
+        
+        Opsumering:
+            Det korte studie kan være med til at underbygge vores ?ide? til at informere og oplyse folk gennem projektet, hvor vigtigt den mentale sundhed er. 
+            Det begrundes særligt med den sidste del omkring den generelle offentlighed, og med staten, media og sunhedsproffesionelle. 
+            En begrundelse for, hvorfor man kan have en frygt for, at pandimien vil påvirke den mentale sundhed, støtter det første uddrag ret godt. 
+            Det er nemlig bevidst, at forhænværende pandemier, har haft betydning for den generelle mentale sundhed.
+     
+            ALT EFTER RETNINGEN FOR PROJEKTET, KAN DENNE ARTIKEL GODT VÆRE RET INTERESSANT AT SE LIDT NÆRMERE PÅ 
+    "COVID 19 and its mental health consequences - Journal of Mental Health" PDF-LINK: https://www.researchgate.net/profile/Anant_Kumar/publication/340954951_COVID_19_and_its_mental_health_consequences/links/5ea7ccd492851c1a9076636e/COVID-19-and-its-mental-health-consequences.pdf"
+    
+           "The global community is concerned about Coronavirus disease 2019 (COVID-19) and its long-term consequences. It is going to 
+           impact various spheres of life such as the economy, industries, global market, agriculture, human health, health care, etc."
+           
+           "The WHO has also expressed its concern over the pandemic’s mental health and psycho-social consequence (World Health Organization, 2020d). 
+           It speculates that new measures such as self-isolation and quarantine have affected usual activities, routines, and livelihoods of people that may
+           lead to an increase in loneliness, anxiety, depression, insomnia, harmful alcohol, and drug use, and self-harm or suicidal behavior"
+           
+           "The lockdowns around the world have led to an increase in cases of domestic violence where women and children who live with domestic violence 
+           have no escape from their abusers during quarantine (Abramson, 2020; Chandra, 2020; GrahamHarrison et al., 2020; World Health Organization, 2020a)."
+           "The recent survey by the Indian Psychiatric Society shows a twenty percent increase in mental illnesses since the coronavirus outbreak in India (Loiwal, 2020)."
+    
+           "Psychologists and mental health professionals speculate that the pandemic is going to impact on the mental health of the population globally 
+           with the increase in cases of depression, suicide, and self-harm, apart from other symptoms reported globally due to COVID 2019"
+           
+           "They speculate about the chances of developing neurotic disorders such as generalized anxiety disorder and obsessive-compulsive disorders (OCD) 
+           in large population groups. Overemphasis on consistent handwashing (for twenty seconds) may affect a significant population group globally 
+           considering people are not aware of when and how many times to wash. In such a scenario, many people are washing their hands on a regular interval 
+           (Times of India, 2020). It is a sanitary fight against an invisible virus and sources of infection. In such a scenario, OCD and related 
+           maladaptive behaviors particularly due to consistent promotion of handwashing to mitigate the coronavirus infection and its spread is a serious concern."
+                    Kan vise hvad en fejloplysning kan gøre for mennesket - En overhygiejne kan måske også have en betydning for den mentale sundhed.
+                    
+           "Besides mood-related and emotional outbursts especially panic, fear, avoidance and fear in meeting other people, fear of death (Thanatophobia), 
+           fear of getting isolated, stigmatization, fear of even not getting essential items, food, etc., may have its psychological manifestations. 
+           In many states, due to anxieties, people have been hoarding essential items which has led to shortages. Millions of People have lost their jobs.
+           People employed in the informal and unorganized sectors are worst hit as they are struggling for, food, shelter and their livelihoods which created 
+           uncertainty leading to depression, suicide, self-harm etc. The lockdown may be an important strategy to break the chain of transmission. But it
+           has also created boredom and monotony among office goers and children. In many households, children who end up staying indoors become restless and, 
+           in some cases, violent. Many households have even closed windows and doors due to wrong notions regarding the infection."
+                    Kan vise en mulig konsekvens fra hvilken påvirkelse pandemien har på den mentale sundhed. Hvad en svækket mental sundhed kan føre til. 
+                    
+           "Interestingly the Coronavirus pandemic has another feature in this age of social media, where people are getting overloaded with rumors and 
+           misinformation which are not authentic and verified. Such rumors and unauthenticated information create fear, anxiety, and stress with a 
+           sudden and near-constant stream of news reports about an outbreak."
+                    SoMe's påvirkning på den generelle befolkning, som benytter sådane platforme
+                    
+           
+           Opsumering: 
+                Artiklen oplyser, at det generelle samfund har en stor bekymkring for pandemiens langsigtede påvirkning. En påvirkning, som kommer til at ramme
+                mange forskellige esentielle områder, for den måde vi kender livet i samtiden, økonomi, industri, det globale marked, landbrug, menneskelig sundhed, 
+                sundhed generelt mm. 
+                Artiklen oplyser, at WHO allerede har udmeldt deres bekymring for de pandemines påvirkning på den mentale sundhed men OGSÅ psykosocial. 
+                Selv WHO spekulere om påvirkningen af selv-isolation og karantæne på samfundets og menneskets daglige aktivitetet, rutiner hvilket kan lede til 
+                en forøgelse af ensomhed, angst, depression, søvnløshed, skadeligt alkohol forbrug, stoffer og selvskade & selvmord. 
+                
+                Et særligt interessant punkt, som ikke nødvendigvis har været særligt italesat, er situationer med huslig vold mod kvinder og eller børn, som 
+                i disse tider ikke har nogle mulighd for at flygte fra situationerne.
+                
+                Et ander særligt interessant stykke, er artiklens oplysning omkrign psykologer og mentale-sundheds professorer, som har en bekrymring om, chanchen for 
+                at store grupper i samfundet, vil komme til at udvikle neurotiske forstyrrleser, som generel angst og OCD. Det skyldes blandt andet samfundets oplysning
+                om den generelle hygiejne, hvilken for nogle folk, kan resultere i en overhygiejne og på længere sigt skade dem. Der bliver også spekuleret over, om denne 
+                mulige overhygiejne kan lede til at gruppen af mennesker får en større generel angist for, at ikke alle bakterier er forsvundet. **Det er nemlig påvist
+                at en for ofte "rengøring" af hænder og andre steder af kroppen, på længere sigt kan skade mere end det gør gavn**
+                
+                Artiklen beskriver også vigtigheden af brugen af de sociale medier i tider som disse. Det bliver særligt beskrevet i de to sidste citater, som er tager
+                fra selve artiklen.
+                
+            - Jasan
+                Link: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC7061893/
+                Titel: A nationwide survey of psychological distress among Chinese people in the COVID-19 epidemic: implications and policy recommendations
+                Skrevet af: Jianyin Qiu, Bin Shen, Min Zhao, Zhen Wang, Bin Xie, og Yifeng Xu
+
+                Bullet Points
+                * En undersøgelse om psykiske udfordringer som kineserne oplever pga COVID-19
+                * 52.730 deltager, 35.27% mænd, 64.73% kvinder
+                * Ca. 35% har oplevet milde/slemme psykiske udfordringer
+                * Folk under 18 lav CPDI score, gns. CPDI score 14.83 (mulig årsag: lav dødelighed)
+                * Folk mellem 18-99+ havde højst CPDI score, gns. CPDI score 27.76  (mulig årsag: sociale medier)
+                * En større mængde kvinder oplever psykiske udfordringer pga. COVID-19 i forhold til mænd
+
+                    *Bemærk det er en undersøgelse i Kina*
+
+                Godt keyword til at finde data: COVID-19 Peritraumatic Distress Index (CPDI)  
+
+                Link: https://www.ons.gov.uk/peoplepopulationandcommunity/wellbeing/bulletins/coronavirusandlonelinessgreatbritain/3aprilto3may2020
+                Titel: Coronavirus and loneliness, Great Britain: 3 April to 3 May 2020
+                Skrevet af: Eleanor Rees and Rebecca Large
+                
+                Bullet Points
+                * 30.9% af deltagerne udtrykker at deres mentale helbred blev påvirket pga corona i tidsperioden mellem 3. April og 3. Maj ( Iform af ensomhed)
+                * Voksne der bor alene/skilt osv. oplevede i højere grad ensomhed 
+              TLDR; Manges mentale helbred er blevet påvirket pga corona
+
+                    *Bemærk det en undersøgelse i GB*
+
+                Links: https://www.sciencedirect.com/science/article/pii/S0889159120309545?via%3Dihub#t0005 
+                      https://research.regionh.dk/psykiatrien/en/publications/covid19-pandemic-and-mental-health-consequences(13610281-3288-4917-8973-b411b12d6d08).html
+                Titel: COVID-19 pandemic and mental health consequences: Systematic review of the current evidence
+                Skrevet af: Nina Vindegaard & Michael Eriksen Benros
+
+                Bullet points 
+                * Fald i psykisk velvære i befolkningen
+                * Folk indenfor sundhedsfeltet oplever i højere grad psykiatriske symptomer
+                * Stigning i forhold til depression og depressive symptomer
+                * Dårligere søvn kvalitet
+    
+           Mega utydelig, her er en undersøgelse i DK om psykisk velvære under COVID-19 (Se linket under)
+                 https://imgur.com/a/6pfsWdh
+                   - Det er fra 1.link 
+            
+
+Torsdag d. 24/9 
+    - Casper
+    Jeg har udformet et umiddelbart udkast til en problemformulering.
+    Gennemlæsning fra andre medlemmer samt godkendelse inden afsendelse til vejleder mangler. 
+
+- Marcus
+Jeg har undersøgt kilder og fundet følgende:
+1) Depression symptoms 3 times higher during covid-19 lockdown
+Artiklen tager udgangspunkt i, hvor mange der oplever drepression ift. Tideligere år, også indikeret i titlen, den går efterfølgende over i at snakke om, de grupper som er mest udsat i USA, og slutter af med at gennemgå dem som der også er udsatte, men som eventuelt ikke falder under foregående kategori. Artiklen giver dermed et overblik over, hvem og hvor mange det påvirker.
+
+Hovedpunkter:
+1) ” “Identifying those at risk for mood symptoms — for example, those with a history of depression or anxiety, substance abuse history, those facing long-term unemployment, or those who feel a sense of isolation from others — is vital for early detection and intervention,” said LeMonda. “Recognizing warning signs in our friends and family members, such as feelings of hopelessness and withdrawal from others, can be a way to connect individuals with the appropriate services before symptoms worsen.” ”
+2) “The study found among participants that there were fewer people with no symptoms of depression and more people with more symptoms during COVID-19 than before COVID-19. It also found that certain groups were at greater risk of depression symptoms, such as lower income groups and those that have less than $5,000 in household savings. They had a 50 percent greater risk of depression symptoms than those of higher income. “
+
+Link: https://www.healthline.com/health-news/depression-symptoms-3-times-higher-during-covid-19-lockdown#How-to-address-depression-symptoms-during-COVID-19
+
+Skribent: Megan Drillinger
+Udgivelse: Sep. 10 2020
+-------------------------------------------------------------------------
+
+   2)  
+
+
+
+
+
+Fredag d. 25/9
+
+
+
+
+
+Lørdag d. 26/9
+
+
+
+
+
+Søndag d. 27/9 
+
+
+
