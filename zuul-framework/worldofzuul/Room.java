@@ -6,15 +6,16 @@ import java.util.HashMap;
 
 public class Room
 {
+    //Attributes
     private String description;
     private HashMap<String, Room> exits;
-
+//Constructor
     public Room(String description)
     {
         this.description = description;
         exits = new HashMap<String, Room>();
     }
-
+//Setter for exit
     public void setExit(String direction, Room neighbor) 
     {
         exits.put(direction, neighbor);
@@ -25,6 +26,7 @@ public class Room
         return description;
     }
 
+    //Method that gets invoked when going int to
     public String getLongDescription()
     {
         return "You are " + description + ".\n" + getExitString();
@@ -39,7 +41,7 @@ public class Room
         }
         return returnString;
     }
-
+//Getter for exit with the directions as parameter
     public Room getExit(String direction) 
     {
         return exits.get(direction);

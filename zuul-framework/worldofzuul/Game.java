@@ -7,12 +7,12 @@ public class Game
 
     public Game() //game constructor
     {
-        createRooms(); //create rooms funktion
-        parser = new Parser(); //create parser object
+        createRooms(); //create rooms function
+        parser = new Parser(); //creates parser object
     }
 
 
-    private void createRooms()
+    private void createRooms()    //The rooms that will be created! (Add rooms needed for the project here!)
     {
         Room outside, theatre, pub, lab, office;
       
@@ -38,30 +38,30 @@ public class Game
         currentRoom = outside;
     }
 
-    public void play() 
+    public void play() //Method that prints game introduction and
     {            
         printWelcome();
 
                 
-        boolean finished = false;
+        boolean finished = false; //Sets that the game is still running
         while (! finished) {
-            Command command = parser.getCommand();
-            finished = processCommand(command);
+            Command command = parser.getCommand(); // While the game is not finished read input from user (Check getCommand in parser class)
+            finished = processCommand(command);  // Game is finished when processCommand(command)is true (wantToQuit is the deciding factor in the processCommand method)
         }
         System.out.println("Thank you for playing.  Good bye.");
     }
 
-    private void printWelcome()
+    private void printWelcome() //Game introduction which is included in play method
     {
         System.out.println();
         System.out.println("Welcome to the World of Zuul!");
         System.out.println("World of Zuul is a new, incredibly boring adventure game.");
-        System.out.println("Type '" + CommandWord.HELP + "' if you need help.");
+        System.out.println("Type '" + CommandWord.HELP + "' if you need help."); // Reference to CommandWord class which has the commandstring "help"
         System.out.println();
-        System.out.println(currentRoom.getLongDescription());
+        System.out.println(currentRoom.getLongDescription()); //Gets description of current room
     }
 
-    private boolean processCommand(Command command) 
+    private boolean processCommand(Command command)  /* Method that processes unknown commands and  go, quit, help*/
     {
         boolean wantToQuit = false;
 
@@ -84,19 +84,19 @@ public class Game
         return wantToQuit;
     }
 
-    private void printHelp() 
+    private void printHelp()  /*This methods gets invoked when typing help in the console (is included in the processCommand method)*/
     {
         System.out.println("You are lost. You are alone. You wander");
         System.out.println("around at the university.");
         System.out.println();
         System.out.println("Your command words are:");
-        parser.showCommands();
+        parser.showCommands(); //Prints commands available
     }
 
-    private void goRoom(Command command) 
+    private void goRoom(Command command)  //Overall a method that controls the directions of the player
     {
         if(!command.hasSecondWord()) {
-            System.out.println("Go where?");
+            System.out.println("Go where?"); //if the commandword "go" doesnt has a second word then it prints go where
             return;
         }
 
@@ -104,7 +104,7 @@ public class Game
 
         Room nextRoom = currentRoom.getExit(direction);
 
-        if (nextRoom == null) {
+        if (nextRoom == null) { // If a another room cant be found then it prints "There is no door"
             System.out.println("There is no door!");
         }
         else {
@@ -113,7 +113,7 @@ public class Game
         }
     }
 
-    private boolean quit(Command command) 
+    private boolean quit(Command command)  //Method that checks if the word quit has a word included after it, if it doenst then it returns a true value which stops the game (wantToQuit)
     {
         if(command.hasSecondWord()) {
             System.out.println("Quit what?");
