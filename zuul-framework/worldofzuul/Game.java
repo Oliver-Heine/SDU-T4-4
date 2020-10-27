@@ -2,13 +2,13 @@ package worldofzuul;
 
 public class Game 
 {
-    private Parser parser;
-    private Room currentRoom;
+    private Parser parser; //parser attribut
+    private Room currentRoom; //room attribut
 
-    public Game() 
+    public Game() //game constructor
     {
-        createRooms();
-        parser = new Parser();
+        createRooms(); //create rooms funktion
+        parser = new Parser(); //create parser object
     }
 
 

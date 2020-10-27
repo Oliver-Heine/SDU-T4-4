@@ -5,8 +5,8 @@ import java.util.StringTokenizer;
 
 public class Parser 
 {
-    private CommandWords commands;
-    private Scanner reader;
+    private CommandWords commands; //commandwords object
+    private Scanner reader; //scanner object
 
     public Parser() 
     {
@@ -14,15 +14,15 @@ public class Parser
         reader = new Scanner(System.in);
     }
 
-    public Command getCommand() 
+    public Command getCommand()
     {
         String inputLine;
         String word1 = null;
         String word2 = null;
 
-        System.out.print("> "); 
+        System.out.print("> "); //indikere at man kan skrive
 
-        inputLine = reader.nextLine();
+        inputLine = reader.nextLine(); //user input
 
         Scanner tokenizer = new Scanner(inputLine);
         if(tokenizer.hasNext()) {
@@ -30,7 +30,7 @@ public class Parser
             if(tokenizer.hasNext()) {
                 word2 = tokenizer.next(); 
             }
-        }
+        } //tager kommando (mellemrum) handling
 
         return new Command(commands.getCommandWord(word1), word2);
     }
