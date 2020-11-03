@@ -14,28 +14,38 @@ public class Game
 
     private void createRooms()
     {
-        Room outside, theatre, pub, lab, office;
-      
-        outside = new Room("outside the main entrance of the university");
-        theatre = new Room("in a lecture theatre");
-        pub = new Room("in the campus pub");
-        lab = new Room("in a computing lab");
-        office = new Room("in the computing admin office");
-        
-        outside.setExit("east", theatre);
-        outside.setExit("south", lab);
-        outside.setExit("west", pub);
+        Room bedroom, livingRoom, kitchen, bathroom, entrance;
+      //Description of rooms (Changes pending!)
+        bedroom = new Room("awake and in your bedroom and you see " + /*plus with bedroom-items*/ " and you can interact with "
+                /*plus with bedroom-Intractable items*/);
+        livingRoom = new Room("in your living room and you see " + /*plus with livingroom-items*/ " and you can interact with "
+                /*plus with bedroom-Intractable items*/);
+        kitchen = new Room("in your kitchen and you see " + /*plus with kitchen-items*/ " and you can interact with "
+                /*plus with bedroom-Intractable items*/);
+        bathroom = new Room("in your bathroom and you see " + /*plus with bathroom-items*/ " and you can interact with "
+                /*plus with bedroom-Intractable items*/);
+        entrance = new Room("in your entrance and you see " + /*plus with entrance-items*/ "and you can interact with "
+                /*plus with bedroom-Intractable items*/);
 
-        theatre.setExit("west", outside);
 
-        pub.setExit("east", outside);
+        //Exits / entrances from rooms starting at bedroom
+        bedroom.setExit("livingroom", livingRoom);
 
-        lab.setExit("north", outside);
-        lab.setExit("east", office);
+        livingRoom.setExit("bedroom", bedroom);
+        livingRoom.setExit("kitchen", kitchen);
+        livingRoom.setExit("entrance", entrance);
 
-        office.setExit("west", lab);
+        kitchen.setExit("livingroom", livingRoom);
+        kitchen.setExit("entrance", entrance);
 
-        currentRoom = outside;
+        entrance.setExit("kitchen", kitchen);
+        entrance.setExit("livingroom", livingRoom);
+        entrance.setExit("bathroom", bathroom);
+
+        bathroom.setExit("entrance", entrance);
+
+        //Room where you start
+        currentRoom = bedroom;
     }
 
     public void play() 
@@ -86,8 +96,8 @@ public class Game
 
     private void printHelp() 
     {
-        System.out.println("You are lost. You are alone. You wander");
-        System.out.println("around at the university.");
+        System.out.println("You are alone in your apartment during the Covid-19 pandemic.");
+        System.out.println("Live your day.");
         System.out.println();
         System.out.println("Your command words are:");
         parser.showCommands();
