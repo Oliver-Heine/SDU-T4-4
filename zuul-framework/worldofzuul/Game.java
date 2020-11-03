@@ -2,13 +2,13 @@ package worldofzuul;
 
 public class Game 
 {
-    private Parser parser;
-    private Room currentRoom;
+    private Parser parser; //parser attribut
+    private Room currentRoom; //room attribut
 
-    public Game() 
+    public Game() //game constructor
     {
-        createRooms();
-        parser = new Parser();
+        createRooms(); //create rooms funktion
+        parser = new Parser(); //create parser object
     }
 
 
@@ -48,17 +48,26 @@ public class Game
         currentRoom = bedroom;
     }
 
-    public void play() 
-    {            
-        printWelcome();
 
-                
+    public void play()
+    {
+        printWelcome();
         boolean finished = false;
         while (! finished) {
             Command command = parser.getCommand();
-            finished = processCommand(command);
+            StatusScore end = new StatusScore();
+            if (processCommand(command)|| end.gameOver())
+            {
+                finished = processCommand(command)|| end.gameOver();
+                System.out.println("Thank you for playing. You lost.");
+            }
+            else if(end.won())
+            {
+                finished = true;
+                System.out.println("Thank you for playing. You won!");
+            }
+
         }
-        System.out.println("Thank you for playing.  Good bye.");
     }
 
     private void printWelcome()
