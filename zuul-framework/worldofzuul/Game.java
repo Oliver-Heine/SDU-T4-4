@@ -38,17 +38,26 @@ public class Game
         currentRoom = outside;
     }
 
-    public void play() 
-    {            
-        printWelcome();
 
-                
+    public void play()
+    {
+        printWelcome();
         boolean finished = false;
         while (! finished) {
             Command command = parser.getCommand();
-            finished = processCommand(command);
+            StatusScore end = new StatusScore();
+            if (processCommand(command)|| end.gameOver())
+            {
+                finished = processCommand(command)|| end.gameOver();
+                System.out.println("Thank you for playing. You lost.");
+            }
+            else if(end.won())
+            {
+                finished = true;
+                System.out.println("Thank you for playing. You won!");
+            }
+
         }
-        System.out.println("Thank you for playing.  Good bye.");
     }
 
     private void printWelcome()
