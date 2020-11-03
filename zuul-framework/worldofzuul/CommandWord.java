@@ -2,8 +2,9 @@ package worldofzuul;
 
 public enum CommandWord
 {
-    GO("go"), QUIT("quit"), HELP("help"), UNKNOWN("?"); //Følg syntaks for at tilføje flere kommandoer
-    
+    GO("go"), QUIT("quit"), HELP("help"), UNKNOWN("?"), INTERACT("interact");
+
+
     private String commandString;
     
     CommandWord(String commandString)

@@ -1,6 +1,9 @@
 package worldofzuul;
 
-public class Game 
+import java.lang.reflect.Array;
+import java.util.ArrayList;
+
+public class Game
 {
     private Parser parser; //parser attribut
     private Room currentRoom; //room attribut
@@ -11,41 +14,35 @@ public class Game
         parser = new Parser(); //create parser object
     }
 
-
     private void createRooms()
     {
-        Room bedroom, livingRoom, kitchen, bathroom, entrance;
-      //Description of rooms (Changes pending!)
-        bedroom = new Room("awake and in your bedroom and you see " + /*plus with bedroom-items*/ " and you can interact with "
-                /*plus with bedroom-Intractable items*/);
-        livingRoom = new Room("in your living room and you see " + /*plus with livingroom-items*/ " and you can interact with "
-                /*plus with bedroom-Intractable items*/);
-        kitchen = new Room("in your kitchen and you see " + /*plus with kitchen-items*/ " and you can interact with "
-                /*plus with bedroom-Intractable items*/);
-        bathroom = new Room("in your bathroom and you see " + /*plus with bathroom-items*/ " and you can interact with "
-                /*plus with bedroom-Intractable items*/);
-        entrance = new Room("in your entrance and you see " + /*plus with entrance-items*/ "and you can interact with "
-                /*plus with bedroom-Intractable items*/);
+        Room outside, theatre, pub, lab, office;
 
+        Item fridge = new Item("Fridge");
+        Item freezer = new Item("Freezer");
+        Item[] itemsArray = {fridge,freezer};
+        Items roomItems = new Items(itemsArray);
 
-        //Exits / entrances from rooms starting at bedroom
-        bedroom.setExit("livingroom", livingRoom);
+        outside = new Room("outside the main entrance of the university", roomItems);
+        theatre = new Room("in a lecture theatre", roomItems);
+        pub = new Room("in the campus pub", roomItems);
+        lab = new Room("in a computing lab", roomItems);
+        office = new Room("in the computing admin office", roomItems);
+        
+        outside.setExit("east", theatre);
+        outside.setExit("south", lab);
+        outside.setExit("west", pub);
 
-        livingRoom.setExit("bedroom", bedroom);
-        livingRoom.setExit("kitchen", kitchen);
-        livingRoom.setExit("entrance", entrance);
+        theatre.setExit("west", outside);
 
-        kitchen.setExit("livingroom", livingRoom);
-        kitchen.setExit("entrance", entrance);
+        pub.setExit("east", outside);
 
-        entrance.setExit("kitchen", kitchen);
-        entrance.setExit("livingroom", livingRoom);
-        entrance.setExit("bathroom", bathroom);
+        lab.setExit("north", outside);
+        lab.setExit("east", office);
 
-        bathroom.setExit("entrance", entrance);
+        office.setExit("west", lab);
 
-        //Room where you start
-        currentRoom = bedroom;
+        currentRoom = outside;
     }
 
 
@@ -100,6 +97,10 @@ public class Game
         else if (commandWord == CommandWord.QUIT) {
             wantToQuit = quit(command);
         }
+        else if (commandWord == CommandWord.INTERACT) {
+            System.out.println("interact works");
+            interactItem(command);
+        }
         return wantToQuit;
     }
 
@@ -142,4 +143,33 @@ public class Game
             return true;
         }
     }
+
+    private void interactItem(Command command)
+    {
+        if(!command.hasSecondWord()) {
+            System.out.println("Interact with what?");
+            return;
+        }
+        String interatebleItem = command.getSecondWord();
+        Item[] item = currentRoom.getItem().itemsArray;
+        for(Item i: item)
+        {
+            if (interatebleItem.equals(i.itemName))
+            {
+               System.out.println("You are interacting with: "+i.itemName);
+            }
+
+        }
+
+    }
+
+    public String[] getInteraction(Room room)
+    {
+        if (room.equals("Kitchen"))
+        {
+
+        }
+    }
+
+
 }
