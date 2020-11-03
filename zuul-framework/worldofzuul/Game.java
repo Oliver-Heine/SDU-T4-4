@@ -18,7 +18,13 @@ public class Game
     private void createRooms()
     {
         Room outside, theatre, pub, lab, office;
-        Items roomItems = new Items();
+
+        Item fridge = new Item("Fridge");
+        Item freezer = new Item("Freezer");
+
+        Item[] itemsArray = {fridge,freezer};
+
+        Items roomItems = new Items(itemsArray);
       
         outside = new Room("outside the main entrance of the university", roomItems );
         theatre = new Room("in a lecture theatre", roomItems);
@@ -84,6 +90,9 @@ public class Game
         }
         else if (commandWord == CommandWord.QUIT) {
             wantToQuit = quit(command);
+        }
+        else if (commandWord == CommandWord.INTERACT) {
+            System.out.println("interact works");
         }
         return wantToQuit;
     }

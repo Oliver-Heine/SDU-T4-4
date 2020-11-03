@@ -1,5 +1,6 @@
 package worldofzuul;
 
+import java.lang.reflect.Array;
 import java.util.ArrayList;
 import java.util.Set;
 
@@ -16,37 +17,29 @@ public class Item {
 
 }
 
-/*
+
 class InteractableItem extends Item{
 
+    InteractableItem(String itemName) {
+        super(itemName);
+    }
+
+
 }
- */
+
 
 
 class Items{
-    public ArrayList<Item> items;
+    public Item[] itemsArray;
 
-    Items (ArrayList<Item> items) {
-        this.items = items;
-    }
-    Items () {
-        this(new ArrayList<Item>());
-    }
-
-    public void addItem (Item item) {
-        if (!items.contains(item)){
-            items.add(item);
-        }
-    }
-
-    public void removeItem (Item item) {
-        items.remove(item);
+    public Items(Item[] itemsArray) {
+        this.itemsArray = itemsArray;
     }
 
     public String printItems() {
         StringBuilder returnString = new StringBuilder("This room contains these items: ");
-        for (int i = 0; i<items.size() ; i++) {
-            returnString.append(", ").append(items.get(i).getItemName());
+        for (int i = 0; i< itemsArray.length ; i++) {
+            returnString.append(", ").append(itemsArray[i].itemName);
         }
         return returnString.toString();
     }
