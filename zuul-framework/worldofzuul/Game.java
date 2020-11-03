@@ -20,9 +20,7 @@ public class Game
 
         Item fridge = new Item("Fridge");
         Item freezer = new Item("Freezer");
-
         Item[] itemsArray = {fridge,freezer};
-
         Items roomItems = new Items(itemsArray);
 
         outside = new Room("outside the main entrance of the university", roomItems);
@@ -91,6 +89,10 @@ public class Game
             wantToQuit = quit(command);
         }
         else if (commandWord == CommandWord.INTERACT) {
+            roomItems.printItems();
+
+
+
             System.out.println("interact works");
             interactItem(command);
         }
