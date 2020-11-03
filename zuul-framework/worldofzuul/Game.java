@@ -154,5 +154,13 @@ public class Game
 
     }
 
+    public String[] getInteraction(Room room)
+    {
+        if (room.equals("Kitchen"))
+        {
+
+        }
+    }
+
 
 }
