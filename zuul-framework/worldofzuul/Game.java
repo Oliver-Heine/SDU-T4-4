@@ -14,7 +14,6 @@ public class Game
         parser = new Parser();
     }
 
-
     private void createRooms()
     {
         Room outside, theatre, pub, lab, office;
@@ -25,8 +24,8 @@ public class Game
         Item[] itemsArray = {fridge,freezer};
 
         Items roomItems = new Items(itemsArray);
-      
-        outside = new Room("outside the main entrance of the university", roomItems );
+
+        outside = new Room("outside the main entrance of the university", roomItems);
         theatre = new Room("in a lecture theatre", roomItems);
         pub = new Room("in the campus pub", roomItems);
         lab = new Room("in a computing lab", roomItems);
@@ -93,6 +92,7 @@ public class Game
         }
         else if (commandWord == CommandWord.INTERACT) {
             System.out.println("interact works");
+            interactItem(command);
         }
         return wantToQuit;
     }
@@ -134,6 +134,20 @@ public class Game
         }
         else {
             return true;
+        }
+    }
+
+    private void interactItem(Command command)
+    {
+        if(!command.hasSecondWord()) {
+            System.out.println("Interact with what?");
+            return;
+        }
+
+        String interatebleItem = command.getSecondWord();
+
+        if (interatebleItem.equals("Fridge")){
+            System.out.println("interacting with " + interatebleItem);
         }
     }
 }

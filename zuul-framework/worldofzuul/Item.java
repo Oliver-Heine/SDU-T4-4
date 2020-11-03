@@ -17,17 +17,21 @@ public class Item {
 
 }
 
-
 class InteractableItem extends Item{
 
-    InteractableItem(String itemName) {
+    String interactionText;
+
+    InteractableItem(String itemName, String interactionText) {
         super(itemName);
+        this.interactionText = interactionText;
     }
 
+    public void interactionWithItem(){
+        // score metode here
+        System.out.println("You interacted with the item");
+    }
 
 }
-
-
 
 class Items{
     public Item[] itemsArray;
