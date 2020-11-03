@@ -89,10 +89,6 @@ public class Game
             wantToQuit = quit(command);
         }
         else if (commandWord == CommandWord.INTERACT) {
-            roomItems.printItems();
-
-
-
             System.out.println("interact works");
             interactItem(command);
         }
@@ -145,11 +141,18 @@ public class Game
             System.out.println("Interact with what?");
             return;
         }
-
         String interatebleItem = command.getSecondWord();
+        Item[] item = currentRoom.getItem().itemsArray;
+        for(Item i: item)
+        {
+            if (interatebleItem.equals(i.itemName))
+            {
+               System.out.println("You are interacting with: "+i.itemName);
+            }
 
-        if (interatebleItem.equals("Fridge")){
-            System.out.println("interacting with " + interatebleItem);
         }
+
     }
+
+
 }

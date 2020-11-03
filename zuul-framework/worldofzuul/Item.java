@@ -47,4 +47,8 @@ class Items{
         }
         return returnString.toString();
     }
+
+    public Item[] getItemsArray() {
+        return itemsArray;
+    }
 }

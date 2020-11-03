@@ -47,5 +47,10 @@ public class Room
     {
         return exits.get(direction);
     }
+
+    public Items getItem()
+    {
+        return items;
+    }
 }
 
