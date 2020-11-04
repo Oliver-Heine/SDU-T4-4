@@ -158,18 +158,6 @@ public class Game
             {
                System.out.println("You are interacting with: "+i.itemName);
             }
-
-        }
-
-    }
-
-    public String[] getInteraction(Room room)
-    {
-        if (room.equals("Kitchen"))
-        {
-
         }
     }
-
-
 }
