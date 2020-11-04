@@ -30,7 +30,9 @@ public class Room
 
     public String getLongDescription()
     {
-        return "You are " + description + ".\n" + items.printItems() + ".\n" + getExitString();
+        return "You are " + description + ".\n" + items.printItems()
+                + ".\n" + "Your status score is: " +StatusScore.getScore()
+                + ".\n" + getExitString();
     }
 
     private String getExitString()

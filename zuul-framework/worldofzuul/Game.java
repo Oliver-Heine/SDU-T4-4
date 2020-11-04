@@ -1,8 +1,5 @@
 package worldofzuul;
 
-import java.lang.reflect.Array;
-import java.util.ArrayList;
-
 public class Game
 {
     private Parser parser; //parser attribut
@@ -16,33 +13,28 @@ public class Game
 
     private void createRooms()
     {
-        Room outside, theatre, pub, lab, office;
+        Room kitchen, room, living_room, bathroom, entrance;
 
-        Item fridge = new Item("Fridge");
-        Item freezer = new Item("Freezer");
-        Item[] itemsArray = {fridge,freezer};
-        Items roomItems = new Items(itemsArray);
-
-        outside = new Room("outside the main entrance of the university", roomItems);
-        theatre = new Room("in a lecture theatre", roomItems);
-        pub = new Room("in the campus pub", roomItems);
-        lab = new Room("in a computing lab", roomItems);
-        office = new Room("in the computing admin office", roomItems);
+        kitchen = new Room("You are in the kitchen", kitchenItems);
+        room = new Room("in your room", roomItems);
+        living_room = new Room("in the living_room", livingRoomItems);
+        bathroom = new Room("in a bathroom", bathroomItems);
+        entrance = new Room("The entrance", entranceItems);
         
-        outside.setExit("east", theatre);
-        outside.setExit("south", lab);
-        outside.setExit("west", pub);
+        kitchen.setExit("east", room);
+        kitchen.setExit("south", bathroom);
+        kitchen.setExit("west", living_room);
 
-        theatre.setExit("west", outside);
+        room.setExit("west", kitchen);
 
-        pub.setExit("east", outside);
+        living_room.setExit("east", kitchen);
 
-        lab.setExit("north", outside);
-        lab.setExit("east", office);
+        bathroom.setExit("north", kitchen);
+        bathroom.setExit("east", entrance);
 
-        office.setExit("west", lab);
+        entrance.setExit("west", bathroom);
 
-        currentRoom = outside;
+        currentRoom = kitchen;
     }
 
 
@@ -73,6 +65,7 @@ public class Game
         System.out.println("Welcome to the World of Zuul!");
         System.out.println("World of Zuul is a new, incredibly boring adventure game.");
         System.out.println("Type '" + CommandWord.HELP + "' if you need help.");
+        System.out.println("Interact with an item by typing \"Interact ItemName\"");
         System.out.println();
         System.out.println(currentRoom.getLongDescription());
     }
@@ -98,7 +91,7 @@ public class Game
             wantToQuit = quit(command);
         }
         else if (commandWord == CommandWord.INTERACT) {
-            System.out.println("interact works");
+            //System.out.println("interact works");
             interactItem(command);
         }
         return wantToQuit;
@@ -150,14 +143,51 @@ public class Game
             System.out.println("Interact with what?");
             return;
         }
-        String interatebleItem = command.getSecondWord();
-        Item[] item = currentRoom.getItem().itemsArray;
-        for(Item i: item)
-        {
-            if (interatebleItem.equals(i.itemName))
-            {
-               System.out.println("You are interacting with: "+i.itemName);
-            }
+        String interactableItem = command.getSecondWord();
+        //Item[] item = currentRoom.getItem().itemsArray;
+
+        switch (interactableItem.toLowerCase()) {
+            //Kitchen items
+            case "fridge" -> ItemFunctions.fridgeInteraction();
+            case "freezer" -> ItemFunctions.freezerInteraction();
+            //Room items
+            case "bed" -> ItemFunctions.bedInteraction();
+            case "computer" -> ItemFunctions.computerInteraction();
+            //Living room items
+            case "tv" -> ItemFunctions.tvInteraction();
+            //Bathroom items
+            case "toilet" -> ItemFunctions.toiletInteraction();
+            //Entrance items
+            case "door" -> ItemFunctions.doorInteraction();
+            //Default
+            default -> System.out.println("This item is not in this room");
         }
+
     }
+    //Kitchen items:
+    Item fridge = new Item("fridge");
+    Item freezer = new Item("freezer");
+    Item[] kitchenItemsArray = {fridge,freezer};
+    Items kitchenItems = new Items(kitchenItemsArray);
+
+    //room items:
+    Item bed = new Item("bed");
+    Item computer = new Item("computer");
+    Item[] roomItemsArray = {bed,computer};
+    Items roomItems = new Items(roomItemsArray);
+
+    //living room items:
+    Item tv = new Item("tv");
+    Item[] livingRoomItemsArray = {tv};
+    Items livingRoomItems = new Items(livingRoomItemsArray);
+
+    //bathroom items:
+    Item toilet = new Item("toilet");
+    Item[] bathroomItemsArray = {toilet};
+    Items bathroomItems = new Items(bathroomItemsArray);
+
+    //Entrance items:
+    Item door = new Item("door");
+    Item[] entranceItemsArray = {door};
+    Items entranceItems = new Items(entranceItemsArray);
 }

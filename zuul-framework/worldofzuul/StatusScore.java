@@ -3,27 +3,27 @@ package worldofzuul;
 public class StatusScore {
     private static int score = 50;
 
-    public void increaseScore() {
+    public static void increaseScore() {
         score += 2;
     }
 
-    public void increaseScore(int num) {
+    public static void increaseScore(int num) {
         score += num;
     }
 
-    public void decreaseScore() {
+    public static void decreaseScore() {
         score -= 2;
     }
 
-    public void decreaseScore(int num) {
+    public static void decreaseScore(int num) {
         score -= num;
     }
 
-    public void setScore(int num) {
+    public static void setScore(int num) {
         score = num;
     }
 
-    public int getScore() {
+    public static int getScore() {
         return score;
     }
 
