@@ -48,7 +48,7 @@ public class Game
         while (! finished) {
             Command command = parser.getCommand();
             StatusScore end = new StatusScore();
-            if (processCommand(command) || end.gameOver())
+            if (end.gameOver())
             {
                 finished = true;
                 System.out.println("Thank you for playing. You lost because your score was zero or less. \n" +
@@ -59,6 +59,11 @@ public class Game
             {
                 finished = true;
                 System.out.println("Thank you for playing. You won!");
+            }
+            else if(processCommand(command))
+            {
+                finished = true;
+                System.out.println("Thank you for playing. You quit!");
             }
 
         }
