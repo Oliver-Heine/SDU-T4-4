@@ -2,39 +2,42 @@ package worldofzuul;
 
 public class Game
 {
-    private Parser parser; //parser attribut
-    private Room currentRoom; //room attribut
+    private Parser parser; //parser attribute
+    private Room currentRoom; //room attribute
 
     public Game() //game constructor
     {
-        createRooms(); //create rooms funktion
+        createRooms(); //create rooms function
         parser = new Parser(); //create parser object
     }
 
     private void createRooms()
     {
-        Room kitchen, room, living_room, bathroom, entrance;
+        Room kitchen, bedroom, livingRoom, bathroom, entrance;
 
-        kitchen = new Room("You are in the kitchen", kitchenItems);
-        room = new Room("in your room", roomItems);
-        living_room = new Room("in the living_room", livingRoomItems);
-        bathroom = new Room("in a bathroom", bathroomItems);
-        entrance = new Room("The entrance", entranceItems);
+        kitchen = new Room("in your kitchen", kitchenItems);
+        bedroom = new Room("in your bedroom", roomItems);
+        livingRoom = new Room("in your living room", livingRoomItems);
+        bathroom = new Room("in your bathroom", bathroomItems);
+        entrance = new Room("at the entrance", entranceItems);
         
-        kitchen.setExit("east", room);
-        kitchen.setExit("south", bathroom);
-        kitchen.setExit("west", living_room);
+        kitchen.setExit("bedroom", bedroom);
+        kitchen.setExit("bathroom", bathroom);
+        kitchen.setExit("livingroom", livingRoom);
 
-        room.setExit("west", kitchen);
+        bedroom.setExit("kitchen", livingRoom);
 
-        living_room.setExit("east", kitchen);
+        livingRoom.setExit("kitchen", kitchen);
+        livingRoom.setExit("entrance", entrance);
+        livingRoom.setExit("bedroom", bedroom);
 
-        bathroom.setExit("north", kitchen);
-        bathroom.setExit("east", entrance);
+        entrance.setExit("bathroom", bathroom);
+        entrance.setExit("livingroom", livingRoom);
 
-        entrance.setExit("west", bathroom);
+        bathroom.setExit("entrance", entrance);
 
-        currentRoom = kitchen;
+
+        currentRoom = bedroom;
     }
 
 
@@ -48,7 +51,9 @@ public class Game
             if (processCommand(command)|| end.gameOver())
             {
                 finished = processCommand(command)|| end.gameOver();
-                System.out.println("Thank you for playing. You lost.");
+                System.out.println("Thank you for playing. You lost because your score was zero or less. " +
+                        "Play again and try to keep your score up.\n" +
+                        "TIP: the score is your mental health");
             }
             else if(end.won())
             {
@@ -100,9 +105,7 @@ public class Game
     private void printHelp() 
     {
         System.out.println("You are alone in your apartment during the Covid-19 pandemic.");
-        System.out.println("Live your day.");
-        System.out.println();
-        System.out.println("Your command words are:");
+        System.out.println("Live your day.\n Your command words are:");
         parser.showCommands();
     }
 
