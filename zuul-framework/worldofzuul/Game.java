@@ -52,7 +52,7 @@ public class Game
             {
                 finished = processCommand(command)|| end.gameOver();
                 System.out.println("Thank you for playing. You lost because your score was zero or less. " +
-                        "Play again and try to keep your score up." +
+                        "Play again and try to keep your score up.\n" +
                         "TIP: the score is your mental health");
             }
             else if(end.won())
@@ -105,9 +105,7 @@ public class Game
     private void printHelp() 
     {
         System.out.println("You are alone in your apartment during the Covid-19 pandemic.");
-        System.out.println("Live your day.");
-        System.out.println();
-        System.out.println("Your command words are:");
+        System.out.println("Live your day.\n Your command words are:");
         parser.showCommands();
     }
 
