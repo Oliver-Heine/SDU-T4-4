@@ -25,7 +25,7 @@ public class Game
         kitchen.setExit("bathroom", bathroom);
         kitchen.setExit("livingroom", livingRoom);
 
-        bedroom.setExit("kitchen", livingRoom);
+        bedroom.setExit("kitchen", kitchen);
 
         livingRoom.setExit("kitchen", kitchen);
         livingRoom.setExit("entrance", entrance);
@@ -48,10 +48,10 @@ public class Game
         while (! finished) {
             Command command = parser.getCommand();
             StatusScore end = new StatusScore();
-            if (processCommand(command)|| end.gameOver())
+            if (processCommand(command) || end.gameOver())
             {
-                finished = end.gameOver();
-                System.out.println("Thank you for playing. You lost because your score was zero or less. " +
+                finished = true;
+                System.out.println("Thank you for playing. You lost because your score was zero or less. \n" +
                         "Play again and try to keep your score up.\n" +
                         "TIP: the score is your mental health");
             }
@@ -104,7 +104,7 @@ public class Game
 
     private void printHelp() 
     {
-        System.out.println("You are alone in your apartment during the Covid-19 pandemic.");
+        System.out.println("You are alone in your apartment during the Covid-19 pandemic.\n");
         System.out.println("Live your day.\n Your command words are:");
         parser.showCommands();
     }
