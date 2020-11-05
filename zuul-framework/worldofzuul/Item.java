@@ -1,34 +1,24 @@
 package worldofzuul;
 
-import java.lang.reflect.Array;
-import java.util.ArrayList;
-import java.util.Set;
 
 public class Item {
     public String itemName;
+    public String interactionMessage;
+    public int statusScoreChange;
 
-    Item(String itemName) {
+    public Item(String itemName, String interactionMessage, int statusScoreChange) {
         this.itemName = itemName;
+        this.interactionMessage = interactionMessage;
+        this.statusScoreChange = statusScoreChange;
     }
 
     public String getItemName (){
         return itemName;
     }
 
-}
-
-class InteractableItem extends Item{
-
-    String interactionText;
-
-    InteractableItem(String itemName, String interactionText) {
-        super(itemName);
-        this.interactionText = interactionText;
-    }
-
-    public void interactionWithItem(){
-        // score metode here
-        System.out.println("You interacted with the item");
+    public void itemInteraction(){
+        StatusScore.ChangeScore(statusScoreChange);
+        System.out.println(interactionMessage);
     }
 
 }
@@ -43,7 +33,11 @@ class Items{
     public String printItems() {
         StringBuilder returnString = new StringBuilder("This room contains these items: ");
         for (int i = 0; i< itemsArray.length ; i++) {
-            returnString.append(", ").append(itemsArray[i].itemName);
+            if(i == 0){
+                returnString.append(itemsArray[i].itemName);
+            }else{
+                returnString.append(", ").append(itemsArray[i].itemName);
+            }
         }
         return returnString.toString();
     }

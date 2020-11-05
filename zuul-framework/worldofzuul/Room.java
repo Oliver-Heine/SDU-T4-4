@@ -9,16 +9,22 @@ public class Room
 {
     private String description;
     private HashMap<String, Room> exits;
+    private int roomId;
     Items items;
 
-    public Room(String description, Items items)
+    public Room(String description, Items items, int roomId)
     {
         this.description = description;
         this.items = items;
+        this.roomId = roomId;
         exits = new HashMap<String, Room>();
     }
 
-    public void setExit(String direction, Room neighbor) 
+    public int getRoomId() {
+        return roomId;
+    }
+
+    public void setExit(String direction, Room neighbor)
     {
         exits.put(direction, neighbor);
     }
@@ -30,7 +36,9 @@ public class Room
 
     public String getLongDescription()
     {
-        return "You are " + description + ".\n" + items.printItems() + ".\n" + getExitString();
+        return "You are " + description + ".\n" + items.printItems()
+                + ".\n" + "Your status score is: " +StatusScore.getScore()
+                + ".\n" + getExitString();
     }
 
     private String getExitString()
