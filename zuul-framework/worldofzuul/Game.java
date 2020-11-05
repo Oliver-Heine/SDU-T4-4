@@ -151,46 +151,50 @@ public class Game
 
         switch (interactableItem.toLowerCase()) {
             //Kitchen items
-            case "fridge" -> ItemFunctions.fridgeInteraction();
-            case "freezer" -> ItemFunctions.freezerInteraction();
+            case "fridge" -> fridge.itemInteraction();
+            case "freezer" -> freezer.itemInteraction();
             //Room items
-            case "bed" -> ItemFunctions.bedInteraction();
-            case "computer" -> ItemFunctions.computerInteraction();
+            case "bed" -> bed.itemInteraction();
+            case "computer" -> computer.itemInteraction();
             //Living room items
-            case "tv" -> ItemFunctions.tvInteraction();
+            case "tv" -> tv.itemInteraction();
             //Bathroom items
-            case "toilet" -> ItemFunctions.toiletInteraction();
+            case "toilet" -> toilet.itemInteraction();
             //Entrance items
-            case "door" -> ItemFunctions.doorInteraction();
+            case "door" -> door.itemInteraction();
             //Default
             default -> System.out.println("This item is not in this room");
         }
 
     }
     //Kitchen items:
-    Item fridge = new Item("fridge");
-    Item freezer = new Item("freezer");
+    Item fridge = new Item("fridge","You open the fridge and get some food",5);
+    Item freezer = new Item("freezer", "You open the freezer and eat some ice cream!", 5);
     Item[] kitchenItemsArray = {fridge,freezer};
     Items kitchenItems = new Items(kitchenItemsArray);
 
     //room items:
-    Item bed = new Item("bed");
-    Item computer = new Item("computer");
+    Item bed = new Item("bed","You lay in your bed",5);
+    Item computer = new Item("computer","You play on the computer",5);
     Item[] roomItemsArray = {bed,computer};
     Items roomItems = new Items(roomItemsArray);
 
+
     //living room items:
-    Item tv = new Item("tv");
+    Item tv = new Item("tv","You watch some tv",-5);
     Item[] livingRoomItemsArray = {tv};
     Items livingRoomItems = new Items(livingRoomItemsArray);
 
+
     //bathroom items:
-    Item toilet = new Item("toilet");
+    Item toilet = new Item("toilet","You use the toilet",5);
     Item[] bathroomItemsArray = {toilet};
     Items bathroomItems = new Items(bathroomItemsArray);
 
+
     //Entrance items:
-    Item door = new Item("door");
+    Item door = new Item("door","You go for a short walk",5);
     Item[] entranceItemsArray = {door};
     Items entranceItems = new Items(entranceItemsArray);
+
 }

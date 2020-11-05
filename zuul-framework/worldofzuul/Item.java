@@ -7,58 +7,24 @@ import java.util.Set;
 
 public class Item {
     public String itemName;
+    public String interactionMessage;
+    public int statusScoreChange;
 
-    Item(String itemName) {
+    public Item(String itemName, String interactionMessage, int statusScoreChange) {
         this.itemName = itemName;
+        this.interactionMessage = interactionMessage;
+        this.statusScoreChange = statusScoreChange;
     }
 
     public String getItemName (){
         return itemName;
     }
-}
 
-class ItemFunctions{
-
-    //Functions for all the items:
-
-    //Kitchen item interactions
-    public static void fridgeInteraction(){
-        StatusScore.increaseScore(10);
-        System.out.println("You open the fridge and get some food");
-    }
-    public static void freezerInteraction(){
-        StatusScore.decreaseScore(25);
-        System.out.println("You open the freezer and eat some ice cream!");
+    public void itemInteraction(){
+        StatusScore.increaseScore(statusScoreChange);
+        System.out.println(interactionMessage);
     }
 
-    //Bathroom item interactions
-    public static void bedInteraction(){
-        StatusScore.increaseScore(10);
-        System.out.println("You lay in your bed");
-    }
-
-    public static void computerInteraction(){
-        StatusScore.decreaseScore(25);
-        System.out.println("You play on the computer");
-    }
-
-    //Living room item interactions
-    public static void tvInteraction(){
-        StatusScore.decreaseScore(20);
-        System.out.println("You watch some tv");
-    }
-
-    //Bathroom item interactions
-    public static void toiletInteraction(){
-        StatusScore.increaseScore(15);
-        System.out.println("You use the toilet");
-    }
-
-    //Entrance item interactions
-    public static void doorInteraction(){
-        StatusScore.increaseScore(20);
-        System.out.println("You go for a short walk");
-    }
 }
 
 class Items{
