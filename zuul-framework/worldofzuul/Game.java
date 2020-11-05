@@ -50,7 +50,7 @@ public class Game
             StatusScore end = new StatusScore();
             if (processCommand(command)|| end.gameOver())
             {
-                finished = processCommand(command)|| end.gameOver();
+                finished = end.gameOver();
                 System.out.println("Thank you for playing. You lost because your score was zero or less. " +
                         "Play again and try to keep your score up.\n" +
                         "TIP: the score is your mental health");
