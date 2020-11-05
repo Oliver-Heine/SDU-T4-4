@@ -3,20 +3,8 @@ package worldofzuul;
 public class StatusScore {
     private static int score = 50;
 
-    public static void increaseScore() {
-        score += 2;
-    }
-
-    public static void increaseScore(int num) {
+    public static void ChangeScore(int num) {
         score += num;
-    }
-
-    public static void decreaseScore() {
-        score -= 2;
-    }
-
-    public static void decreaseScore(int num) {
-        score -= num;
     }
 
     public static void setScore(int num) {
@@ -27,7 +15,7 @@ public class StatusScore {
         return score;
     }
 
-    public boolean gameOver() {
+    public static boolean gameOver() {
         if(score<=0) {
             return true;
         } else {
@@ -35,7 +23,7 @@ public class StatusScore {
         }
     }
 
-    public boolean won() {
+    public static boolean won() {
         if (score>=100) {
             return true;
         } else {

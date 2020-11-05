@@ -1,5 +1,7 @@
 package worldofzuul;
 
+import javax.swing.*;
+
 public class Game
 {
     private Parser parser; //parser attribute
@@ -15,11 +17,11 @@ public class Game
     {
         Room kitchen, bedroom, livingRoom, bathroom, entrance;
 
-        kitchen = new Room("in your kitchen", kitchenItems);
-        bedroom = new Room("in your bedroom", roomItems);
-        livingRoom = new Room("in your living room", livingRoomItems);
-        bathroom = new Room("in your bathroom", bathroomItems);
-        entrance = new Room("at the entrance", entranceItems);
+        kitchen = new Room("in your kitchen", kitchenItems,0);
+        bedroom = new Room("in your bedroom", roomItems,1);
+        livingRoom = new Room("in your living room", livingRoomItems,2);
+        bathroom = new Room("in your bathroom", bathroomItems,3);
+        entrance = new Room("at the entrance", entranceItems,4);
         
         kitchen.setExit("bedroom", bedroom);
         kitchen.setExit("bathroom", bathroom);
@@ -47,15 +49,14 @@ public class Game
         boolean finished = false;
         while (! finished) {
             Command command = parser.getCommand();
-            StatusScore end = new StatusScore();
-            if (end.gameOver())
+            if (StatusScore.gameOver())
             {
                 finished = true;
                 System.out.println("Thank you for playing. You lost because your score was zero or less. \n" +
                         "Play again and try to keep your score up.\n" +
                         "TIP: the score is your mental health");
             }
-            else if(end.won())
+            else if(StatusScore.won())
             {
                 finished = true;
                 System.out.println("Thank you for playing. You won!");
@@ -153,7 +154,38 @@ public class Game
         }
         String interactableItem = command.getSecondWord();
         //Item[] item = currentRoom.getItem().itemsArray;
+        int id = currentRoom.getRoomId();
+        if (id == 0){
+            switch (interactableItem.toLowerCase()) {
+                //Kitchen items
+                case "fridge" -> fridge.itemInteraction();
+                case "freezer" -> freezer.itemInteraction();
+                default -> System.out.println("This item is not in this room");
+            }
+        }else if(id==1){
+            switch (interactableItem.toLowerCase()) {
+                case "bed" -> bed.itemInteraction();
+                case "computer" -> computer.itemInteraction();
+                default -> System.out.println("This item is not in this room");
+            }
+        }else if(id==2){
+            switch (interactableItem.toLowerCase()) {
+                case "tv" -> tv.itemInteraction();
+                default -> System.out.println("This item is not in this room");
+            }
+        }else if(id==3){
+            switch (interactableItem.toLowerCase()) {
+               case "toilet" -> toilet.itemInteraction();
+                default -> System.out.println("This item is not in this room");
+            }
+        }else if(id==4){
+        switch (interactableItem.toLowerCase()) {
+            case "door" -> door.itemInteraction();
+            default -> System.out.println("This item is not in this room");
+        }
+      }
 
+        /*
         switch (interactableItem.toLowerCase()) {
             //Kitchen items
             case "fridge" -> fridge.itemInteraction();
@@ -169,7 +201,8 @@ public class Game
             case "door" -> door.itemInteraction();
             //Default
             default -> System.out.println("This item is not in this room");
-        }
+
+        }*/
 
     }
     //Kitchen items:

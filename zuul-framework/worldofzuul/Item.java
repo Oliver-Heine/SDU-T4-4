@@ -1,9 +1,5 @@
 package worldofzuul;
 
-import java.lang.reflect.Array;
-import java.util.ArrayList;
-import java.util.Set;
-
 
 public class Item {
     public String itemName;
@@ -21,7 +17,7 @@ public class Item {
     }
 
     public void itemInteraction(){
-        StatusScore.increaseScore(statusScoreChange);
+        StatusScore.ChangeScore(statusScoreChange);
         System.out.println(interactionMessage);
     }
 
