@@ -43,11 +43,11 @@ public class Game
     }
 
 
-    public void play()
-    {
+    public void play() throws InterruptedException {
         printWelcome();
         boolean finished = false;
         while (! finished) {
+            TimeClass.TimeCounter();
             Command command = parser.getCommand();
             if (StatusScore.gameOver())
             {

@@ -8,7 +8,7 @@ public class TimeClass {
     private static int DayNumber = 0;
 
 
-    public static void TimeChecker() {
+    public static void TimeChecker() { // When time gets incremented to 24 then DayNumber gets incremented by 1
         if (time <= 25) {
             DayNumber++;
 
@@ -19,11 +19,11 @@ public class TimeClass {
     }
 
 
-    public static void TimeCounter () throws InterruptedException {
+    public static void TimeCounter () throws InterruptedException { /*Heart of this class, This method prints out from 0 to 24, and connects the two other methods*/
         for (int time = 0; time<25;time++){
             TimeChecker();
             dayNumbers();
-            TimeUnit.SECONDS.sleep(60); //Ændrer for hurtigere or langsomere output
+            TimeUnit.SECONDS.sleep(60); //Change this value for faster or slower time output!
             System.out.println("The clock is "+time + " : 00");
 
 
