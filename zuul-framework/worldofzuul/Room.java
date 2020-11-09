@@ -41,7 +41,7 @@ public class Room
                 + ".\n" + getExitString();
     }
 
-    private String getExitString()
+    public String getExitString()
     {
         String returnString = "Exits:";
         Set<String> keys = exits.keySet();

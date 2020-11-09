@@ -111,7 +111,9 @@ public class Game
     private void printHelp() 
     {
         System.out.println("You are alone in your apartment during the Covid-19 pandemic.\n");
+        System.out.println(currentRoom.getLongDescription());
         System.out.println("Live your day.\n Your command words are:");
+
         parser.showCommands();
     }
 
@@ -119,6 +121,8 @@ public class Game
     {
         if(!command.hasSecondWord()) {
             System.out.println("Go where?");
+            System.out.println("your options are");
+            System.out.println(currentRoom.getExitString());
             return;
         }
 
@@ -150,6 +154,8 @@ public class Game
     {
         if(!command.hasSecondWord()) {
             System.out.println("Interact with what?");
+            System.out.println("your options are");
+            System.out.println(currentRoom.items.printItems());
             return;
         }
         String interactableItem = command.getSecondWord();
