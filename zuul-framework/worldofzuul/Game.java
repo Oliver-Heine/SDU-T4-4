@@ -243,7 +243,7 @@ public class Game
 
     //bedroom items:
     Item bed = new Item("bed","You lay in your bed",5);
-    Item computer = new Item("computer","You play on the computer",-5);
+    Item computer = new Item("computer","You finished a voice chat with your friends, you feel good",5);
     Item[] bedroomItemsArray = {bed,computer};
     Items bedroomItems = new Items(bedroomItemsArray);
 
