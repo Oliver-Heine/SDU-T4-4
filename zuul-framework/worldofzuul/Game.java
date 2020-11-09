@@ -83,7 +83,7 @@ public class Game
         System.out.println();
         System.out.println("You wake up in your appartment during the COVID19 pandemic!");
         System.out.println("The goal of the game is to manage your score. You win by reaching 100 points, lose by reaching 0 points.");
-        System.out.println("The game also ends after the 7th day.");W
+        System.out.println("The game also ends after the 7th day.");
         System.out.println("Type '" + CommandWord.HELP + "' if you need help.");
         System.out.println("Interact with an item by typing " +CommandWord.INTERACT + " and the name of the item.");
         System.out.println();
@@ -237,13 +237,13 @@ public class Game
     }
     //Kitchen items:
     Item fridge = new Item("fridge","You open the fridge and get some food",5);
-    Item freezer = new Item("freezer", "You open the freezer and eat some ice cream!", 5);
+    Item freezer = new Item("freezer", "You open the freezer and eat some ice cream!", -5);
     Item[] kitchenItemsArray = {fridge,freezer};
     Items kitchenItems = new Items(kitchenItemsArray);
 
     //room items:
     Item bed = new Item("bed","You lay in your bed",5);
-    Item computer = new Item("computer","You play on the computer",5);
+    Item computer = new Item("computer","You play on the computer",-5);
     Item[] roomItemsArray = {bed,computer};
     Items roomItems = new Items(roomItemsArray);
 
@@ -261,7 +261,7 @@ public class Game
 
     //Entrance items:
     Item door = new Item("door","You look at the door, and wonder what is outside",5);
-    Item mirror = new Item("mirror","You take a deep look in the mirror",5);
+    Item mirror = new Item("mirror","You take a deep look in the mirror and feel lonely",-5);
     Item[] entranceItemsArray = {door, mirror};
     Items entranceItems = new Items(entranceItemsArray);
 
