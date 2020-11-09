@@ -32,7 +32,8 @@ public class Parser
             }
         } //tager kommando (mellemrum) handling
 
-        return new Command(commands.getCommandWord(word1), word2);
+        assert word1 != null;
+        return new Command(commands.getCommandWord(word1.toLowerCase()), word2);
     }
 
     public void showCommands()
