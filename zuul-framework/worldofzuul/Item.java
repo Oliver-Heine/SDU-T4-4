@@ -19,6 +19,7 @@ public class Item {
     public void itemInteraction(){
         StatusScore.ChangeScore(statusScoreChange);
         System.out.println(interactionMessage);
+        System.out.println("Your status score is now: " + StatusScore.getScore());
     }
 
 }

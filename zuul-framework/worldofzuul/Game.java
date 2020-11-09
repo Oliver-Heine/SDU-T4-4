@@ -112,7 +112,7 @@ public class Game
     {
         System.out.println("You are alone in your apartment during the Covid-19 pandemic.\n");
         System.out.println(currentRoom.getLongDescription());
-        System.out.println("Live your day.\n Your command words are:");
+        System.out.println("\nYour command words are:");
 
         parser.showCommands();
     }
