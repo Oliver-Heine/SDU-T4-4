@@ -1,86 +1,56 @@
 package worldofzuul;
 
-import java.util.concurrent.TimeUnit;
+
 
 public class TimeClass {
-    private static int time;
 
-    private static int DayNumber = 0;
+    private static int time=23;
+    private static int dayNumber = 0;
+    private static String dayName = "Monday";
 
-
-    public static void TimeChecker() { // When time gets incremented to 24 then DayNumber gets incremented by 1
-        if (time <= 25) {
-            DayNumber++;
-
-        } else
-            time++;
-
-
+    public static void addTime(){
+        time++;
+        timeChecker();
+        dayChecker();
     }
 
+    public static void timeChecker() {
+        if (time==24){
+        dayNumber++;
+        time=0;
+}
+    }
 
-    public static void TimeCounter () throws InterruptedException { /*Heart of this class, This method prints out from 0 to 24, and connects the two other methods*/
-        for (int time = 0; time<25;time++){
-            TimeChecker();
-            dayNumbers();
-            TimeUnit.SECONDS.sleep(60); //Change this value for faster or slower time output!
-            System.out.println("The clock is "+time + " : 00");
-
-
-
+    public static void dayChecker(){
+        if (dayNumber == 1 && time == 0) {
+            System.out.println("It's a new day:  MONDAY");
+            dayName= "Monday";
+        } else if (dayNumber == 2 && time == 0) {
+            System.out.println("It's a new day:  TUESDAY");
+            dayName= "Tuesday";
+        } else if (dayNumber == 3 && time == 0) {
+            System.out.println("It's a new day:  WEDNESDAY");
+            dayName="WEDNESDAY";
+        } else if (dayNumber == 4 && time == 0) {
+            System.out.println("It's a new day:  THURSDAY");
+            dayName="Thursday";
+        } else if (dayNumber == 5 && time == 0) {
+            System.out.println("It's a new day:  FRIDAY");
+            dayName="Friday";
+        } else if (dayNumber == 6 && time == 0) {
+            System.out.println("It's a new day:  SATURDAY");
+            dayName="Saturday";
+        } else if (dayNumber == 7 && time == 0) {
+            System.out.println("It's a new day:  SUNDAY");
+            dayName="Sunday";
         }
     }
-    public static void dayNumbers () throws InterruptedException {
 
-        switch (DayNumber) {
-            case 7 -> {
-                TimeCounter();
-                System.out.println("NEW DAY : MONDAY"+ "\n");
-                TimeChecker();
-
-            }
-            case 6 -> {
-                TimeCounter();
-                System.out.println("NEW DAY : TUESDAY"+ "\n");
-                TimeChecker();
-
-            }
-            case 5 -> {
-                TimeCounter();
-                System.out.println("NEW DAY : WEDNESDAY"+ "\n");
-                TimeChecker();
-
-            }
-            case 4 -> {
-                TimeCounter();
-                System.out.println("NEW DAY : THURSDAY"+ "\n");
-                TimeChecker();
-
-
-
-            }
-            case 3 -> {
-                TimeCounter();
-                System.out.println("NEW DAY : FRIDAY"+ "\n");
-                TimeChecker();
-
-            }
-            case 2 -> {
-
-                TimeCounter();
-                System.out.println("NEW DAY : SATURDAY"+ "\n");
-                TimeChecker();
-
-            }
-            case 1 -> {
-
-                TimeCounter();
-                System.out.println("NEW DAY : SUNDAY" + "\n");
-                TimeChecker();
-
-            }
-        }
+    public static void getTime(){
+        System.out.println("You are in the "+time+ "th hour");
+        System.out.println("Today is " + dayName);
     }
+
 
 }
 

@@ -1,6 +1,5 @@
 package worldofzuul;
 
-import javax.swing.*;
 
 public class Game
 {
@@ -43,11 +42,11 @@ public class Game
     }
 
 
-    public void play() throws InterruptedException {
+    public void play() {
         printWelcome();
         boolean finished = false;
         while (! finished) {
-            TimeClass.TimeCounter();
+
             Command command = parser.getCommand();
             if (StatusScore.gameOver())
             {
@@ -93,17 +92,23 @@ public class Game
         }
 
         if (commandWord == CommandWord.HELP) {
+            TimeClass.addTime();
             printHelp();
         }
         else if (commandWord == CommandWord.GO) {
+            TimeClass.addTime();
             goRoom(command);
         }
         else if (commandWord == CommandWord.QUIT) {
+            TimeClass.addTime();
             wantToQuit = quit(command);
         }
         else if (commandWord == CommandWord.INTERACT) {
-            //System.out.println("interact works");
+            TimeClass.addTime();
             interactItem(command);
+        }
+        else if (commandWord == CommandWord.TIME) {
+            TimeClass.getTime();
         }
         return wantToQuit;
     }
