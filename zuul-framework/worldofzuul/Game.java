@@ -17,7 +17,7 @@ public class Game
         Room kitchen, bedroom, livingRoom, bathroom, entrance, outside;
 
         kitchen = new Room("in your kitchen", kitchenItems,0);
-        bedroom = new Room("in your bedroom", roomItems,1);
+        bedroom = new Room("in your bedroom", bedroomItems,1);
         livingRoom = new Room("in your living room", livingRoomItems,2);
         bathroom = new Room("in your bathroom", bathroomItems,3);
         entrance = new Room("at the entrance", entranceItems,4);
@@ -241,11 +241,11 @@ public class Game
     Item[] kitchenItemsArray = {fridge,freezer};
     Items kitchenItems = new Items(kitchenItemsArray);
 
-    //room items:
+    //bedroom items:
     Item bed = new Item("bed","You lay in your bed",5);
     Item computer = new Item("computer","You play on the computer",-5);
-    Item[] roomItemsArray = {bed,computer};
-    Items roomItems = new Items(roomItemsArray);
+    Item[] bedroomItemsArray = {bed,computer};
+    Items bedroomItems = new Items(bedroomItemsArray);
 
     //living room items:
     Item tv = new Item("tv","You watch some tv",-5);
