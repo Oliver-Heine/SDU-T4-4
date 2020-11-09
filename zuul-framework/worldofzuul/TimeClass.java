@@ -4,7 +4,7 @@ package worldofzuul;
 
 public class TimeClass {
 
-    private static int time=23;
+    private static int time=8;
     private static int dayNumber = 0;
     private static String dayName = "Monday";
 
@@ -47,10 +47,34 @@ public class TimeClass {
     }
 
     public static void getTime(){
-        System.out.println("You are in the "+time+ "th hour");
+        System.out.println("The clock is  "+time+ ":00 ");
         System.out.println("Today is " + dayName);
     }
+    public static void sleep() {
+        if (time > 0 && time < 7) {
+            StatusScore.ChangeScore(-10);
+            time += 7;
+            System.out.println("You just slept 7 hours, the time is" + time);
+        }
+        if (time > 18 && time < 24) {
+            StatusScore.ChangeScore(+10);
+            time = 7;
+            dayNumber++;
+            System.out.println("You just slept until the next morning");
+            getTime();
+        } else {
+            System.out.println("You can only go to bed between 18:00 - 7:00");
+        }
+    }
 
+
+    public static boolean gameEnd() {
+        if(dayNumber==7) {
+            return true;
+        } else {
+            return false;
+        }
+    }
 
 }
 

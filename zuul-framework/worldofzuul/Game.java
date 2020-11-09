@@ -65,17 +65,23 @@ public class Game
                 finished = true;
                 System.out.println("Thank you for playing. You quit!");
             }
-
+            else if(TimeClass.gameEnd())
+            {
+                finished = true;
+                System.out.println("Thank you for playing. You ended the game! Your score is: "+ StatusScore.getScore() );
+            }
         }
     }
+
 
     private void printWelcome()
     {
         System.out.println();
-        System.out.println("Welcome to the World of Zuul!");
-        System.out.println("World of Zuul is a new, incredibly boring adventure game.");
+        System.out.println("You wake up in your appartment during the COVID19 pandemic!");
+        System.out.println("The goal of the game is to manage your score. You win by reaching 100 points, lose by reaching 0 points.");
+        System.out.println("The game also ends after the 7th day.");W
         System.out.println("Type '" + CommandWord.HELP + "' if you need help.");
-        System.out.println("Interact with an item by typing \"Interact ItemName\"");
+        System.out.println("Interact with an item by typing " +CommandWord.INTERACT + " and the name of the item.");
         System.out.println();
         System.out.println(currentRoom.getLongDescription());
     }
@@ -169,7 +175,7 @@ public class Game
             }
         }else if(id==1){
             switch (interactableItem.toLowerCase()) {
-                case "bed" -> bed.itemInteraction();
+                case "bed" ->TimeClass.sleep();
                 case "computer" -> computer.itemInteraction();
                 default -> System.out.println("This item is not in this room");
             }
