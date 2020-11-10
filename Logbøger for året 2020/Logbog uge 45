@@ -16,6 +16,23 @@ det virker ustruktureret, men det er åbenbart meningen.
 Vi mangler UML diagram og CRC kort for hvad vi selv implementere.  
 
 
+Vejlederreferat
+Anton fraværende (Syg), har skrevet ud til gruppen. Line er fraværende (syg), hun var i øvrigt med fysisk en del af dagen.
+Vi gennemgår funktionelle og ikke-funktionelle krav som der blev opstillet i MoSCoW metode. Layoutet ændres til en tabel, som laves med en Overleaf table generator.
+De funktionelle og ikke-funktionelle krav for MoSCoW modellen udpensles i flere enkelte krav, som skal være korte og specifikke (mindst 30). 
+Kravene skal have en titel, beskrivelse og et bogstav i forhold til prioriteringslisten for MoSCoW metoden.
+CRC skal ikke ændres på, når vi finder problemer. CRC skal være et bilag, som der refereres til i rapporten. UML skal placeres i hovedafsnittet, 
+det må opdateres løbende hvis vi støder ind i problematikker, men er en yderst vigtig del for design-delen.
+For redegørelse af framework skal vi analysere løsningsdomænet (World of Zuul), da det underbygger løsningen til vores problem, 
+som der er defineret ved problemformuleringen. Det er for i øvrigt en analyse af den udleverede kode og IKKE vores endelige kode! 
+Det skal ikke fylde meget, men vores problemanalyse skal kunne kobles ind i frameworket, hvilket skal lede os til en problemformulering.
+For indledningen skal vi fjerne underoverskrifterne, indledningen skal ikke fylde mere end en halv til en hel side. 
+Det gælder også for analysen af frameworket, hvilket så ikke skal være super detaljeret. Det er også klart, da indledningen er en indledning til selve rapporten.
+Enums ville være godt at få implementeret, da det gør det lettere for andre at arbejde med koden. 
+Det ville være en god ide at bruge enums i forhold til interactable types, for ikke at skabe unødvendig kompleks kode.
+Det vil være en god ide, at lave en .gitignore fil, for at fjerne filer der autogenereres når man feks. Builder.
+
+
 Onsdag d. 4/11
 
 Daniel
@@ -48,4 +65,5 @@ Lørdag d. 7/11
 
 
 Søndag d. 8/11
-
+ -Oliver
+  Har arbejdet lidt med projektrapporten - hovedsageligt læst igennem, og rettet enkelte afsnit, samt kargjort kravanalysen til mandag
