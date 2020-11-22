@@ -20,6 +20,23 @@ Disse elementer tænker vi at implementer
 -Timer ved valg 
 -Viden ved computer
 
+
+Vejlederreferat  
+
+Oliver fraværende (Aftalt med gruppen), ellers er alle mødt! 
+
+Spekuleringen om det er et krav at vi skal bruge SceneBuilder blev afklaret. Det er ikke et krav men det anbefales da det er det vi blevet undervist i.  
+
+Det ville være en god ide at gruppen arbejder i hold, for at øge produktiviteten. Her skal vi løbende catche up med hinanden, 
+for at forstå hvad der er blevet lavet, og for at komme med inputs. Denne ide formindsker også merge conflicts hvilket sker tit, når man er så mange! 
+
+En anden god ide var, at vi kommer med forslag på en løsning, som kan pitches til de andre gruppemedlemmer, før den implementeres, 
+da det kan hjælpe med at formindske tidsspild og formindske kompleksitet. Kompleksitet skal generelt formindskes så vidt som muligt.   
+
+Vi fik diskuteret, hvorvidt vores løsning var en god løsning. Her blev vi vejledt på vej mod en eventuel bedre løsning, 
+da vores nuværende ville kræve en del tid at implementere, og generelt bygge teknisk gæld, hvilket er noget vi skal undgå.  
+
+
 Onsdag d. 18/11
 
 
@@ -27,6 +44,7 @@ Onsdag d. 18/11
 
 
 Torsdag d. 19/11 
+Gruppen mødtes, og fik kigget på JavaFX (Oliver fraværende, dog aftalt)
 
 
 
