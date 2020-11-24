@@ -20,11 +20,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="cdb932d9-7e58-4d94-93a9-e7b232ef17da" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/src/sample/room_1.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/lib.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/lib.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/lib1.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/sample/Controller.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/sample/Controller.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/sample/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/sample/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/zuul-framework.iml" beforeDir="false" afterPath="$PROJECT_DIR$/zuul-framework.iml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -106,12 +105,13 @@
     <property name="MemberChooser.sorted" value="false" />
     <property name="OverrideImplement.combined" value="false" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="dynamic.classpath" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/../../../../Semester 1/World of depression_001" />
     <property name="project.structure.last.edited" value="Libraries" />
-    <property name="project.structure.proportion" value="0.0" />
-    <property name="project.structure.side.proportion" value="0.0" />
+    <property name="project.structure.proportion" value="0.15" />
+    <property name="project.structure.side.proportion" value="0.2" />
     <property name="recentsLimit" value="5" />
   </component>
   <component name="RunManager">
@@ -143,7 +143,7 @@
     <configuration name="Main" type="Application" factoryName="Application">
       <option name="MAIN_CLASS_NAME" value="sample.Main" />
       <module name="zuul-framework" />
-      <option name="VM_PARAMETERS" value="--module-path C:\javafx-sdk-15.0.1\lib --add-modules javafx.controls,javafx.fxml " />
+      <option name="VM_PARAMETERS" value="--module-path $USER_HOME$/jetbrains/Desktop/javafx-sdk-11.0.2/lib --add-modules javafx.controls,javafx.fxml" />
       <extension name="coverage">
         <pattern>
           <option name="PATTERN" value="sample.*" />
@@ -226,43 +226,43 @@
     <option name="INCLUDE_TEXT_INTO_SHELF" value="false" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="191" y="0" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1606215962347">
-      <screen x="0" y="0" width="1280" height="680" />
-    </state>
-    <state x="191" y="0" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1280.680@0.0.1280.680" timestamp="1606215962347" />
-    <state x="304" y="198" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1680.1050@0.0.1680.1050" timestamp="1606215287568" />
-    <state x="627" y="248" key="#com.intellij.ide.macro.MacrosDialog" timestamp="1606215242116">
+    <state x="304" y="198" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1606216700719">
       <screen x="0" y="0" width="1680" height="1050" />
     </state>
-    <state x="627" y="248" key="#com.intellij.ide.macro.MacrosDialog/0.0.1680.1050@0.0.1680.1050" timestamp="1606215242116" />
+    <state x="191" y="0" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1280.680@0.0.1280.680" timestamp="1606215962347" />
+    <state x="304" y="198" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1680.1050@0.0.1680.1050" timestamp="1606216700719" />
+    <state x="627" y="248" key="#com.intellij.ide.macro.MacrosDialog" timestamp="1606216651483">
+      <screen x="0" y="0" width="1680" height="1050" />
+    </state>
+    <state x="627" y="248" key="#com.intellij.ide.macro.MacrosDialog/0.0.1680.1050@0.0.1680.1050" timestamp="1606216651483" />
     <state x="469" y="82" key="FileChooserDialogImpl" timestamp="1606216127386">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
     <state x="469" y="82" key="FileChooserDialogImpl/0.0.1280.680@0.0.1280.680" timestamp="1606216127386" />
-    <state width="1237" height="163" key="GridCell.Tab.0.bottom" timestamp="1606216432744">
-      <screen x="0" y="0" width="1280" height="680" />
+    <state width="1638" height="285" key="GridCell.Tab.0.bottom" timestamp="1606216636745">
+      <screen x="0" y="0" width="1680" height="1050" />
     </state>
     <state width="1237" height="163" key="GridCell.Tab.0.bottom/0.0.1280.680@0.0.1280.680" timestamp="1606216432744" />
-    <state width="1237" height="163" key="GridCell.Tab.0.center" timestamp="1606216432743">
-      <screen x="0" y="0" width="1280" height="680" />
+    <state width="1638" height="285" key="GridCell.Tab.0.bottom/0.0.1680.1050@0.0.1680.1050" timestamp="1606216636745" />
+    <state width="1638" height="285" key="GridCell.Tab.0.center" timestamp="1606216636743">
+      <screen x="0" y="0" width="1680" height="1050" />
     </state>
     <state width="1237" height="163" key="GridCell.Tab.0.center/0.0.1280.680@0.0.1280.680" timestamp="1606216432743" />
-    <state width="1237" height="163" key="GridCell.Tab.0.left" timestamp="1606216432743">
-      <screen x="0" y="0" width="1280" height="680" />
+    <state width="1638" height="285" key="GridCell.Tab.0.center/0.0.1680.1050@0.0.1680.1050" timestamp="1606216636743" />
+    <state width="1638" height="285" key="GridCell.Tab.0.left" timestamp="1606216636743">
+      <screen x="0" y="0" width="1680" height="1050" />
     </state>
     <state width="1237" height="163" key="GridCell.Tab.0.left/0.0.1280.680@0.0.1280.680" timestamp="1606216432743" />
-    <state width="1237" height="163" key="GridCell.Tab.0.right" timestamp="1606216432744">
-      <screen x="0" y="0" width="1280" height="680" />
+    <state width="1638" height="285" key="GridCell.Tab.0.left/0.0.1680.1050@0.0.1680.1050" timestamp="1606216636743" />
+    <state width="1638" height="285" key="GridCell.Tab.0.right" timestamp="1606216636744">
+      <screen x="0" y="0" width="1680" height="1050" />
     </state>
     <state width="1237" height="163" key="GridCell.Tab.0.right/0.0.1280.680@0.0.1280.680" timestamp="1606216432744" />
-    <state x="242" y="0" key="SettingsEditor" timestamp="1606215827226">
-      <screen x="0" y="0" width="1280" height="680" />
+    <state width="1638" height="285" key="GridCell.Tab.0.right/0.0.1680.1050@0.0.1680.1050" timestamp="1606216636744" />
+    <state x="328" y="117" key="SettingsEditor" timestamp="1606216628204">
+      <screen x="0" y="0" width="1680" height="1050" />
     </state>
     <state x="242" y="0" key="SettingsEditor/0.0.1280.680@0.0.1280.680" timestamp="1606215827226" />
-    <state x="328" y="117" key="SettingsEditor/0.0.1680.1050@0.0.1680.1050" timestamp="1606215195369" />
-  </component>
-  <component name="antWorkspaceConfiguration">
-    <option name="IS_AUTOSCROLL_TO_SOURCE" value="false" />
-    <option name="FILTER_TARGETS" value="false" />
+    <state x="328" y="117" key="SettingsEditor/0.0.1680.1050@0.0.1680.1050" timestamp="1606216628204" />
   </component>
 </project>
