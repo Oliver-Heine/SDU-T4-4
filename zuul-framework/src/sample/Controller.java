@@ -2,38 +2,64 @@ package sample;
 
 import javafx.fxml.FXML;
 import javafx.scene.control.Button;
+import javafx.scene.control.Control;
+import javafx.scene.control.TextArea;
 import javafx.scene.image.Image;
 import javafx.scene.image.ImageView;
 import javafx.scene.input.MouseEvent;
+import javafx.scene.layout.AnchorPane;
 
-import java.io.IOException;
 
 public class Controller {
 
+    //ROOMS
     @FXML
-    private ImageView kitchen;
+    private AnchorPane bedRoom;
 
     @FXML
-    private Button computer;
+    private AnchorPane computerRoom;
 
     @FXML
-    private Button backButton;
+    private AnchorPane kitchenRoom;
 
+    //Other text or stuff
     @FXML
-    void printToScreen(MouseEvent event) throws IOException {
-        System.out.println("Going to computer");
-        kitchen.setImage(new Image("sample/Image/computerRoom.jpg"));
-        computer.setVisible(false);
-        backButton.setVisible(true);
+    private TextArea textAreaComputer;
 
+    //BUTTONS
+    @FXML
+    void goToBedRoom(MouseEvent event) {
+        changeRoom(computerRoom,bedRoom);
     }
 
     @FXML
-    void changeRoom(MouseEvent event) {
-        System.out.println("living!");
-        kitchen.setImage(new Image("sample/Image/bedroom.jpg"));
-        computer.setVisible(true);
-        backButton.setVisible(false);
-
+    void goToComputerRoom(MouseEvent event) {
+        changeRoom(bedRoom,computerRoom);
     }
+
+    @FXML
+    void goToKitchenFromBedroom(MouseEvent event) {
+        changeRoom(bedRoom,kitchenRoom);
+    }
+
+    @FXML
+    void goToBedroomFromKitchen(MouseEvent event) {
+        changeRoom(kitchenRoom,bedRoom);
+    }
+
+    @FXML
+    void showComputerInfo(MouseEvent event) {
+        changeVisability(textAreaComputer);
+    }
+
+    //METHODS
+    public void changeRoom(AnchorPane fromRoom, AnchorPane toRoom){
+        fromRoom.setVisible(false);
+        toRoom.setVisible(true);
+    }
+
+    public void changeVisability(Control control){
+        control.setVisible(!control.isVisible());
+    }
+
 }
