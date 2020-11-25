@@ -1,17 +1,17 @@
 package sample;
 
 public class StatusScore {
-    private int score = 50;
+    private static int score = 50;
 
-    public int getScore() {
+    public static int getScore() {
         return score;
     }
 
-    public void changeScore(int change){
+    public static void changeScore(int change){
         score += change;
     }
 
     public void setScore(int score) {
-        this.score = score;
+        StatusScore.score = score;
     }
 }
