@@ -7,17 +7,16 @@
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.layout.VBox?>
 
+
 <AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.rooms.Controller">
    <children>
       <ImageView fitHeight="400.0" fitWidth="600.0" pickOnBounds="true" preserveRatio="true">
          <image>
-            <Image url="@../Image/computerRoom.jpg" />
+            <Image url="@../Image/kitchen_low_res.jpg" />
          </image>
       </ImageView>
-      <TextArea fx:id="textAreaComputer" layoutX="172.0" layoutY="57.0" prefHeight="132.0" prefWidth="207.0" visible="false" />
-      <Button layoutX="448.0" layoutY="129.0" mnemonicParsing="false" onMouseClicked="#goToBedRoom" prefHeight="141.0" prefWidth="84.0" text="Back" />
-      <Button layoutX="42.0" layoutY="57.0" mnemonicParsing="false" onMouseClicked="#showComputerInfo" prefHeight="132.0" prefWidth="52.0" text="INFO" />
-      <VBox layoutX="533.0" prefHeight="400.0" prefWidth="67.0">
+      <Button layoutX="14.0" layoutY="176.0" mnemonicParsing="false" onMouseClicked="#goToBedroomFromKitchen" prefHeight="48.0" prefWidth="111.0" text="Bedroom" />
+      <VBox layoutX="532.0" prefHeight="400.0" prefWidth="67.0">
          <children>
             <TextArea fx:id="scoreText" editable="false" onMouseEntered="#showContent" prefHeight="69.0" prefWidth="67.0" />
          </children>

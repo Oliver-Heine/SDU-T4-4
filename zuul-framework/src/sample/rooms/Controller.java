@@ -15,6 +15,7 @@ import sample.StatusScore;
 import java.io.IOException;
 
 
+
 public class Controller {
 
     //ROOMS
@@ -36,12 +37,19 @@ public class Controller {
     }
 
     @FXML
-    void goToComputerRoom(MouseEvent event) throws IOException {
+    void goToComputerRoom(MouseEvent event) throws IOException, InterruptedException {
         changeRoom("computer.fxml","Computer",event);
+
     }
 
     @FXML
-    void goToKitchenFromBedroom(MouseEvent event) {
+    void goToKitchenFromBedroom(MouseEvent event) throws IOException {
+        changeRoom("kitchen.fxml", "Kitchen", event);
+    }
+
+    @FXML
+    void goToBedroomFromKitchen(MouseEvent event) throws IOException {
+        changeRoom("bedroom.fxml","Bedroom",event);
     }
 
 
@@ -59,16 +67,19 @@ public class Controller {
         updateScoreText();
     }
 
+    @FXML
+    void showContent(MouseEvent event) {
+        updateScoreText();
+    }
+
 
     //METHODS
     public void changeRoom(String fxmlFileName, String roomName, MouseEvent event) throws IOException {
         Node node = (Node) event.getSource();
         Stage thisStage = (Stage) node.getScene().getWindow();
         Parent root = FXMLLoader.load(getClass().getResource(fxmlFileName));
-        updateScoreText();
         thisStage.setTitle(roomName);
         thisStage.setScene(new Scene(root, 600, 400));
-
         thisStage.show();
     }
 
