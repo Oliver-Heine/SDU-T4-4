@@ -8,6 +8,7 @@ import javafx.scene.Node;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
 import javafx.scene.control.Control;
+import javafx.scene.control.ProgressBar;
 import javafx.scene.control.TextArea;
 import javafx.scene.input.MouseEvent;
 import javafx.scene.layout.AnchorPane;
@@ -30,7 +31,7 @@ public class Controller {
     private TextArea textAreaComputer;
 
     @FXML
-    private TextArea scoreText;
+    private ProgressBar scoreText;
 
 
     //BUTTONS
@@ -59,14 +60,14 @@ public class Controller {
     @FXML
     void showComputerInfo(MouseEvent event) {
         textAreaComputer.setText("This is the computer!" + "\n" + "You suck");
-        StatusScore.changeScore(-5);
+        StatusScore.changeScore(-0.05);
         updateScoreText();
         changevisability(textAreaComputer);
     }
 
     @FXML
     void layInBed(MouseEvent event) {
-        StatusScore.changeScore(5);
+        StatusScore.changeScore(0.05);
         updateScoreText();
     }
 
@@ -96,7 +97,7 @@ public class Controller {
     }
 
     public void updateScoreText(){
-        scoreText.setText("Score: " + StatusScore.getScore());
+        scoreText.setProgress(StatusScore.getScore());
     }
 
 }

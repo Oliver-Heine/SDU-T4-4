@@ -1,13 +1,13 @@
 package sample;
 
 public class StatusScore {
-    private static int score = 50;
+    private static double score = 0.5;
 
-    public static int getScore() {
+    public static double getScore() {
         return score;
     }
 
-    public static void changeScore(int change){
+    public static void changeScore(double change){
         score += change;
     }
 
