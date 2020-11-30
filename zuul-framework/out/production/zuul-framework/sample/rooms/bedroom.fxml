@@ -2,31 +2,24 @@
 
 <?import javafx.scene.control.Button?>
 <?import javafx.scene.control.ProgressBar?>
-<?import javafx.scene.control.TextArea?>
 <?import javafx.scene.image.Image?>
 <?import javafx.scene.image.ImageView?>
 <?import javafx.scene.layout.AnchorPane?>
-<?import javafx.scene.layout.VBox?>
 
 <AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.rooms.Controller">
     <children>
-      <AnchorPane fx:id="bedRoom" prefHeight="400.0" prefWidth="600.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+      <AnchorPane layoutY="50.0" prefHeight="600.0" prefWidth="800.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
          <children>
-              <ImageView fitHeight="400.0" fitWidth="600.0" pickOnBounds="true" preserveRatio="true">
+              <ImageView fitHeight="600.0" fitWidth="800.0" pickOnBounds="true" preserveRatio="true">
                   <image>
                       <Image url="@../Image/bedroom.jpg" />
                   </image>
               </ImageView>
-              <Button layoutX="71.0" layoutY="14.0" mnemonicParsing="false" onMouseClicked="#goToComputerRoom" prefHeight="96.0" prefWidth="161.0" text="Computer" />
-            <Button layoutX="320.0" layoutY="330.0" mnemonicParsing="false" onMouseClicked="#goToKitchenFromBedroom" prefHeight="48.0" prefWidth="111.0" text="Kitchen" />
-            <Button layoutX="78.0" layoutY="308.0" mnemonicParsing="false" onMouseClicked="#layInBed" prefHeight="69.0" prefWidth="147.0" text="Bed" />
+            <ProgressBar fx:id="scoreText" layoutX="15.0" layoutY="9.0" prefHeight="33.0" prefWidth="131.0" progress="0.5" />
+              <Button layoutX="526.0" layoutY="305.0" mnemonicParsing="false" onMouseClicked="#goToComputerRoom" opacity="0.0" prefHeight="93.0" prefWidth="100.0" text="Computer" />
+            <Button layoutX="37.0" layoutY="290.0" mnemonicParsing="false" onMouseClicked="#layInBed" opacity="0.0" prefHeight="222.0" prefWidth="336.0" rotate="11.3" text="Bed" />
+            <Button layoutX="657.0" layoutY="10.0" mnemonicParsing="false" onMouseClicked="#goToKitchenFromBedroom" prefHeight="27.0" prefWidth="123.0" text="Kitchen" />
          </children>
       </AnchorPane>
-      <VBox layoutX="533.0" prefHeight="400.0" prefWidth="67.0">
-         <children>
-            <TextArea fx:id="scoreText" editable="false" onMouseEntered="#showContent" prefHeight="69.0" prefWidth="67.0" />
-            <ProgressBar prefWidth="200.0" progress="0.0" />
-         </children>
-      </VBox>
     </children>
 </AnchorPane>

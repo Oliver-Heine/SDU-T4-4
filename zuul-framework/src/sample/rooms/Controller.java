@@ -22,10 +22,6 @@ import java.util.ResourceBundle;
 
 public class Controller {
 
-    //ROOMS
-    @FXML
-    private AnchorPane bedRoom;
-
     //Other text or stuff
     @FXML
     private TextArea textAreaComputer;
@@ -43,7 +39,6 @@ public class Controller {
     @FXML
     void goToComputerRoom(MouseEvent event) throws IOException, InterruptedException {
         changeRoom("computer.fxml","Computer",event);
-
     }
 
     @FXML
@@ -60,7 +55,9 @@ public class Controller {
     @FXML
     void showComputerInfo(MouseEvent event) {
         textAreaComputer.setText("This is the computer!" + "\n" + "You suck");
-        StatusScore.changeScore(-0.05);
+        if(!textAreaComputer.isVisible()){
+            StatusScore.changeScore(-0.05);
+        }
         updateScoreText();
         changevisability(textAreaComputer);
     }
