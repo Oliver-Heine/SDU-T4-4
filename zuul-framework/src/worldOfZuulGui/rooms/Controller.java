@@ -10,25 +10,24 @@ import javafx.scene.control.TextArea;
 import javafx.scene.input.MouseEvent;
 import javafx.stage.Stage;
 import worldOfZuulGui.Room;
-
 import java.io.IOException;
 
 
 public class Controller {
 
+    //Singleton
     StatusScore depressionBar = StatusScore.getInstance();
 
 
-    //Other text or stuff
+    //Controls
     @FXML
     private TextArea textAreaComputer;
 
     @FXML
-    private ProgressBar scoreText;
+    private ProgressBar progressBar;
 
 
-    //BUTTONS
-
+    //Change room methods
     @FXML
     void goNextRoom(MouseEvent event) throws IOException {
         Node node = (Node) event.getSource();
@@ -54,6 +53,8 @@ public class Controller {
         }
     }
 
+
+    //Computer room buttons
     @FXML
     void goToComputerRoom(MouseEvent event) throws IOException, InterruptedException {
         changeRoom(Room.Computer.name(), event);
@@ -68,20 +69,19 @@ public class Controller {
         updateScoreText();
     }
 
+
+    //Bedroom items
     @FXML
     void layInBed(MouseEvent event) {
         depressionBar.changeScore(0.05);
         updateScoreText();
     }
 
-    @FXML
-    void showContent(MouseEvent event) {
-        updateScoreText();
-    }
 
+    //Initializing the scoreText
     @FXML
     void initialize() {
-    scoreText.setProgress(depressionBar.getScore());
+    progressBar.setProgress(depressionBar.getScore());
     }
 
 
@@ -96,7 +96,7 @@ public class Controller {
     }
 
     public void updateScoreText(){
-        scoreText.setProgress(depressionBar.getScore());
+        progressBar.setProgress(depressionBar.getScore());
     }
 
 }

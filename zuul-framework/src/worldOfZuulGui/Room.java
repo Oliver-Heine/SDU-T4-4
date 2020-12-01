@@ -8,7 +8,6 @@ public enum Room {
     menu("menu.fxml"),
     gameOver("gameOver.fxml");
 
-
     private String fxml;
 
     Room(String fxml) {

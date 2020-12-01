@@ -8,11 +8,9 @@ public class StatusScore {
         this.score = 0.5;
     }
 
-
     public double getScore() {
         return score;
     }
-
 
     public void changeScore(double change){
         score += change;
@@ -23,9 +21,9 @@ public class StatusScore {
     }
 
     public static StatusScore getInstance() {
-            if (single_instance == null)
+            if (single_instance == null) {
                 single_instance = new StatusScore();
-
+            }
             return single_instance;
     }
 }
