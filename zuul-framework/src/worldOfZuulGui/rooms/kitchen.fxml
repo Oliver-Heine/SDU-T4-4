@@ -9,14 +9,14 @@
 <?import javafx.scene.layout.HBox?>
 <?import javafx.scene.layout.VBox?>
 
-<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.rooms.Controller">
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="worldOfZuulGui.rooms.Controller">
    <children>
       <ImageView fitHeight="400.0" fitWidth="600.0" pickOnBounds="true" preserveRatio="true">
          <image>
             <Image url="@../Image/kitchen_low_res.jpg" />
          </image>
       </ImageView>
-      <Button layoutX="14.0" layoutY="176.0" mnemonicParsing="false" onMouseClicked="#goToBedroomFromKitchen" prefHeight="48.0" prefWidth="111.0" text="Bedroom" />
+      <Button layoutX="14.0" layoutY="176.0" mnemonicParsing="false" onMouseClicked="#goPrevRoom" prefHeight="48.0" prefWidth="111.0" text="Bedroom" />
       <VBox layoutX="532.0" prefHeight="400.0" prefWidth="67.0" />
       <HBox layoutX="8.0" layoutY="10.0" prefHeight="50.0" prefWidth="800.0">
          <children>

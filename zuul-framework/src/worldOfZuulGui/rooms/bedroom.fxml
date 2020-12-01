@@ -6,7 +6,7 @@
 <?import javafx.scene.image.ImageView?>
 <?import javafx.scene.layout.AnchorPane?>
 
-<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.rooms.Controller">
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="worldOfZuulGui.rooms.Controller">
     <children>
       <AnchorPane layoutY="50.0" prefHeight="600.0" prefWidth="800.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
          <children>
@@ -18,7 +18,7 @@
             <ProgressBar fx:id="scoreText" layoutX="15.0" layoutY="9.0" prefHeight="33.0" prefWidth="131.0" progress="0.5" />
               <Button layoutX="526.0" layoutY="305.0" mnemonicParsing="false" onMouseClicked="#goToComputerRoom" opacity="0.0" prefHeight="93.0" prefWidth="100.0" text="Computer" />
             <Button layoutX="37.0" layoutY="290.0" mnemonicParsing="false" onMouseClicked="#layInBed" opacity="0.0" prefHeight="222.0" prefWidth="336.0" rotate="11.3" text="Bed" />
-            <Button layoutX="657.0" layoutY="10.0" mnemonicParsing="false" onMouseClicked="#goToKitchenFromBedroom" prefHeight="27.0" prefWidth="123.0" text="Kitchen" />
+            <Button layoutX="657.0" layoutY="10.0" mnemonicParsing="false" onMouseClicked="#goNextRoom" prefHeight="27.0" prefWidth="123.0" text="Kitchen" />
          </children>
       </AnchorPane>
     </children>
