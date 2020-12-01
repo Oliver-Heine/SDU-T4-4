@@ -16,7 +16,7 @@ import java.io.IOException;
 
 public class Controller {
 
-    StatusScore depressionBar = new StatusScore();
+    StatusScore depressionBar = StatusScore.getInstance();
 
 
     //Other text or stuff
@@ -48,8 +48,6 @@ public class Controller {
 
         switch (thisStage.getTitle()) {
             case "Kitchen":
-                changeRoom(Room.Bedroom.name(), event);
-                break;
             case "Computer":
                 changeRoom(Room.Bedroom.name(), event);
                 break;
@@ -83,8 +81,7 @@ public class Controller {
 
     @FXML
     void initialize() {
-        depressionBar.setScore(depressionBar.getScore());
-
+    scoreText.setProgress(depressionBar.getScore());
     }
 
 
