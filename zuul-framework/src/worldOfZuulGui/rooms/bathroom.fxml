@@ -25,7 +25,7 @@
             <Image url="@../Image/Happy-Smiley.jpg" />
          </image>
       </ImageView>
-      <ProgressBar fx:id="progressBar" layoutX="58.0" layoutY="11.0" prefHeight="33.0" prefWidth="131.0" progress="0.5" />
+      <ProgressBar fx:id="progressBar" layoutX="45.0" layoutY="11.0" prefHeight="33.0" prefWidth="131.0" progress="0.5" />
       <Button layoutX="531.0" layoutY="14.0" mnemonicParsing="false" onMouseClicked="#goPrevRoom" prefHeight="27.0" prefWidth="123.0" text="Bedroom" />
       <Button layoutX="10.0" layoutY="438.0" mnemonicParsing="false" onMouseClicked="#useToilet" opacity="0.0" prefHeight="147.0" prefWidth="207.0" text="Toilet" />
       <Button layoutX="58.0" layoutY="63.0" mnemonicParsing="false" onMouseClicked="#useBath" opacity="0.0" prefHeight="330.0" prefWidth="167.0" text="Bathroom" />
