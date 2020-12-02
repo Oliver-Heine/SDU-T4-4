@@ -1,0 +1,32 @@
+@startuml
+
+class Start
+class StatusScore
+enum Room
+class TimeClass
+class Controller
+class Item
+
+
+Start <|-- Controller
+Controller <|-- Room
+Controller <|-- TimeClass
+Controller <|-- StatusScore
+Controller <|-- Item
+
+
+
+
+enum Room {
+Entry
+Kitchen
+Computer
+LivingRoom
+Bedroom
+Bathroom
+menu
+gameOver
+getFxml()
+}
+
+@enduml
