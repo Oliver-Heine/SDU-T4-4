@@ -1,0 +1,125 @@
+@startuml
+
+class Start
+class Game
+class Command
+class CommandWords
+class Parser
+class Room
+Enum CommandWord
+class TimeClass
+class StatusScore
+class Item
+class Items
+
+Start <|-- Game
+Game <|-- Command
+Game <|-- Room
+Game <|-- Parser
+Game <|-- TimeClass
+Parser <|-- Command
+CommandWords <|-- Parser
+CommandWords <|-- CommandWord
+Room <|-- Item
+Item <|-- Items
+Item <|-- StatusScore
+Command <|-- CommandWord
+
+class Start{
+main(args: String[])
+}
+
+class Game{
+Parser: parser
+room: Room
+Game()
+createRooms():void
+play():void
+printwelcome():void
+processCommand(Command):boolean
+printHelp():void
+goRoom(Command):void
+quit(Command):boolean
+}
+
+class TimeClass{
+time: int
+dayNumber: int
+dayName: String
+addTime():void
+timeChecker():
+getTime():void
+sleep():void
+gameEnd():
+}
+
+class StatusScore{
+Score: int
+ChangeScore(int)
+setScore()
+getScore()
+gameOver()
+}
+
+class Item {
+Name: String
+interationMessage: String
+StatusScoreChange: int
+itemInteraction(): void
+Item (String,String,int)
+}
+
+Class Items{
+Array(Items)<>
+Items(Item[])
+printItems():String
+getItems: Item[]
+}
+
+Class Room{
+description: String
+exits: Hashmap<String,Room>
+Room(String)
+setExit(String,Room): Void
+getShortDescription(): String
+getLongDescription(): String
+getExit(String): Room
+getItem(String): Item
+}
+
+Enum CommandWord{
+GO
+QUIT
+HELP
+UNKNOWN
+INTERACT
+TIME
+toString()
+}
+
+class Command{
+commandWord: CommandWord
+secondWord: String
+command(CommandWord, String)
+getCommandWord(): CommandWord
+getSecondWord(): String
+isUnkown(): boolean
+hasSecondWord(): boolean
+}
+
+class Parser{
+commands: CommandWords
+reader: Scanner
+Parser()
+getCommand(): Command
+showCommands(): Void
+}
+
+class CommandWords{
+commands: CommandWords
+reader: Scanner
+Parser()
+getCommand(): Command
+showCommands():Void
+}
+@enduml
