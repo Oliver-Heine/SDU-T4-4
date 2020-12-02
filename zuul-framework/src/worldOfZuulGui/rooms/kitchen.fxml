@@ -15,12 +15,12 @@
             <Image url="@../Image/kitchen.jpg" />
          </image>
       </ImageView>
-      <ImageView fitHeight="33.0" fitWidth="36.0" layoutX="14.0" layoutY="11.0" pickOnBounds="true" preserveRatio="true">
+      <ImageView fitHeight="33.0" fitWidth="36.0" layoutX="8.0" layoutY="11.0" pickOnBounds="true" preserveRatio="true">
          <image>
             <Image url="@../Image/Sad-Smiley.jpg" />
          </image>
       </ImageView>
-      <ImageView fitHeight="33.0" fitWidth="36.0" layoutX="195.0" layoutY="11.0" pickOnBounds="true" preserveRatio="true">
+      <ImageView fitHeight="33.0" fitWidth="36.0" layoutX="182.0" layoutY="11.0" pickOnBounds="true" preserveRatio="true">
          <image>
             <Image url="@../Image/Happy-Smiley.jpg" />
          </image>
