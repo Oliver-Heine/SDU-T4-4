@@ -1,5 +1,8 @@
 package worldOfZuulGui.rooms;
 
+import javafx.animation.Animation;
+import javafx.animation.KeyFrame;
+import javafx.animation.Timeline;
 import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Node;
@@ -7,10 +10,13 @@ import javafx.scene.Parent;
 import javafx.scene.Scene;
 import javafx.scene.control.ProgressBar;
 import javafx.scene.control.TextArea;
+import javafx.scene.control.Label;
 import javafx.scene.input.MouseEvent;
 import javafx.stage.Stage;
+import javafx.util.Duration;
 import worldOfZuulGui.Room;
 import worldOfZuulGui.StatusScore;
+import worldOfZuulGui.TimeClass;
 
 import java.io.IOException;
 
@@ -19,6 +25,7 @@ public class Controller {
 
     //Singleton
     StatusScore depressionBar = StatusScore.getInstance();
+    TimeClass time = TimeClass.getInstance();
 
 
     //Controls
@@ -27,6 +34,9 @@ public class Controller {
 
     @FXML
     private ProgressBar progressBar;
+
+    @FXML
+    private Label timeLabel;
 
 
     //Change room methods
@@ -136,6 +146,9 @@ public class Controller {
     @FXML
     void initialize() {
     progressBar.setProgress(depressionBar.getScore());
+    timeLabel.setText(time.getFullTime());
+    timeline.setCycleCount(Animation.INDEFINITE);
+    timeline.play();
     }
 
 
@@ -146,6 +159,7 @@ public class Controller {
         Parent root = FXMLLoader.load(getClass().getResource(roomName +".fxml"));
         thisStage.setTitle(roomName);
         thisStage.setScene(new Scene(root));
+        timeline.stop();
         thisStage.show();
     }
 
@@ -153,4 +167,12 @@ public class Controller {
         progressBar.setProgress(depressionBar.getScore());
     }
 
+    Timeline timeline = new Timeline(
+            new KeyFrame( Duration.seconds(3),
+                    event -> {
+                        timeLabel.setText(time.getFullTime());
+                        time.addTime();
+                    }
+            )
+    );
 }
