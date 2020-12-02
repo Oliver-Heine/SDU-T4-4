@@ -7,6 +7,8 @@
 <?import javafx.scene.layout.AnchorPane?>
 
 <?import javafx.scene.control.ProgressBar?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.text.Font?>
 <AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="worldOfZuulGui.rooms.Controller">
    <children>
       <ImageView fitHeight="600.0" fitWidth="814.0" pickOnBounds="true" preserveRatio="true">
@@ -28,5 +30,9 @@
       <TextArea fx:id="textAreaComputer" layoutX="172.0" layoutY="57.0" prefHeight="132.0" prefWidth="207.0" visible="false" />
       <Button layoutX="709.0" layoutY="219.0" mnemonicParsing="false" onMouseClicked="#goPrevRoom" prefHeight="141.0" prefWidth="84.0" text="Back" />
       <Button layoutX="42.0" layoutY="118.0" mnemonicParsing="false" onMouseClicked="#showComputerInfo" prefHeight="132.0" prefWidth="52.0" text="INFO" />
-   </children>
+      <Label fx:id="timeLabel" layoutX="246.0" layoutY="11.0" prefHeight="33.0" prefWidth="258.0" text="Label">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>   </children>
 </AnchorPane>
