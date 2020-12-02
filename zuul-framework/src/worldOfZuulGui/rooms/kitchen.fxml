@@ -13,9 +13,19 @@
             <Image url="@../Image/kitchen.jpg" />
          </image>
       </ImageView>
-      <ProgressBar fx:id="progressBar" layoutX="15.0" layoutY="9.0" prefHeight="33.0" prefWidth="131.0" progress="0.5" />
-      <Button layoutX="565.0" layoutY="10.0" mnemonicParsing="false" onMouseClicked="#goPrevRoom" prefHeight="25.0" prefWidth="90.0" text="Living Room" />
+      <ImageView fitHeight="33.0" fitWidth="36.0" layoutX="14.0" layoutY="11.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../Image/Sad-Smiley.jpg" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="33.0" fitWidth="36.0" layoutX="195.0" layoutY="11.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../Image/Happy-Smiley.jpg" />
+         </image>
+      </ImageView>
+      <ProgressBar fx:id="progressBar" layoutX="58.0" layoutY="11.0" prefHeight="33.0" prefWidth="131.0" progress="0.5" />
+      <Button layoutX="640.0" layoutY="14.0" mnemonicParsing="false" onMouseClicked="#goNextRoom" prefHeight="27.0" prefWidth="123.0" text="Entry" />
+      <Button layoutX="483.0" layoutY="14.0" mnemonicParsing="false" onMouseClicked="#goPrevRoom" prefHeight="27.0" prefWidth="123.0" text="Living Room" />
       <Button layoutX="180.0" layoutY="317.0" mnemonicParsing="false" opacity="0.0" prefHeight="186.0" prefWidth="94.0" text="Fridge" />
-      <Button layoutX="685.0" layoutY="9.0" mnemonicParsing="false" onMouseClicked="#goNextRoom" prefHeight="25.0" prefWidth="90.0" text="Entry" />
    </children>
 </AnchorPane>

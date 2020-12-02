@@ -13,11 +13,20 @@
             <Image url="@../Image/livingRoom.jpg" />
          </image>
       </ImageView>
-      <ProgressBar fx:id="progressBar" layoutX="15.0" layoutY="9.0" prefHeight="33.0" prefWidth="131.0" progress="0.5" />
-      <Button layoutX="683.0" layoutY="9.0" mnemonicParsing="false" onMouseClicked="#goNextRoom" prefHeight="25.0" prefWidth="90.0" text="Kitchen" />
-      <Button layoutX="58.0" layoutY="63.0" mnemonicParsing="false" onMouseClicked="#goNextRoom" opacity="0.0" prefHeight="330.0" prefWidth="167.0" text="Bathroom" />
+      <ImageView fitHeight="33.0" fitWidth="36.0" layoutX="14.0" layoutY="11.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../Image/Sad-Smiley.jpg" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="33.0" fitWidth="36.0" layoutX="195.0" layoutY="11.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../Image/Happy-Smiley.jpg" />
+         </image>
+      </ImageView>
+      <ProgressBar fx:id="progressBar" layoutX="58.0" layoutY="11.0" prefHeight="33.0" prefWidth="131.0" progress="0.5" />
+      <Button layoutX="640.0" layoutY="14.0" mnemonicParsing="false" onMouseClicked="#goNextRoom" prefHeight="27.0" prefWidth="123.0" text="Kitchen" />
+      <Button layoutX="483.0" layoutY="14.0" mnemonicParsing="false" onMouseClicked="#goPrevRoom" prefHeight="27.0" prefWidth="123.0" text="Bedroom" />
       <Button layoutX="41.0" layoutY="280.0" mnemonicParsing="false" onMouseClicked="#useTV" opacity="0.0" prefHeight="89.0" prefWidth="161.0" text="TV" />
-      <Button layoutX="570.0" layoutY="9.0" mnemonicParsing="false" onMouseClicked="#goPrevRoom" prefHeight="25.0" prefWidth="90.0" text="Bedroom" />
       <Button layoutX="221.0" layoutY="439.0" mnemonicParsing="false" onMouseClicked="#readBook" opacity="0.0" prefHeight="39.0" prefWidth="110.0" text="Book" />
       <Button layoutX="551.0" layoutY="181.0" mnemonicParsing="false" onMouseClicked="#lookOutWindow" opacity="0.0" prefHeight="174.0" prefWidth="241.0" text="Window" />
    </children>
