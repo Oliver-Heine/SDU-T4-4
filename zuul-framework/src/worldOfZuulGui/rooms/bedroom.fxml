@@ -8,18 +8,25 @@
 
 <AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="worldOfZuulGui.rooms.Controller">
     <children>
-      <AnchorPane layoutY="50.0" prefHeight="600.0" prefWidth="800.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
-         <children>
-              <ImageView fitHeight="600.0" fitWidth="800.0" pickOnBounds="true" preserveRatio="true">
-                  <image>
-                      <Image url="@../Image/bedroom.jpg" />
-                  </image>
-              </ImageView>
-            <ProgressBar fx:id="progressBar" layoutX="15.0" layoutY="9.0" prefHeight="33.0" prefWidth="131.0" progress="0.5" />
-              <Button layoutX="526.0" layoutY="305.0" mnemonicParsing="false" onMouseClicked="#goToComputerRoom" opacity="0.0" prefHeight="93.0" prefWidth="100.0" text="Computer" />
-            <Button layoutX="37.0" layoutY="290.0" mnemonicParsing="false" onMouseClicked="#layInBed" opacity="0.0" prefHeight="222.0" prefWidth="336.0" rotate="11.3" text="Bed" />
-            <Button layoutX="657.0" layoutY="10.0" mnemonicParsing="false" onMouseClicked="#goNextRoom" prefHeight="27.0" prefWidth="123.0" text="Kitchen" />
-         </children>
-      </AnchorPane>
+        <ImageView fitHeight="600.0" fitWidth="800.0" pickOnBounds="true" preserveRatio="true">
+            <image>
+                <Image url="@../Image/bedroom.jpg" />
+            </image>
+        </ImageView>
+      <ImageView fitHeight="33.0" fitWidth="36.0" layoutX="14.0" layoutY="11.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../Image/Sad-Smiley.jpg" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="33.0" fitWidth="36.0" layoutX="195.0" layoutY="11.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../Image/Happy-Smiley.jpg" />
+         </image>
+      </ImageView>
+      <ProgressBar fx:id="progressBar" layoutX="58.0" layoutY="11.0" prefHeight="33.0" prefWidth="131.0" progress="0.5" />
+        <Button layoutX="529.0" layoutY="306.0" mnemonicParsing="false" onMouseClicked="#goToComputerRoom" opacity="0.0" prefHeight="93.0" prefWidth="100.0" text="Computer" />
+      <Button layoutX="42.0" layoutY="282.0" mnemonicParsing="false" onMouseClicked="#layInBed" opacity="0.0" prefHeight="222.0" prefWidth="336.0" rotate="20.6" text="Bed" />
+      <Button layoutX="640.0" layoutY="14.0" mnemonicParsing="false" onMouseClicked="#goNextRoom" prefHeight="27.0" prefWidth="123.0" text="Living Room" />
+      <Button layoutX="483.0" layoutY="14.0" mnemonicParsing="false" onMouseClicked="#goPrevRoom" prefHeight="27.0" prefWidth="123.0" text="Bathroom" />
     </children>
 </AnchorPane>

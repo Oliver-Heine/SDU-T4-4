@@ -1,10 +1,12 @@
 package worldOfZuulGui;
 
 public enum Room {
+    Entry("entry.fxml"),
     Kitchen("kitchen.fxml"),
-    Bedroom("bedroom.fxml"),
+    LivingRoom("livingRoom.fxml"),
+    Bedroom("bedRoom.fxml"),
+    BathRoom("bathroom.fxml"),
     Computer("computer.fxml"),
-    livingRoom("livingRoom.fxml"),
     menu("menu.fxml"),
     gameOver("gameOver.fxml");
 

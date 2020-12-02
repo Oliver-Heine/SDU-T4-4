@@ -1,4 +1,4 @@
-package worldOfZuulGui.rooms;
+package worldOfZuulGui;
 
 public class StatusScore {
     private double score;

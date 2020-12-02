@@ -10,6 +10,8 @@ import javafx.scene.control.TextArea;
 import javafx.scene.input.MouseEvent;
 import javafx.stage.Stage;
 import worldOfZuulGui.Room;
+import worldOfZuulGui.StatusScore;
+
 import java.io.IOException;
 
 
@@ -35,7 +37,13 @@ public class Controller {
 
         switch (thisStage.getTitle()) {
             case "Bedroom":
+                changeRoom(Room.LivingRoom.name(), event);
+                break;
+            case "LivingRoom":
                 changeRoom(Room.Kitchen.name(), event);
+                break;
+            case "Kitchen":
+                changeRoom(Room.Entry.name(), event);
                 break;
         }
     }
@@ -46,9 +54,19 @@ public class Controller {
         Stage thisStage = (Stage) node.getScene().getWindow();
 
         switch (thisStage.getTitle()) {
-            case "Kitchen":
+            case "Bedroom":
+                changeRoom(Room.BathRoom.name(), event);
+                break;
+            case "LivingRoom":
+            case "BathRoom":
             case "Computer":
                 changeRoom(Room.Bedroom.name(), event);
+                break;
+            case "Kitchen":
+                changeRoom(Room.LivingRoom.name(), event);
+                break;
+            case "Entry":
+                changeRoom(Room.Kitchen.name(), event);
                 break;
         }
     }
@@ -56,7 +74,7 @@ public class Controller {
 
     //Computer room buttons
     @FXML
-    void goToComputerRoom(MouseEvent event) throws IOException, InterruptedException {
+    void goToComputerRoom(MouseEvent event) throws IOException {
         changeRoom(Room.Computer.name(), event);
     }
 
@@ -73,10 +91,46 @@ public class Controller {
     //Bedroom items
     @FXML
     void layInBed(MouseEvent event) {
+        depressionBar.changeScore(-0.05);
+        updateScoreText();
+    }
+
+    //Bathroom items
+    @FXML
+    void useToilet(MouseEvent event){
         depressionBar.changeScore(0.05);
         updateScoreText();
     }
 
+    @FXML
+    void useBath(MouseEvent event){
+        depressionBar.changeScore(0.05);
+        updateScoreText();
+    }
+
+    @FXML
+    void useTV(MouseEvent event){
+        depressionBar.changeScore(0.05);
+        updateScoreText();
+    }
+
+    @FXML
+    void readBook(MouseEvent event){
+        depressionBar.changeScore(0.05);
+        updateScoreText();
+    }
+
+    @FXML
+    void lookOutWindow(MouseEvent event){
+        depressionBar.changeScore(0.05);
+        updateScoreText();
+    }
+
+    @FXML
+    void exitDoor(MouseEvent event){
+        depressionBar.changeScore(-0.05);
+        updateScoreText();
+    }
 
     //Initializing the scoreText
     @FXML
@@ -86,9 +140,9 @@ public class Controller {
 
 
     //METHODS
-    public void changeRoom(String roomName, MouseEvent event) throws IOException {
+    public void changeRoom(String roomName, MouseEvent event) throws IOException, NullPointerException {
         Node node = (Node) event.getSource();
-        Stage thisStage = (Stage) node.getScene().getWindow();
+        Stage thisStage = (Stage)node.getScene().getWindow();
         Parent root = FXMLLoader.load(getClass().getResource(roomName +".fxml"));
         thisStage.setTitle(roomName);
         thisStage.setScene(new Scene(root));
