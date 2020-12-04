@@ -1,24 +1,36 @@
-/*package worldOfZuulGui;
+package worldOfZuulGui;
+
+import javafx.scene.control.Alert;
+import javafx.scene.control.ButtonType;
+
+import java.util.concurrent.Delayed;
+import java.util.concurrent.TimeUnit;
 
 public class Item {
-    public String itemName;
-    public String interactionMessage;
-    public int statusScoreChange;
+    private int time;
+    private double scoreChange;
+    private String interactionMessage;
 
-    public Item(String itemName, String interactionMessage, int statusScoreChange) {
-        this.itemName = itemName;
+    StatusScore depressionBar = StatusScore.getInstance();
+    public Item(int time, int scoreChange, String interactionMessage) {
+        this.time = time;
+        this.scoreChange = scoreChange;
+    }
+
+    public Item(String interactionMessage, double scoreChange){
+        this.scoreChange = scoreChange;
         this.interactionMessage = interactionMessage;
-        this.statusScoreChange = statusScoreChange;
     }
 
-    public String getItemName (){
-        return itemName;
+    public double getScoreChange(){
+        return scoreChange;
+    }
+    public void changeScore(){
+        depressionBar.changeScore(scoreChange);
     }
 
-    public void itemInteraction(){
-        StatusScore.ChangeScore(statusScoreChange);
-        System.out.println(interactionMessage);
-        System.out.println("Your status score is now: " + StatusScore.getScore());
+    public String getItemInteractionMessage() {
+        return interactionMessage;
     }
 
-}*/
+}
