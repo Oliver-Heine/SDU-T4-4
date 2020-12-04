@@ -11,6 +11,9 @@ import javafx.scene.Scene;
 import javafx.scene.control.ProgressBar;
 import javafx.scene.control.TextArea;
 import javafx.scene.control.Label;
+import javafx.scene.image.ImageView;
+import javafx.scene.input.KeyCode;
+import javafx.scene.input.KeyEvent;
 import javafx.scene.input.MouseEvent;
 import javafx.stage.Stage;
 import javafx.util.Duration;
@@ -38,6 +41,26 @@ public class Controller {
 
     @FXML
     private Label timeLabel;
+
+
+    //Map
+    @FXML
+    private ImageView map;
+
+    @FXML
+    void showMap(KeyEvent event) {
+        if(event.getCode().equals(KeyCode.M)){
+            map.setVisible(true);
+        }
+    }
+
+    @FXML
+    void hideMap(KeyEvent event) {
+        if(event.getCode().equals(KeyCode.M)){
+            map.setVisible(false);
+        }
+    }
+
 
 
     //Change room methods

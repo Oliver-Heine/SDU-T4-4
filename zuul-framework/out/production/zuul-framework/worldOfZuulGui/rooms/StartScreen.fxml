@@ -14,7 +14,7 @@
             <Image url="@../Image/startMenu.jpg" />
          </image>
       </ImageView>
-      <Text fill="WHITE" layoutX="205.0" layoutY="58.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Welcome to &quot;GameTitle&quot;" textAlignment="CENTER" wrappingWidth="375.22900390625">
+      <Text fill="WHITE" layoutX="205.0" layoutY="58.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Welcome to Game of Life during a pandemic" textAlignment="CENTER" wrappingWidth="375.22900390625">
          <font>
             <Font name="Bodoni 72 Book" size="28.0" />
          </font>

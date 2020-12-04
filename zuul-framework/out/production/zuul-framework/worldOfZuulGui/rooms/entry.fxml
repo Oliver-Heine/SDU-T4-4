@@ -8,7 +8,8 @@
 
 <?import javafx.scene.control.Label?>
 <?import javafx.scene.text.Font?>
-<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="worldOfZuulGui.rooms.Controller">
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" onKeyPressed="#showMap" onKeyReleased="#hideMap" prefHeight="600.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="worldOfZuulGui.rooms.Controller">
    <children>
       <ImageView fitHeight="600.0" fitWidth="800.0" pickOnBounds="true" preserveRatio="true">
          <image>
@@ -23,6 +24,11 @@
       <ImageView fitHeight="33.0" fitWidth="36.0" layoutX="182.0" layoutY="11.0" pickOnBounds="true" preserveRatio="true">
          <image>
             <Image url="@../Image/Happy-Smiley.jpg" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="map" fitHeight="546.0" fitWidth="722.0" layoutX="14.0" layoutY="54.0" pickOnBounds="true" preserveRatio="true" visible="false">
+         <image>
+            <Image url="@../Image/Maps/Map_Entrance.png" />
          </image>
       </ImageView>
       <ProgressBar fx:id="progressBar" layoutX="45.0" layoutY="11.0" prefHeight="33.0" prefWidth="131.0" progress="0.5" />
