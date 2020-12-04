@@ -31,11 +31,14 @@ public class MenuController extends Controller {
     }
 
     @FXML
-    void tutorial(MouseEvent event) throws IOException {
+    void startSession(MouseEvent event) throws IOException {
         Node node = (Node) event.getSource();
         Stage thisStage = (Stage) node.getScene().getWindow();
 
         switch (thisStage.getTitle()) {
+            case "StartScreen":
+                changeRoom(Room.StartMenu.name(), event);
+                break;
             case "StartMenu":
                 changeRoom(Room.Tutorial.name(), event);
                 break;

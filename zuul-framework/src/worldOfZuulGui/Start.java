@@ -11,11 +11,11 @@ public class Start extends Application {
     @Override
     public void start(Stage primaryStage) throws Exception{
 
-        Parent root = FXMLLoader.load(getClass().getResource( "rooms/" + Room.StartMenu.name() + ".fxml"));
+        Parent root = FXMLLoader.load(getClass().getResource( "rooms/" + Room.StartScreen.name() + ".fxml"));
 
         Scene scene1 = new Scene(root);
         primaryStage.setScene(scene1);
-        primaryStage.setTitle("StartMenu");
+        primaryStage.setTitle("StartScreen");
         primaryStage.show();
 
     }
