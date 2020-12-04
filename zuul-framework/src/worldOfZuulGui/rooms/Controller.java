@@ -17,6 +17,7 @@ import javafx.scene.input.KeyEvent;
 import javafx.scene.input.MouseEvent;
 import javafx.stage.Stage;
 import javafx.util.Duration;
+import worldOfZuulGui.Item;
 import worldOfZuulGui.Room;
 import worldOfZuulGui.StatusScore;
 import worldOfZuulGui.TimeClass;
@@ -112,11 +113,32 @@ public class Controller {
         changeRoom(Room.Computer.name(), event);
     }
 
+    //Kitchen items:
+    Item fridge = new Item("You open the fridge and get some food",0.05);
+    Item freezer = new Item("You open the freezer and eat some ice cream!", -0.05);
+
+    //Bedroom items:
+    Item bed = new Item("You lay in your bed",0.05);
+    Item computer = new Item("You finished a voice chat with your friends, you feel good",0.05);
+
+    //Livingroom items:
+    Item tv = new Item("You watch some tv",-0.05);
+    Item book = new Item("You read you for a while",0.05);
+    Item window = new Item("You stare out the window, sad that you can't go outside",-0.05);
+
+    //Bathroom items:
+    Item toilet = new Item("You use the toilet",0.05);
+    Item bath = new Item("You take a nice long bath", 0.05);
+
+    //Entrance items:
+    Item door = new Item("You look at the door, and wonder what is outside",0.05);
+    Item mirror = new Item("You take a deep look in the mirror and feel lonely",-0.05);
+
     @FXML
     void showComputerInfo(MouseEvent event) {
-        textAreaComputer.setText("This is the computer!" + "\n" + "You suck");
+        textAreaComputer.setText(computer.getItemInteractionMessage());
         if(!textAreaComputer.isVisible()){
-            depressionBar.changeScore(-0.05);
+            computer.changeScore();
         }
         updateScoreText();
     }
@@ -124,45 +146,52 @@ public class Controller {
 
     //Bedroom items
     @FXML
-    void layInBed(MouseEvent event) {
-        depressionBar.changeScore(-0.05);
+    void layInBed(MouseEvent event){
+        String ChangeToMB = bed.getItemInteractionMessage();
+        bed.changeScore();
         updateScoreText();
     }
 
     //Bathroom items
     @FXML
     void useToilet(MouseEvent event){
-        depressionBar.changeScore(0.05);
+        String ChangeToMB = toilet.getItemInteractionMessage();
+        toilet.changeScore();
         updateScoreText();
     }
 
     @FXML
     void useBath(MouseEvent event){
-        depressionBar.changeScore(0.05);
+        String ChangeToMB = bath.getItemInteractionMessage();
+        bath.changeScore();
         updateScoreText();
     }
 
     @FXML
     void useTV(MouseEvent event){
-        depressionBar.changeScore(0.05);
+        String ChangeToMB = tv.getItemInteractionMessage();
+        tv.changeScore();
         updateScoreText();
     }
 
     @FXML
     void readBook(MouseEvent event){
-        depressionBar.changeScore(0.05);
+        String ChangeToMB = book.getItemInteractionMessage();
+        book.changeScore();
         updateScoreText();
     }
 
     @FXML
     void lookOutWindow(MouseEvent event){
-        depressionBar.changeScore(0.05);
+        String ChangeToMB = window.getItemInteractionMessage();
+        window.changeScore();
         updateScoreText();
     }
 
     @FXML
     void exitDoor(MouseEvent event){
-        depressionBar.changeScore(-0.05);
+        String ChangeToMB = door.getItemInteractionMessage();
+        door.changeScore();
         updateScoreText();
     }
 
