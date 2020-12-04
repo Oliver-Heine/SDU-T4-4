@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+
+
+<?import javafx.scene.control.Button?>
+<AnchorPane prefHeight="600.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="worldOfZuulGui.rooms.MenuController">
+   <children>
+      <ImageView fitHeight="345.0" fitWidth="570.0" layoutX="64.0" layoutY="68.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../Image/livingRoom.jpg" />
+         </image>
+      </ImageView>
+         <Button layoutX="4.0" layoutY="-3.0" mnemonicParsing="false" onMouseClicked="#goNextMenu" opacity="0.0" prefHeight="600.0" prefWidth="800.0" text="Button" />
+   </children>
+</AnchorPane>

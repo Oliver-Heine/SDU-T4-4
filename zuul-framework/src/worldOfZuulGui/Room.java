@@ -7,7 +7,8 @@ public enum Room {
     Bedroom("bedRoom.fxml"),
     BathRoom("bathroom.fxml"),
     Computer("computer.fxml"),
-    menu("menu.fxml"),
+    StartMenu("StartMenu.fxml"),
+    Tutorial("Tutorial.fxml"),
     gameOver("gameOver.fxml");
 
     private String fxml;
