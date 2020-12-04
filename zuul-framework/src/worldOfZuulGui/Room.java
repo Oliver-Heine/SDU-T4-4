@@ -8,6 +8,7 @@ public enum Room {
     BathRoom("bathroom.fxml"),
     Computer("computer.fxml"),
     StartMenu("StartMenu.fxml"),
+    StartScreen("StartScreen.fxml"),
     Tutorial("Tutorial.fxml"),
     gameOver("gameOver.fxml");
 
