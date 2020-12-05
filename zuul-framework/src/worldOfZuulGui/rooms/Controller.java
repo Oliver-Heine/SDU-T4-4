@@ -5,6 +5,7 @@ import javafx.animation.KeyFrame;
 import javafx.animation.Timeline;
 import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
+import javafx.fxml.Initializable;
 import javafx.scene.Node;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
@@ -12,16 +13,20 @@ import javafx.scene.control.ProgressBar;
 import javafx.scene.control.TextArea;
 import javafx.scene.control.Label;
 import javafx.scene.input.MouseEvent;
+import javafx.scene.media.Media;
+import javafx.scene.media.MediaPlayer;
 import javafx.stage.Stage;
 import javafx.util.Duration;
 import worldOfZuulGui.Room;
 import worldOfZuulGui.StatusScore;
 import worldOfZuulGui.TimeClass;
-
+import javafx.scene.media.MediaView;
 import java.io.IOException;
+import java.net.URL;
+import java.util.ResourceBundle;
 
 
-public class Controller {
+public class Controller implements Initializable {
 
     //Singleton
     StatusScore depressionBar = StatusScore.getInstance();
@@ -37,6 +42,9 @@ public class Controller {
 
     @FXML
     private Label timeLabel;
+    @FXML
+    private MediaPlayer mediaPlayer;
+    private Media media;
 
 
     //Change room methods
@@ -175,4 +183,13 @@ public class Controller {
                     }
             )
     );
+
+    @Override
+    public void initialize(URL url, ResourceBundle resourceBundle) {
+
+        media = new Media (Controller.class.getResource("/TestMusik.wav").toString());
+        mediaPlayer = new MediaPlayer(media);
+        mediaPlayer.play();
+    }
 }
+
