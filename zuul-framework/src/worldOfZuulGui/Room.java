@@ -10,6 +10,9 @@ public enum Room {
     StartMenu("StartMenu.fxml"),
     StartScreen("StartScreen.fxml"),
     Tutorial("Tutorial.fxml"),
+    Tutorial_2("Tutorial_2.fxml"),
+    Tutorial_3("Tutorial_3.fxml"),
+    Tutorial_4("Tutorial_4.fxml"),
     gameOver("gameOver.fxml");
 
     private String fxml;
