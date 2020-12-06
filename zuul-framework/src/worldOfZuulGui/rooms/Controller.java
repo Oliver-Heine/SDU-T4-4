@@ -68,8 +68,9 @@ public class Controller {
     private TextArea itemInformation;
 
     @FXML
-    void hideTextBox(MouseEvent event) {
+    void hideTextBox(MouseEvent event) throws IOException {
         textBox.setVisible(false);
+        checkIfGameIsOver(event);
     }
 
     public void itemTextBoxShow(String itemInfo){
@@ -250,6 +251,7 @@ public class Controller {
     public void checkIfGameIsOver(MouseEvent event) throws IOException {
         if(depressionBar.getScore() >= 1 || depressionBar.getScore() <= 0 ){
             changeRoom(Room.StartScreen.name(),event);
+            depressionBar.setScore(0.5);
         }
     }
 
@@ -259,8 +261,6 @@ public class Controller {
             item.changeScore();
             updateScoreText();
             itemTextBoxShow(item.getItemInteractionMessage());
-            checkIfGameIsOver(event);
-
         }
     }
 }
