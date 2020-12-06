@@ -13,6 +13,6 @@
             <Image url="@../Image/livingRoom.jpg" />
          </image>
       </ImageView>
-         <Button layoutX="4.0" layoutY="-3.0" mnemonicParsing="false" onMouseClicked="#" opacity="0.0" prefHeight="600.0" prefWidth="800.0" text="Button" />
+         <Button layoutX="4.0" layoutY="-3.0" mnemonicParsing="false" onMouseClicked="#startSession" opacity="0.0" prefHeight="600.0" prefWidth="800.0" text="Button" />
    </children>
 </AnchorPane>
