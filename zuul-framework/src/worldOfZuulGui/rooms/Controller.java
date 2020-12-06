@@ -25,6 +25,7 @@ import worldOfZuulGui.TimeClass;
 
 import java.awt.event.ActionEvent;
 import java.io.IOException;
+import java.sql.SQLOutput;
 
 
 public class Controller {
@@ -132,7 +133,7 @@ public class Controller {
 
     //Bedroom items:
     Item bed = new Item("You lay in your bed",0.05);
-    Item computer = new Item("You finished a voice chat with your friends, you feel good",0.05);
+    Item computer = new Item("You finished a voice chat with your friends, you feel good",-0.05);
 
     //Livingroom items:
     Item tv = new Item("You watch some tv",-0.05);
@@ -249,7 +250,7 @@ public class Controller {
 
 
     public void checkIfGameIsOver(MouseEvent event) throws IOException {
-        if(depressionBar.getScore() >= 1 || depressionBar.getScore() <= 0 ){
+        if(depressionBar.getScore() >= 1 || depressionBar.getScore() <= 0.001){
             changeRoom(Room.StartScreen.name(),event);
             depressionBar.setScore(0.5);
         }
@@ -259,6 +260,7 @@ public class Controller {
     public void simpleItemInteraction(Item item, MouseEvent event) throws IOException {
         if(item.getCanBeInteractedWith()) {
             item.changeScore();
+            System.out.println(depressionBar.getScore());
             updateScoreText();
             itemTextBoxShow(item.getItemInteractionMessage());
         }
