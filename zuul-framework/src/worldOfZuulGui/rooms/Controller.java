@@ -15,6 +15,7 @@ import javafx.scene.image.ImageView;
 import javafx.scene.input.KeyCode;
 import javafx.scene.input.KeyEvent;
 import javafx.scene.input.MouseEvent;
+import javafx.scene.layout.AnchorPane;
 import javafx.stage.Stage;
 import javafx.util.Duration;
 import worldOfZuulGui.Item;
@@ -33,10 +34,7 @@ public class Controller {
     TimeClass time = TimeClass.getInstance();
 
 
-    //Controls
-    @FXML
-    private TextArea textAreaComputer;
-
+    //Game information
     @FXML
     private ProgressBar progressBar;
 
@@ -60,6 +58,23 @@ public class Controller {
         if(event.getCode().equals(KeyCode.M)){
             map.setVisible(false);
         }
+    }
+
+    //Item information text box
+    @FXML
+    private AnchorPane textBox;
+
+    @FXML
+    private TextArea itemInformation;
+
+    @FXML
+    void hideTextBox(MouseEvent event) {
+        textBox.setVisible(false);
+    }
+
+    public void itemTextBoxShow(String itemInfo){
+        textBox.setVisible(true);
+        itemInformation.setText(itemInfo);
     }
 
 
@@ -107,15 +122,12 @@ public class Controller {
     }
 
 
-    //Computer room buttons
+    //Computer room button
     @FXML
     void goToComputerRoom(MouseEvent event) throws IOException {
         changeRoom(Room.Computer.name(), event);
     }
 
-    //Kitchen items:
-    Item fridge = new Item("You open the fridge and get some food",0.05);
-    Item freezer = new Item("You open the freezer and eat some ice cream!", -0.05);
 
     //Bedroom items:
     Item bed = new Item("You lay in your bed",0.05);
@@ -132,68 +144,72 @@ public class Controller {
 
     //Entrance items:
     Item door = new Item("You look at the door, and wonder what is outside",0.05);
-    Item mirror = new Item("You take a deep look in the mirror and feel lonely",-0.05);
 
-    @FXML
-    void showComputerInfo(MouseEvent event) {
-        textAreaComputer.setText(computer.getItemInteractionMessage());
-        if(!textAreaComputer.isVisible()){
-            computer.changeScore();
-        }
-        updateScoreText();
-    }
 
 
     //Bedroom items
     @FXML
-    void layInBed(MouseEvent event){
-        String ChangeToMB = bed.getItemInteractionMessage();
-        bed.changeScore();
-        updateScoreText();
+    void layInBed(MouseEvent event) throws IOException {
+        simpleItemInteraction(bed,event);
     }
+
+
+    //Computer room
+    @FXML
+    private TextArea textAreaComputer;
+
+    @FXML
+    void showComputerInfo(MouseEvent event) throws IOException {
+        textAreaComputer.setText(computer.getItemInteractionMessage());
+        if(textAreaComputer.isVisible()){
+            textAreaComputer.setVisible(false);
+        } else{
+            textAreaComputer.setVisible(true);
+        }
+        if(textAreaComputer.isVisible()){
+            computer.changeScore();
+        }
+        updateScoreText();
+        checkIfGameIsOver(event);
+    }
+
 
     //Bathroom items
     @FXML
-    void useToilet(MouseEvent event){
-        String ChangeToMB = toilet.getItemInteractionMessage();
-        toilet.changeScore();
-        updateScoreText();
+    void useToilet(MouseEvent event) throws IOException {
+        simpleItemInteraction(toilet,event);
+
     }
 
     @FXML
-    void useBath(MouseEvent event){
-        String ChangeToMB = bath.getItemInteractionMessage();
-        bath.changeScore();
-        updateScoreText();
+    void useBath(MouseEvent event) throws IOException {
+        simpleItemInteraction(bath,event);
+    }
+
+
+    //Living room
+    @FXML
+    void useTV(MouseEvent event) throws IOException {
+        simpleItemInteraction(tv,event);
     }
 
     @FXML
-    void useTV(MouseEvent event){
-        String ChangeToMB = tv.getItemInteractionMessage();
-        tv.changeScore();
-        updateScoreText();
+    void readBook(MouseEvent event) throws IOException {
+        simpleItemInteraction(book,event);
     }
 
     @FXML
-    void readBook(MouseEvent event){
-        String ChangeToMB = book.getItemInteractionMessage();
-        book.changeScore();
-        updateScoreText();
+    void lookOutWindow(MouseEvent event) throws IOException {
+        simpleItemInteraction(window,event);
     }
 
+
+    //Entry
     @FXML
-    void lookOutWindow(MouseEvent event){
-        String ChangeToMB = window.getItemInteractionMessage();
-        window.changeScore();
-        updateScoreText();
+    void exitDoor(MouseEvent event) throws IOException {
+        simpleItemInteraction(door,event);
     }
 
-    @FXML
-    void exitDoor(MouseEvent event){
-        String ChangeToMB = door.getItemInteractionMessage();
-        door.changeScore();
-        updateScoreText();
-    }
 
     //Initializing the scoreText
     @FXML
@@ -205,7 +221,7 @@ public class Controller {
     }
 
 
-    //METHODS
+    //Change room
     public void changeRoom(String roomName, MouseEvent event) throws IOException, NullPointerException {
         Node node = (Node) event.getSource();
         Stage thisStage = (Stage)node.getScene().getWindow();
@@ -220,6 +236,7 @@ public class Controller {
         progressBar.setProgress(depressionBar.getScore());
     }
 
+    //Time
     Timeline timeline = new Timeline(
             new KeyFrame( Duration.seconds(3),
                     event -> {
@@ -228,4 +245,22 @@ public class Controller {
                     }
             )
     );
+
+
+    public void checkIfGameIsOver(MouseEvent event) throws IOException {
+        if(depressionBar.getScore() >= 1 || depressionBar.getScore() <= 0 ){
+            changeRoom(Room.StartScreen.name(),event);
+        }
+    }
+
+
+    public void simpleItemInteraction(Item item, MouseEvent event) throws IOException {
+        if(item.getCanBeInteractedWith()) {
+            item.changeScore();
+            updateScoreText();
+            itemTextBoxShow(item.getItemInteractionMessage());
+            checkIfGameIsOver(event);
+
+        }
+    }
 }

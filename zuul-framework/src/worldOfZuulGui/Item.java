@@ -31,14 +31,15 @@ public class Item {
     }
 
     public void changeScore(){
-        if (canBeInteractedWith){
             depressionBar.changeScore(scoreChange);
             canBeInteractedWith = false;
-        }
     }
 
     public String getItemInteractionMessage() {
         return interactionMessage;
     }
 
+    public boolean getCanBeInteractedWith() {
+        return canBeInteractedWith;
+    }
 }
