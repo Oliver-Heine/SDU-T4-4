@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ProgressBar?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane prefHeight="600.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="worldOfZuulGui.rooms.MenuController">
+   <children>
+      <ImageView fitHeight="600.0" fitWidth="800.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../Image/MenuSession/Tutorial-background.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="mentalHealthTutorial" fitHeight="73.0" fitWidth="800.0" pickOnBounds="true" preserveRatio="true" visible="false">
+         <image>
+            <Image url="@../Image/MenuSession/InfoBar.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="mentalHealthTutorial_2" fitHeight="33.0" fitWidth="36.0" layoutX="8.0" layoutY="11.0" pickOnBounds="true" preserveRatio="true" visible="false">
+         <image>
+            <Image url="@../Image/Sad-Smiley.jpg" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="mentalHealthTutorial_3" fitHeight="33.0" fitWidth="36.0" layoutX="182.0" layoutY="11.0" pickOnBounds="true" preserveRatio="true" visible="false">
+         <image>
+            <Image url="@../Image/Happy-Smiley.jpg" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="mentalHealthTutorial_4" fitHeight="157.0" fitWidth="195.0" layoutX="-52.0" layoutY="32.0" pickOnBounds="true" preserveRatio="true" rotate="18.4" visible="false">
+         <image>
+            <Image url="@../Image/MenuSession/Tutorial-Arrow.png" />
+         </image>
+      </ImageView>
+      <ProgressBar fx:id="mentalHealthTutorial_5" layoutX="45.0" layoutY="11.0" prefHeight="33.0" prefWidth="131.0" progress="0.5" visible="false" />
+      <Text fill="#fffdfd" layoutX="90.0" layoutY="99.0" strokeType="OUTSIDE" strokeWidth="0.0" text="You have to manage your mental health. It is represented by a progress bar on the top left corner.  " textAlignment="JUSTIFY" wrappingWidth="617.22900390625">
+         <font>
+            <Font name="Bodoni 72 Oldstyle Book" size="24.0" />
+         </font>
+      </Text>
+      <Text fx:id="playerTutorial_3Text_2" fill="#fffdfd" layoutX="90.0" layoutY="179.0" strokeType="OUTSIDE" strokeWidth="0.0" text="You have different options around your apartment. Your actions will affect your mental health which you will have to get as high as possible. " textAlignment="JUSTIFY" visible="false" wrappingWidth="617.22900390625">
+         <font>
+            <Font name="Bodoni 72 Oldstyle Book" size="24.0" />
+         </font>
+      </Text>
+      <Text fill="WHITE" layoutX="302.0" layoutY="307.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Press anywhere to continue">
+         <font>
+            <Font name="Bodoni 72 Smallcaps Book" size="18.0" />
+         </font>
+      </Text>
+      <Button fx:id="showMentalHealthTutorialButton" mnemonicParsing="false" onMouseClicked="#showMentalHealthTutorial" opacity="0.0" prefHeight="600.0" prefWidth="800.0" />
+      <Button fx:id="hideMentalHealthTutorialButton" disable="true" mnemonicParsing="false" onMouseClicked="#hideMentalHealthTutorial" opacity="0.0" prefHeight="600.0" prefWidth="800.0" />
+      <Button fx:id="nextTutorialFXML" disable="true" mnemonicParsing="false" onMouseClicked="#startSession" opacity="0.0" prefHeight="600.0" prefWidth="800.0" />
+   </children>
+</AnchorPane>

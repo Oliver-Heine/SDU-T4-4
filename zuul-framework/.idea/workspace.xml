@@ -20,10 +20,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="cdb932d9-7e58-4d94-93a9-e7b232ef17da" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/lib1.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/zuul-framework.iml" beforeDir="false" afterPath="$PROJECT_DIR$/zuul-framework.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/zuul-framework/worldOfZuulGui/rooms/Tutorial.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/zuul-framework/worldOfZuulGui/rooms/Tutorial.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/worldOfZuulGui/rooms/Tutorial.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/worldOfZuulGui/rooms/Tutorial.fxml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -108,13 +107,19 @@
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="dynamic.classpath" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../../../Semester 1/World of depression_001" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/worldOfZuulGui/Image/Maps" />
     <property name="project.structure.last.edited" value="Libraries" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
     <property name="recentsLimit" value="5" />
   </component>
-  <component name="RunManager">
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/worldOfZuulGui/Image/Maps" />
+      <recent name="$PROJECT_DIR$/src/worldOfZuulGui/Image" />
+    </key>
+  </component>
+  <component name="RunManager" selected="Application.Start">
     <configuration default="true" type="Applet" factoryName="Applet">
       <module name="" />
       <option name="MAIN_CLASS_NAME" />
@@ -156,6 +161,20 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="Start" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="worldOfZuulGui.Start" />
+      <module name="zuul-framework" />
+      <option name="VM_PARAMETERS" value="--module-path $PROJECT_DIR$/../../javafx-sdk-15.0.1/lib --add-modules javafx.controls,javafx.fxml" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="worldOfZuulGui.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration default="true" type="Application" factoryName="Application">
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
       <method v="2">
@@ -193,6 +212,15 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <list>
+      <item itemvalue="Application.Main" />
+      <item itemvalue="Application.Start" />
+    </list>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Application.Start" />
+      </list>
+    </recent_temporary>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
@@ -226,11 +254,12 @@
     <option name="INCLUDE_TEXT_INTO_SHELF" value="false" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="304" y="198" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1606216700719">
-      <screen x="0" y="0" width="1680" height="1050" />
+    <state x="261" y="153" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1607077201146">
+      <screen x="0" y="23" width="1440" height="806" />
     </state>
     <state x="191" y="0" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1280.680@0.0.1280.680" timestamp="1606215962347" />
     <state x="304" y="198" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1680.1050@0.0.1680.1050" timestamp="1606216700719" />
+    <state x="261" y="153" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.23.1440.806@0.23.1440.806" timestamp="1607077201146" />
     <state x="627" y="248" key="#com.intellij.ide.macro.MacrosDialog" timestamp="1606216651483">
       <screen x="0" y="0" width="1680" height="1050" />
     </state>
@@ -239,26 +268,42 @@
       <screen x="0" y="0" width="1280" height="680" />
     </state>
     <state x="469" y="82" key="FileChooserDialogImpl/0.0.1280.680@0.0.1280.680" timestamp="1606216127386" />
-    <state width="1638" height="285" key="GridCell.Tab.0.bottom" timestamp="1606216636745">
-      <screen x="0" y="0" width="1680" height="1050" />
+    <state width="1398" height="188" key="GridCell.Tab.0.bottom" timestamp="1607086226236">
+      <screen x="0" y="23" width="1440" height="808" />
     </state>
     <state width="1237" height="163" key="GridCell.Tab.0.bottom/0.0.1280.680@0.0.1280.680" timestamp="1606216432744" />
     <state width="1638" height="285" key="GridCell.Tab.0.bottom/0.0.1680.1050@0.0.1680.1050" timestamp="1606216636745" />
-    <state width="1638" height="285" key="GridCell.Tab.0.center" timestamp="1606216636743">
-      <screen x="0" y="0" width="1680" height="1050" />
+    <state width="1398" height="185" key="GridCell.Tab.0.bottom/0.23.1440.806@0.23.1440.806" timestamp="1607079555132" />
+    <state width="1398" height="188" key="GridCell.Tab.0.bottom/0.23.1440.808@0.23.1440.808" timestamp="1607086226236" />
+    <state width="1398" height="188" key="GridCell.Tab.0.bottom/0.23.1440.811@0.23.1440.811" timestamp="1607085483368" />
+    <state width="1092" height="185" key="GridCell.Tab.0.bottom/0.23.1440.812@0.23.1440.812" timestamp="1607083525513" />
+    <state width="1398" height="188" key="GridCell.Tab.0.center" timestamp="1607086226234">
+      <screen x="0" y="23" width="1440" height="808" />
     </state>
     <state width="1237" height="163" key="GridCell.Tab.0.center/0.0.1280.680@0.0.1280.680" timestamp="1606216432743" />
     <state width="1638" height="285" key="GridCell.Tab.0.center/0.0.1680.1050@0.0.1680.1050" timestamp="1606216636743" />
-    <state width="1638" height="285" key="GridCell.Tab.0.left" timestamp="1606216636743">
-      <screen x="0" y="0" width="1680" height="1050" />
+    <state width="1398" height="185" key="GridCell.Tab.0.center/0.23.1440.806@0.23.1440.806" timestamp="1607079555131" />
+    <state width="1398" height="188" key="GridCell.Tab.0.center/0.23.1440.808@0.23.1440.808" timestamp="1607086226234" />
+    <state width="1398" height="188" key="GridCell.Tab.0.center/0.23.1440.811@0.23.1440.811" timestamp="1607085483367" />
+    <state width="1092" height="185" key="GridCell.Tab.0.center/0.23.1440.812@0.23.1440.812" timestamp="1607083525510" />
+    <state width="1398" height="188" key="GridCell.Tab.0.left" timestamp="1607086226233">
+      <screen x="0" y="23" width="1440" height="808" />
     </state>
     <state width="1237" height="163" key="GridCell.Tab.0.left/0.0.1280.680@0.0.1280.680" timestamp="1606216432743" />
     <state width="1638" height="285" key="GridCell.Tab.0.left/0.0.1680.1050@0.0.1680.1050" timestamp="1606216636743" />
-    <state width="1638" height="285" key="GridCell.Tab.0.right" timestamp="1606216636744">
-      <screen x="0" y="0" width="1680" height="1050" />
+    <state width="1398" height="185" key="GridCell.Tab.0.left/0.23.1440.806@0.23.1440.806" timestamp="1607079555129" />
+    <state width="1398" height="188" key="GridCell.Tab.0.left/0.23.1440.808@0.23.1440.808" timestamp="1607086226233" />
+    <state width="1398" height="188" key="GridCell.Tab.0.left/0.23.1440.811@0.23.1440.811" timestamp="1607085483366" />
+    <state width="1092" height="185" key="GridCell.Tab.0.left/0.23.1440.812@0.23.1440.812" timestamp="1607083525509" />
+    <state width="1398" height="188" key="GridCell.Tab.0.right" timestamp="1607086226235">
+      <screen x="0" y="23" width="1440" height="808" />
     </state>
     <state width="1237" height="163" key="GridCell.Tab.0.right/0.0.1280.680@0.0.1280.680" timestamp="1606216432744" />
     <state width="1638" height="285" key="GridCell.Tab.0.right/0.0.1680.1050@0.0.1680.1050" timestamp="1606216636744" />
+    <state width="1398" height="185" key="GridCell.Tab.0.right/0.23.1440.806@0.23.1440.806" timestamp="1607079555131" />
+    <state width="1398" height="188" key="GridCell.Tab.0.right/0.23.1440.808@0.23.1440.808" timestamp="1607086226235" />
+    <state width="1398" height="188" key="GridCell.Tab.0.right/0.23.1440.811@0.23.1440.811" timestamp="1607085483368" />
+    <state width="1092" height="185" key="GridCell.Tab.0.right/0.23.1440.812@0.23.1440.812" timestamp="1607083525512" />
     <state x="328" y="117" key="SettingsEditor" timestamp="1606216628204">
       <screen x="0" y="0" width="1680" height="1050" />
     </state>
