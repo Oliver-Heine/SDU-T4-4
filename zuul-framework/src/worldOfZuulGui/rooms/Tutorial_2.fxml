@@ -15,12 +15,12 @@
          </image>
       </ImageView>
       <Button mnemonicParsing="false" onMouseClicked="#startSession" opacity="0.0" prefHeight="600.0" prefWidth="800.0" />
-      <Text fill="#fffdfd" layoutX="91.0" layoutY="82.0" strokeType="OUTSIDE" strokeWidth="0.0" text="You are one out of many who are affected by the lockdown. A young adult who lives in an apartment on your own. " textAlignment="JUSTIFY" wrappingWidth="617.22900390625">
+      <Text fill="#fffdfd" layoutX="91.0" layoutY="82.0" strokeType="OUTSIDE" strokeWidth="0.0" text="You are one out of many who are affected by the lockdown. A young adult who lives in an apartment on your own. " textAlignment="JUSTIFY" wrappingWidth="617.22900390625">
          <font>
             <Font name="Bodoni 72 Oldstyle Book" size="24.0" />
          </font>
       </Text>
-      <Text fill="#fffdfd" layoutX="91.0" layoutY="158.0" strokeType="OUTSIDE" strokeWidth="0.0" text="It is your job to make sure that your mental health stays in shape. despite not being able to socialize, and perform your daily rutines as you used to do. " textAlignment="JUSTIFY" wrappingWidth="617.22900390625">
+      <Text fill="#fffdfd" layoutX="91.0" layoutY="158.0" strokeType="OUTSIDE" strokeWidth="0.0" text="It is your job to make sure that your mental health stays in shape. Despite not being able to socialize and perform your daily routines as you used to do. " textAlignment="JUSTIFY" wrappingWidth="617.22900390625">
          <font>
             <Font name="Bodoni 72 Oldstyle Book" size="24.0" />
          </font>
