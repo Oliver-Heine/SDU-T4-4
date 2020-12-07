@@ -21,11 +21,87 @@
   <component name="ChangeListManager">
     <list default="true" id="cdb932d9-7e58-4d94-93a9-e7b232ef17da" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/zuul-framework/worldOfZuulGui/Room.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/zuul-framework/worldOfZuulGui/Room.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/zuul-framework/worldOfZuulGui/rooms/Tutorial.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/zuul-framework/worldOfZuulGui/rooms/Tutorial.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/zuul-framework/worldOfZuulGui/rooms/gameLost.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/zuul-framework/worldOfZuulGui/rooms/gameLost.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/zuul-framework/worldOfZuulGui/rooms/gameWon.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/zuul-framework/worldOfZuulGui/rooms/gameWon.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/worldOfZuulGui/rooms/Controller.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/worldOfZuulGui/rooms/Controller.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/zuul-framework/music/TestMusik.wav" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/zuul-framework/worldOfZuulGui/Image/GameLost.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/worldOfZuulGui/assets/GameLost.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/zuul-framework/worldOfZuulGui/Image/GameWon.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/worldOfZuulGui/assets/GameWon.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/zuul-framework/worldOfZuulGui/Image/Happy-Smiley.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/src/worldOfZuulGui/assets/Happy-Smiley.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/zuul-framework/worldOfZuulGui/Image/Maps/Map_Bathroom.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/worldOfZuulGui/assets/Maps/Map_Bathroom.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/zuul-framework/worldOfZuulGui/Image/Maps/Map_Bedroom.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/worldOfZuulGui/assets/Maps/Map_Bedroom.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/zuul-framework/worldOfZuulGui/Image/Maps/Map_Entrance.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/worldOfZuulGui/assets/Maps/Map_Entrance.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/zuul-framework/worldOfZuulGui/Image/Maps/Map_Kitchen.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/worldOfZuulGui/assets/Maps/Map_Kitchen.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/zuul-framework/worldOfZuulGui/Image/Maps/Map_LivingRoom.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/worldOfZuulGui/assets/Maps/Map_LivingRoom.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/zuul-framework/worldOfZuulGui/Image/MenuSession/InfoBar.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/worldOfZuulGui/assets/MenuSession/InfoBar.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/zuul-framework/worldOfZuulGui/Image/MenuSession/Tutorial-Arrow.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/worldOfZuulGui/assets/MenuSession/Tutorial-Arrow.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/zuul-framework/worldOfZuulGui/Image/MenuSession/Tutorial-background.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/worldOfZuulGui/assets/MenuSession/Tutorial-background.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/zuul-framework/worldOfZuulGui/Image/MenuSession/startMenu.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/src/worldOfZuulGui/assets/MenuSession/startMenu.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/zuul-framework/worldOfZuulGui/Image/Rooms/bathroom.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/src/worldOfZuulGui/assets/Rooms/bathroom.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/zuul-framework/worldOfZuulGui/Image/Rooms/bedroom.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/src/worldOfZuulGui/assets/Rooms/bedroom.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/zuul-framework/worldOfZuulGui/Image/Rooms/computerRoom.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/src/worldOfZuulGui/assets/Rooms/computerRoom.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/zuul-framework/worldOfZuulGui/Image/Rooms/entry.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/src/worldOfZuulGui/assets/Rooms/entry.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/zuul-framework/worldOfZuulGui/Image/Rooms/kitchen.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/src/worldOfZuulGui/assets/Rooms/kitchen.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/zuul-framework/worldOfZuulGui/Image/Rooms/livingRoom.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/src/worldOfZuulGui/assets/Rooms/livingRoom.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/zuul-framework/worldOfZuulGui/Image/Sad-Smiley.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/src/worldOfZuulGui/assets/Sad-Smiley.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/zuul-framework/worldOfZuulGui/Item.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/zuul-framework/worldOfZuulGui/Room.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/zuul-framework/worldOfZuulGui/Start.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/zuul-framework/worldOfZuulGui/StatusScore.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/zuul-framework/worldOfZuulGui/TimeClass.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/zuul-framework/worldOfZuulGui/rooms/Controller.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/zuul-framework/worldOfZuulGui/rooms/MenuController.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/zuul-framework/worldOfZuulGui/rooms/StartMenu.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/worldOfZuulGui/fxml/StartMenu.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/zuul-framework/worldOfZuulGui/rooms/StartScreen.fxml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/zuul-framework/worldOfZuulGui/rooms/Tutorial.fxml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/zuul-framework/worldOfZuulGui/rooms/Tutorial_2.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/worldOfZuulGui/fxml/Tutorial_2.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/zuul-framework/worldOfZuulGui/rooms/Tutorial_3.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/worldOfZuulGui/fxml/Tutorial_3.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/zuul-framework/worldOfZuulGui/rooms/Tutorial_4.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/worldOfZuulGui/fxml/Tutorial_4.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/zuul-framework/worldOfZuulGui/rooms/bathroom.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/worldOfZuulGui/fxml/bathroom.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/zuul-framework/worldOfZuulGui/rooms/bedroom.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/worldOfZuulGui/fxml/bedroom.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/zuul-framework/worldOfZuulGui/rooms/computer.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/worldOfZuulGui/fxml/computer.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/zuul-framework/worldOfZuulGui/rooms/entry.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/worldOfZuulGui/fxml/entry.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/zuul-framework/worldOfZuulGui/rooms/gameLost.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/worldOfZuulGui/fxml/gameLost.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/zuul-framework/worldOfZuulGui/rooms/gameWon.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/worldOfZuulGui/fxml/gameWon.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/zuul-framework/worldOfZuulGui/rooms/kitchen.fxml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/zuul-framework/worldOfZuulGui/rooms/livingRoom.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/worldOfZuulGui/fxml/livingRoom.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/worldOfZuulGui/Image/GameLost.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/worldOfZuulGui/Image/GameWon.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/worldOfZuulGui/Image/Happy-Smiley.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/worldOfZuulGui/Image/Maps/Map_Bathroom.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/worldOfZuulGui/Image/Maps/Map_Bedroom.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/worldOfZuulGui/Image/Maps/Map_Entrance.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/worldOfZuulGui/Image/Maps/Map_Kitchen.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/worldOfZuulGui/Image/Maps/Map_LivingRoom.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/worldOfZuulGui/Image/MenuSession/InfoBar.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/worldOfZuulGui/Image/MenuSession/Tutorial-Arrow.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/worldOfZuulGui/Image/MenuSession/Tutorial-background.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/worldOfZuulGui/Image/MenuSession/startMenu.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/worldOfZuulGui/Image/Rooms/bathroom.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/worldOfZuulGui/Image/Rooms/bedroom.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/worldOfZuulGui/Image/Rooms/computerRoom.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/worldOfZuulGui/Image/Rooms/entry.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/worldOfZuulGui/Image/Rooms/kitchen.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/worldOfZuulGui/Image/Rooms/livingRoom.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/worldOfZuulGui/Image/Sad-Smiley.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/worldOfZuulGui/Item.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/worldOfZuulGui/domain/Item.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/worldOfZuulGui/Room.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/worldOfZuulGui/domain/Room.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/worldOfZuulGui/Start.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/worldOfZuulGui/presentation/Start.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/worldOfZuulGui/StatusScore.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/worldOfZuulGui/domain/StatusScore.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/worldOfZuulGui/TimeClass.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/worldOfZuulGui/domain/TimeClass.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/worldOfZuulGui/rooms/Controller.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/worldOfZuulGui/presentation/Controller.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/worldOfZuulGui/rooms/MenuController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/worldOfZuulGui/presentation/MenuController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/worldOfZuulGui/rooms/StartMenu.fxml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/worldOfZuulGui/rooms/StartScreen.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/worldOfZuulGui/fxml/StartScreen.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/worldOfZuulGui/rooms/Tutorial.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/worldOfZuulGui/fxml/Tutorial.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/worldOfZuulGui/rooms/Tutorial_2.fxml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/worldOfZuulGui/rooms/Tutorial_3.fxml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/worldOfZuulGui/rooms/Tutorial_4.fxml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/worldOfZuulGui/rooms/bathroom.fxml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/worldOfZuulGui/rooms/bedroom.fxml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/worldOfZuulGui/rooms/computer.fxml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/worldOfZuulGui/rooms/entry.fxml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/worldOfZuulGui/rooms/gameLost.fxml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/worldOfZuulGui/rooms/gameWon.fxml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/worldOfZuulGui/rooms/kitchen.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/worldOfZuulGui/fxml/kitchen.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/worldOfZuulGui/rooms/livingRoom.fxml" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -124,7 +200,7 @@
       <recent name="$PROJECT_DIR$/src/worldOfZuulGui/Image" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.Start">
+  <component name="RunManager">
     <configuration default="true" type="Applet" factoryName="Applet">
       <module name="" />
       <option name="MAIN_CLASS_NAME" />
@@ -137,6 +213,19 @@
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
       <option name="ALTERNATIVE_JRE_PATH" />
       <method />
+    </configuration>
+    <configuration default="true" type="ArquillianTestNG" factoryName="" nameIsGenerated="true">
+      <option name="arquillianRunConfiguration">
+        <value>
+          <option name="containerStateName" value="" />
+        </value>
+      </option>
+      <option name="TEST_OBJECT" value="CLASS" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
     </configuration>
     <configuration default="true" type="DartUnitRunConfigurationType" factoryName="DartUnit">
       <option name="VMOptions" />
@@ -151,15 +240,9 @@
       <Port>5050</Port>
     </configuration>
     <configuration name="Start" type="Application" factoryName="Application">
-      <option name="MAIN_CLASS_NAME" value="Start" />
+      <option name="MAIN_CLASS_NAME" value="worldOfZuulGui.presentation.Start" />
       <module name="zuul-framework" />
-      <option name="VM_PARAMETERS" value="--module-path $USER_HOME$/Downloads/javafx-sdk-11.0.2/lib --add-modules javafx.controls,javafx.fxml" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="sample.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
+      <option name="VM_PARAMETERS" value="--module-path $USER_HOME$/Downloads/javafx-sdk-11.0.2/lib --add-modules javafx.controls,javafx.fxml,javafx.media" />
       <RunnerSettings RunnerId="Run" />
       <ConfigurationWrapper RunnerId="Run" />
       <method v="2">
@@ -182,19 +265,6 @@
     </configuration>
     <configuration default="true" type="Application" factoryName="Application">
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration default="true" type="ArquillianTestNG" factoryName="" nameIsGenerated="true">
-      <option name="arquillianRunConfiguration">
-        <value>
-          <option name="containerStateName" value="" />
-        </value>
-      </option>
-      <option name="TEST_OBJECT" value="CLASS" />
-      <properties />
-      <listeners />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -230,10 +300,6 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <list>
-      <item itemvalue="Application.Main" />
-      <item itemvalue="Application.Start" />
-    </list>
     <recent_temporary>
       <list>
         <item itemvalue="Application.Start" />
@@ -276,105 +342,6 @@
   <component name="VcsManagerConfiguration">
     <option name="OFFER_MOVE_TO_ANOTHER_CHANGELIST_ON_PARTIAL_COMMIT" value="true" />
     <option name="INCLUDE_TEXT_INTO_SHELF" value="false" />
-  </component>
-  <component name="WindowStateProjectService">
-    <state x="191" y="0" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1607332804676">
-      <screen x="0" y="0" width="1280" height="680" />
-    </state>
-    <state x="191" y="0" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1280.680@0.0.1280.680" timestamp="1607332804676" />
-    <state x="304" y="198" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1680.1050@0.0.1680.1050" timestamp="1606216700719" />
-    <state x="261" y="153" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.23.1440.806@0.23.1440.806" timestamp="1607077201146" />
-    <state x="627" y="248" key="#com.intellij.ide.macro.MacrosDialog" timestamp="1606216651483">
-      <screen x="0" y="0" width="1680" height="1050" />
-    </state>
-    <state x="627" y="248" key="#com.intellij.ide.macro.MacrosDialog/0.0.1680.1050@0.0.1680.1050" timestamp="1606216651483" />
-    <state x="533" y="160" key="#com.intellij.ide.util.MemberChooser" timestamp="1607182771498">
-      <screen x="0" y="0" width="1440" height="900" />
-    </state>
-    <state x="533" y="160" key="#com.intellij.ide.util.MemberChooser/0.0.1440.900@0.0.1440.900" timestamp="1607182771498" />
-    <state x="458" y="203" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1607182458801">
-      <screen x="0" y="0" width="1440" height="900" />
-    </state>
-    <state x="458" y="203" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1440.900@0.0.1440.900" timestamp="1607182458801" />
-    <state x="469" y="82" key="FileChooserDialogImpl" timestamp="1606216127386">
-      <screen x="0" y="0" width="1280" height="680" />
-    </state>
-    <state x="469" y="82" key="FileChooserDialogImpl/0.0.1280.680@0.0.1280.680" timestamp="1606216127386" />
-    <state width="1237" height="117" key="GridCell.Tab.0.bottom" timestamp="1607333093252">
-      <screen x="0" y="0" width="1280" height="680" />
-    </state>
-    <state width="1237" height="117" key="GridCell.Tab.0.bottom/0.0.1280.680@0.0.1280.680" timestamp="1607333093252" />
-    <state width="1638" height="285" key="GridCell.Tab.0.bottom/0.0.1680.1050@0.0.1680.1050" timestamp="1606216636745" />
-    <state width="1398" height="185" key="GridCell.Tab.0.bottom/0.23.1440.806@0.23.1440.806" timestamp="1607079555132" />
-    <state width="1398" height="188" key="GridCell.Tab.0.bottom/0.23.1440.808@0.23.1440.808" timestamp="1607086226236" />
-    <state width="1398" height="188" key="GridCell.Tab.0.bottom/0.23.1440.811@0.23.1440.811" timestamp="1607085483368" />
-    <state width="1092" height="185" key="GridCell.Tab.0.bottom/0.23.1440.812@0.23.1440.812" timestamp="1607083525513" />
-    <state width="1237" height="117" key="GridCell.Tab.0.center" timestamp="1607333093252">
-      <screen x="0" y="0" width="1280" height="680" />
-    </state>
-    <state width="1237" height="117" key="GridCell.Tab.0.center/0.0.1280.680@0.0.1280.680" timestamp="1607333093252" />
-    <state width="1638" height="285" key="GridCell.Tab.0.center/0.0.1680.1050@0.0.1680.1050" timestamp="1606216636743" />
-    <state width="1398" height="185" key="GridCell.Tab.0.center/0.23.1440.806@0.23.1440.806" timestamp="1607079555131" />
-    <state width="1398" height="188" key="GridCell.Tab.0.center/0.23.1440.808@0.23.1440.808" timestamp="1607086226234" />
-    <state width="1398" height="188" key="GridCell.Tab.0.center/0.23.1440.811@0.23.1440.811" timestamp="1607085483367" />
-    <state width="1092" height="185" key="GridCell.Tab.0.center/0.23.1440.812@0.23.1440.812" timestamp="1607083525510" />
-    <state width="1237" height="117" key="GridCell.Tab.0.left" timestamp="1607333093252">
-      <screen x="0" y="0" width="1280" height="680" />
-    </state>
-    <state width="1237" height="117" key="GridCell.Tab.0.left/0.0.1280.680@0.0.1280.680" timestamp="1607333093252" />
-    <state width="1638" height="285" key="GridCell.Tab.0.left/0.0.1680.1050@0.0.1680.1050" timestamp="1606216636743" />
-    <state width="1398" height="185" key="GridCell.Tab.0.left/0.23.1440.806@0.23.1440.806" timestamp="1607079555129" />
-    <state width="1398" height="188" key="GridCell.Tab.0.left/0.23.1440.808@0.23.1440.808" timestamp="1607086226233" />
-    <state width="1398" height="188" key="GridCell.Tab.0.left/0.23.1440.811@0.23.1440.811" timestamp="1607085483366" />
-    <state width="1092" height="185" key="GridCell.Tab.0.left/0.23.1440.812@0.23.1440.812" timestamp="1607083525509" />
-    <state width="1237" height="117" key="GridCell.Tab.0.right" timestamp="1607333093252">
-      <screen x="0" y="0" width="1280" height="680" />
-    </state>
-    <state width="1237" height="117" key="GridCell.Tab.0.right/0.0.1280.680@0.0.1280.680" timestamp="1607333093252" />
-    <state width="1638" height="285" key="GridCell.Tab.0.right/0.0.1680.1050@0.0.1680.1050" timestamp="1606216636744" />
-    <state width="1398" height="185" key="GridCell.Tab.0.right/0.23.1440.806@0.23.1440.806" timestamp="1607079555131" />
-    <state width="1398" height="188" key="GridCell.Tab.0.right/0.23.1440.808@0.23.1440.808" timestamp="1607086226235" />
-    <state width="1398" height="188" key="GridCell.Tab.0.right/0.23.1440.811@0.23.1440.811" timestamp="1607085483368" />
-    <state width="1092" height="185" key="GridCell.Tab.0.right/0.23.1440.812@0.23.1440.812" timestamp="1607083525512" />
-    <state x="328" y="117" key="SettingsEditor" timestamp="1606216628204">
-      <screen x="0" y="0" width="1680" height="1050" />
-    </state>
-    <state width="1440" height="306" key="GridCell.Tab.1.bottom/0.0.1440.900@0.0.1440.900" timestamp="1607169710444" />
-    <state width="1440" height="306" key="GridCell.Tab.1.bottom/0.23.1440.830@0.23.1440.830" timestamp="1607101362055" />
-    <state width="1440" height="306" key="GridCell.Tab.1.center" timestamp="1607169710442">
-      <screen x="0" y="0" width="1440" height="900" />
-    </state>
-    <state width="1440" height="306" key="GridCell.Tab.1.center/0.0.1440.900@0.0.1440.900" timestamp="1607169710442" />
-    <state width="1440" height="306" key="GridCell.Tab.1.center/0.23.1440.830@0.23.1440.830" timestamp="1607101362052" />
-    <state width="1440" height="306" key="GridCell.Tab.1.left" timestamp="1607169710441">
-      <screen x="0" y="0" width="1440" height="900" />
-    </state>
-    <state width="1440" height="306" key="GridCell.Tab.1.left/0.0.1440.900@0.0.1440.900" timestamp="1607169710441" />
-    <state width="1440" height="306" key="GridCell.Tab.1.left/0.23.1440.830@0.23.1440.830" timestamp="1607101362051" />
-    <state width="1440" height="306" key="GridCell.Tab.1.right" timestamp="1607169710443">
-      <screen x="0" y="0" width="1440" height="900" />
-    </state>
-    <state width="1440" height="306" key="GridCell.Tab.1.right/0.0.1440.900@0.0.1440.900" timestamp="1607169710443" />
-    <state width="1440" height="306" key="GridCell.Tab.1.right/0.23.1440.830@0.23.1440.830" timestamp="1607101362054" />
-    <state x="281" y="23" width="1024" height="830" key="SettingsEditor" timestamp="1607100115543">
-      <screen x="0" y="0" width="1440" height="900" />
-    </state>
-    <state x="242" y="0" key="SettingsEditor/0.0.1280.680@0.0.1280.680" timestamp="1606215827226" />
-    <state x="281" y="23" width="1024" height="830" key="SettingsEditor/0.0.1440.900@0.0.1440.900" timestamp="1607100115543" />
-    <state x="328" y="117" key="SettingsEditor/0.0.1680.1050@0.0.1680.1050" timestamp="1606216628204" />
-    <state x="240" y="111" key="com.intellij.xdebugger.impl.breakpoints.ui.BreakpointsDialogFactory$2" timestamp="1607086328701">
-      <screen x="0" y="0" width="1440" height="900" />
-    </state>
-    <state x="240" y="111" key="com.intellij.xdebugger.impl.breakpoints.ui.BreakpointsDialogFactory$2/0.0.1440.900@0.0.1440.900" timestamp="1607086328701" />
-    <state x="638" y="81" width="587" height="819" key="find.popup" timestamp="1607183273906">
-      <screen x="0" y="0" width="1440" height="900" />
-    </state>
-    <state x="638" y="81" width="587" height="819" key="find.popup/0.0.1440.900/-218.-1080.1920.1080@0.0.1440.900" timestamp="1607183273906" />
-    <state x="638" y="81" width="587" height="819" key="find.popup/0.0.1440.900@0.0.1440.900" timestamp="1607104640675" />
-    <state x="319" y="26" key="new project wizard" timestamp="1607101499872">
-      <screen x="0" y="0" width="1440" height="900" />
-    </state>
-    <state x="319" y="26" key="new project wizard/0.0.1440.900@0.0.1440.900" timestamp="1607101499872" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
