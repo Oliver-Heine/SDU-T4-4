@@ -14,12 +14,12 @@
             <Image url="@../Image/MenuSession/Tutorial-background.png" />
          </image>
       </ImageView>
-      <Text fill="#fffdfd" layoutX="90.0" layoutY="99.0" strokeType="OUTSIDE" strokeWidth="0.0" text="You have the option to press the key M to get a map of your apartment. " textAlignment="JUSTIFY" wrappingWidth="617.22900390625">
+      <Text fill="#fffdfd" layoutX="90.0" layoutY="99.0" strokeType="OUTSIDE" strokeWidth="0.0" text="You have the option to press the key M to get a map of your apartment. " textAlignment="JUSTIFY" wrappingWidth="617.22900390625">
          <font>
             <Font name="Bodoni 72 Oldstyle Book" size="24.0" />
          </font>
       </Text>
-      <Text fx:id="playerTutorial_3Text_2" fill="#fffdfd" layoutX="90.0" layoutY="179.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Furthermore the game ends after seven days. You can follow the progress of time at the top of the screen. " textAlignment="JUSTIFY" wrappingWidth="617.22900390625">
+      <Text fx:id="playerTutorial_3Text_2" fill="#fffdfd" layoutX="90.0" layoutY="179.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Furthermore, the game ends after seven days. You can follow the progress of time at the top of the screen. " textAlignment="JUSTIFY" wrappingWidth="617.22900390625">
          <font>
             <Font name="Bodoni 72 Oldstyle Book" size="24.0" />
          </font>

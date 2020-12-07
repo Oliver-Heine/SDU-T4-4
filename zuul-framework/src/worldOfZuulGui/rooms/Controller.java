@@ -80,7 +80,6 @@ public class Controller {
     }
 
 
-
     //Change room methods
     @FXML
     void goNextRoom(MouseEvent event) throws IOException {
