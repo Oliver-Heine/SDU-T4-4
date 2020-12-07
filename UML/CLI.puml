@@ -63,7 +63,7 @@ gameOver()
 
 class Item {
 Name: String
-interationMessage: String
+interactionMessage: String
 StatusScoreChange: int
 itemInteraction(): void
 Item (String,String,int)
