@@ -39,7 +39,7 @@ import java.util.ResourceBundle;
 import java.sql.SQLOutput;
 
 
-public class Controller implements Initializable {
+public class Controller{
 
     //Singleton
     StatusScore depressionBar = StatusScore.getInstance();
@@ -52,6 +52,7 @@ public class Controller implements Initializable {
 
     @FXML
     private Label timeLabel;
+
     @FXML
     private MediaPlayer mediaPlayer;
     private Media media;
@@ -262,11 +263,6 @@ public class Controller implements Initializable {
             )
     );
 
-    @Override
-    public void initialize(URL url, ResourceBundle resourceBundle) {
-
-
-    }
 
     //Method to check if game is over. Java use floating points for doubles and will not hit 0 as it should
     //therefore 0.001 and not 0.
@@ -284,7 +280,6 @@ public class Controller implements Initializable {
     public void simpleItemInteraction(Item item, MouseEvent event) throws IOException {
         if(item.getCanBeInteractedWith()) {
             item.changeScore();
-            System.out.println(depressionBar.getScore());
             updateScoreText();
             itemTextBoxShow(item.getItemInteractionMessage());
         }

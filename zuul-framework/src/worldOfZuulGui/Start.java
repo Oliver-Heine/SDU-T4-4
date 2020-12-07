@@ -26,8 +26,7 @@ public class Start extends Application {
         mediaPlayer.setAutoPlay(true);
         mediaPlayer.setCycleCount(MediaPlayer.INDEFINITE);
 
-
-
+        Scene scene1 = new Scene(root);
         primaryStage.setScene(scene1);
         primaryStage.setTitle("StartScreen");
         primaryStage.show();
