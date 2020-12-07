@@ -20,14 +20,14 @@
             <Font name="Georgia" size="24.0" />
          </font>
       </Text>
-      <Text fill="#fffdfd" layoutX="91.0" layoutY="158.0" strokeType="OUTSIDE" strokeWidth="0.0" text="It is your job to make sure that your mental health stays in shape. Despite not being able to socialize and perform your daily routines as you used to do. " textAlignment="JUSTIFY" wrappingWidth="617.22900390625">
+      <Text fill="#fffdfd" layoutX="91.0" layoutY="185.0" strokeType="OUTSIDE" strokeWidth="0.0" text="It is your job to make sure that your mental health stays in shape. Despite not being able to socialize and perform your daily routines as you used to do. " textAlignment="JUSTIFY" wrappingWidth="617.22900390625">
          <font>
             <Font name="Georgia" size="24.0" />
          </font>
       </Text>
-      <Text fill="WHITE" layoutX="302.0" layoutY="307.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Press anywhere to continue">
+      <Text fill="WHITE" layoutX="302.0" layoutY="438.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Press anywhere to continue">
          <font>
-            <Font name="Georgia" size="24.0" />
+            <Font name="Georgia" size="14.0" />
          </font>
       </Text>
    </children>
