@@ -16,7 +16,7 @@
       </ImageView>
       <Text fill="WHITE" layoutX="202.0" layoutY="119.0" strokeType="OUTSIDE" strokeWidth="0.0" text="It’s not over… or... well, It is for you. You couldn’t stand it anymore. Everything was too much. The alone time. The pandemic. Everything. Your mental health worked against you at a pace that was too much. Bad habits took over. Choices were taken away from you. Adding up " wrappingWidth="395.22900390625">
          <font>
-            <Font name="Bodoni 72 Oldstyle Book" size="24.0" />
+            <Font name="Georgia" size="24.0" />
          </font>
       </Text>
       <Button layoutX="202.0" layoutY="392.0" mnemonicParsing="false" onMouseClicked="#startSession" text="Back to menu" />

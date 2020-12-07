@@ -27,7 +27,7 @@
       </Text>
       <Text fill="WHITE" layoutX="302.0" layoutY="438.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Press anywhere to continue">
          <font>
-            <Font name="Bodoni 72 Smallcaps Book" size="18.0" />
+            <Font name="Georgia" size="14.0" />
          </font>
       </Text>
       <Text fill="#fffdfd" layoutX="90.0" layoutY="310.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Despite the unknown one thing is for certain researchers around the world are doing everything in their power to make this go away. " textAlignment="JUSTIFY" wrappingWidth="617.22900390625">
