@@ -38,17 +38,17 @@
       <ProgressBar fx:id="mentalHealthTutorial_5" layoutX="45.0" layoutY="11.0" prefHeight="33.0" prefWidth="131.0" progress="0.5" visible="false" />
       <Text fill="#fffdfd" layoutX="90.0" layoutY="99.0" strokeType="OUTSIDE" strokeWidth="0.0" text="You have to manage your mental health. It is represented by a progress bar on the top left corner.  " textAlignment="JUSTIFY" wrappingWidth="617.22900390625">
          <font>
-            <Font name="Bodoni 72 Oldstyle Book" size="24.0" />
+            <Font name="Georgia" size="24.0" />
          </font>
       </Text>
       <Text fx:id="playerTutorial_3Text_2" fill="#fffdfd" layoutX="90.0" layoutY="179.0" strokeType="OUTSIDE" strokeWidth="0.0" text="You have different options around your apartment. Your actions will affect your mental health which you will have to get as high as possible. " textAlignment="JUSTIFY" visible="false" wrappingWidth="617.22900390625">
          <font>
-            <Font name="Bodoni 72 Oldstyle Book" size="24.0" />
+            <Font name="Georgia" size="24.0" />
          </font>
       </Text>
       <Text fill="WHITE" layoutX="302.0" layoutY="307.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Press anywhere to continue">
          <font>
-            <Font name="Bodoni 72 Smallcaps Book" size="18.0" />
+            <Font name="Georgia" size="24.0" />
          </font>
       </Text>
       <Button fx:id="showMentalHealthTutorialButton" mnemonicParsing="false" onMouseClicked="#showMentalHealthTutorial" opacity="0.0" prefHeight="600.0" prefWidth="800.0" />

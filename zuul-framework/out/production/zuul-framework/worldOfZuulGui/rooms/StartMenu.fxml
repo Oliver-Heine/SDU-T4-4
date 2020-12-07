@@ -17,7 +17,7 @@
       <Button layoutX="500.0" layoutY="287.0" mnemonicParsing="false" onMouseClicked="#startSession" text="Start tutorial" />
       <Text fill="WHITE" layoutX="147.0" layoutY="122.0" strokeType="OUTSIDE" strokeWidth="0.0" text="You have the option to either start the game directly or go through a tutorial before the game starts" textAlignment="CENTER" wrappingWidth="505.29345703125">
          <font>
-            <Font size="21.0" />
+            <Font name="Georgia" size="24.0" />
          </font></Text>
    </children>
 </AnchorPane>

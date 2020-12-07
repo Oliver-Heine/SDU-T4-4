@@ -16,12 +16,12 @@
       </ImageView>
       <Text fill="WHITE" layoutX="202.0" layoutY="91.0" strokeType="OUTSIDE" strokeWidth="0.0" text="The pandemic is over and things are turning back to normal. In the time where the pandemic raged over the world, you managed to keep up your mental health." wrappingWidth="395.22900390625">
          <font>
-            <Font name="Bodoni 72 Oldstyle Book" size="24.0" />
+            <Font name="Georgia" size="24.0" />
          </font>
       </Text>
       <Text fill="WHITE" layoutX="202.0" layoutY="234.0" strokeType="OUTSIDE" strokeWidth="0.0" text="You didn't suffer any further damage, on the contrary, you came out stronger due to your discipline and persistence." wrappingWidth="395.22900390625">
          <font>
-            <Font name="Bodoni 72 Oldstyle Book" size="24.0" />
+            <Font name="Georgia" size="24.0" />
          </font>
       </Text>
       <Button layoutX="202.0" layoutY="392.0" mnemonicParsing="false" onMouseClicked="#startSession" text="Back to menu" />

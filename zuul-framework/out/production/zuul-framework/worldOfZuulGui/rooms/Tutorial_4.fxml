@@ -16,17 +16,17 @@
       </ImageView>
       <Text fill="#fffdfd" layoutX="90.0" layoutY="99.0" strokeType="OUTSIDE" strokeWidth="0.0" text="You have the option to press the key M to get a map of your apartment. " textAlignment="JUSTIFY" wrappingWidth="617.22900390625">
          <font>
-            <Font name="Bodoni 72 Oldstyle Book" size="24.0" />
+            <Font name="Georgia" size="24.0" />
          </font>
       </Text>
       <Text fx:id="playerTutorial_3Text_2" fill="#fffdfd" layoutX="90.0" layoutY="179.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Furthermore, the game ends after seven days. You can follow the progress of time at the top of the screen. " textAlignment="JUSTIFY" wrappingWidth="617.22900390625">
          <font>
-            <Font name="Bodoni 72 Oldstyle Book" size="24.0" />
+            <Font name="Georgia" size="24.0" />
          </font>
       </Text>
       <Text fill="WHITE" layoutX="302.0" layoutY="307.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Press anywhere to continue">
          <font>
-            <Font name="Bodoni 72 Smallcaps Book" size="18.0" />
+            <Font name="Georgia" size="24.0" />
          </font>
       </Text>
       <Button mnemonicParsing="false" onMouseClicked="#startSession" opacity="0.0" prefHeight="600.0" prefWidth="800.0" />
