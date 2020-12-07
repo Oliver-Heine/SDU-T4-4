@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane prefHeight="600.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="worldOfZuulGui.presentation.MenuController">
+   <children>
+      <ImageView fitHeight="600.0" fitWidth="800.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../assets/GameLost.png" />
+         </image>
+      </ImageView>
+      <Text fill="WHITE" layoutX="202.0" layoutY="119.0" strokeType="OUTSIDE" strokeWidth="0.0" text="It’s not over… or... well, It is for you. You couldn’t stand it anymore. Everything was too much. The alone time. The pandemic. Everything. Your mental health worked against you at a pace that was too much. Bad habits took over. Choices were taken away from you. Adding up " wrappingWidth="395.22900390625">
+         <font>
+            <Font name="Georgia" size="24.0" />
+         </font>
+      </Text>
+      <Button layoutX="202.0" layoutY="392.0" mnemonicParsing="false" onMouseClicked="#startSession" text="Back to menu" />
+      <Button layoutX="522.0" layoutY="392.0" mnemonicParsing="false" onMouseClicked="#skipTutorial" prefHeight="27.0" prefWidth="75.0" text="Restart" />
+   </children>
+</AnchorPane>
