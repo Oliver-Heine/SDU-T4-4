@@ -264,9 +264,12 @@ public class Controller{
         if(depressionBar.getScore() >= 1){
             changeRoom(Room.gameWon.name(), event);
             depressionBar.setScore(0.5); //Resets the point-system after end game
+            time.resetTime();
+
         }else if(depressionBar.getScore() <= 0.001||time.isTimeOut()){
             changeRoom(Room.gameLost.name(), event);
             depressionBar.setScore(0.5);
+            time.resetTime();
         }
     }
 

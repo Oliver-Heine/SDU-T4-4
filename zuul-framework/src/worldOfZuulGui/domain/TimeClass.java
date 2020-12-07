@@ -123,6 +123,13 @@ public class TimeClass {
             score.changeScore(-0.2);
             return 0+" hours since you are not tired.";
         }
+
+    }
+
+    public void resetTime(){
+        time = 0;
+        dayNumber = 1;
+        dayName = "Monday";
     }
 
 }
