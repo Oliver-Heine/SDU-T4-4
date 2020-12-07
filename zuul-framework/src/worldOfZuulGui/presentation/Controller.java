@@ -137,7 +137,7 @@ public class Controller{
 
 
     //Bedroom items:
-    Item bed = new Item("You lay in your bed",0.05);
+    Item bed = new Item("You lay in your bed");
     Item computer = new Item("You finished a voice chat with your friends, you feel good",-0.05);
 
     //Livingroom items:
@@ -157,7 +157,11 @@ public class Controller{
     //Bedroom items
     @FXML
     void layInBed(MouseEvent event) throws IOException {
+        String timeSlept;
         simpleItemInteraction(bed,event);
+        timeSlept = time.Sleep(depressionBar);
+        updateScoreText();
+        itemTextBoxShow("You slept "+timeSlept);
     }
 
 
@@ -260,7 +264,7 @@ public class Controller{
         if(depressionBar.getScore() >= 1){
             changeRoom(Room.gameWon.name(), event);
             depressionBar.setScore(0.5); //Resets the point-system after end game
-        }else if(depressionBar.getScore() <= 0.001){
+        }else if(depressionBar.getScore() <= 0.001||time.isTimeOut()){
             changeRoom(Room.gameLost.name(), event);
             depressionBar.setScore(0.5);
         }
