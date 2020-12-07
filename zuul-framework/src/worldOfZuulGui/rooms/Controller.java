@@ -243,7 +243,7 @@ public class Controller {
 
     //Time
     Timeline timeline = new Timeline(
-            new KeyFrame( Duration.seconds(1),
+            new KeyFrame( Duration.seconds(3),
                     event -> {
                         timeLabel.setText(time.getFullTime());
                         time.addTime();
@@ -257,7 +257,7 @@ public class Controller {
         if(depressionBar.getScore() >= 1){
             changeRoom(Room.gameWon.name(), event);
             depressionBar.setScore(0.5); //Resets the point-system after end game
-        }else if(depressionBar.getScore() <= 0.001){
+        }else if(depressionBar.getScore() <= 0.001||time.isTimeOut()){
             changeRoom(Room.gameLost.name(), event);
             depressionBar.setScore(0.5);
         }

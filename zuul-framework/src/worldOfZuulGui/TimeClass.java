@@ -11,6 +11,7 @@ public class TimeClass {
     private int lastTimeSlept;
     private static String TimeString="";
     private static TimeClass single_instance = null;
+    private boolean timeOut = false;
 
     TimeClass(int time, int dayNumber, String dayName){
         this.time = time;
@@ -67,9 +68,13 @@ public class TimeClass {
         } else if (dayNum == 7) {
             return "Sunday";
         }
-        return "No more days";
+        timeOut = true;
+        return "Time Out";
     }
 
+    public boolean isTimeOut() {
+        return timeOut;
+    }
 
     public static TimeClass getInstance() {
         if (single_instance == null) {
