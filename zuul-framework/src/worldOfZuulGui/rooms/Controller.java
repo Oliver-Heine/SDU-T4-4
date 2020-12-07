@@ -248,10 +248,14 @@ public class Controller {
             )
     );
 
-
+    //Method to check if game is over. Java use floating points for doubles and will not hit 0 as it should
+    //therefore 0.001 and not 0.
     public void checkIfGameIsOver(MouseEvent event) throws IOException {
-        if(depressionBar.getScore() >= 1 || depressionBar.getScore() <= 0.001){
-            changeRoom(Room.StartScreen.name(),event);
+        if(depressionBar.getScore() >= 1){
+            changeRoom(Room.gameWon.name(), event);
+            depressionBar.setScore(0.5); //Resets the point-system after end game
+        }else if(depressionBar.getScore() <= 0.001){
+            changeRoom(Room.gameLost.name(), event);
             depressionBar.setScore(0.5);
         }
     }

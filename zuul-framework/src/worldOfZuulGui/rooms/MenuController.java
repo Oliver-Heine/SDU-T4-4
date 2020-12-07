@@ -25,6 +25,8 @@ public class MenuController extends Controller {
 
         switch (thisStage.getTitle()) {
             case "StartMenu":
+            case "gameWon": //Even though the method name is not appropriate it safes us from redoing the same code
+            case "gameLost":
                 changeRoom(Room.Bedroom.name(), event);
                 break;
         }
@@ -37,6 +39,8 @@ public class MenuController extends Controller {
 
         switch (thisStage.getTitle()) {
             case "StartScreen":
+            case "gameWon": //Even though the method name is not appropriate it safes us from redoing the same code
+            case "gameLost":
                 changeRoom(Room.StartMenu.name(), event);
                 break;
             case "StartMenu":
