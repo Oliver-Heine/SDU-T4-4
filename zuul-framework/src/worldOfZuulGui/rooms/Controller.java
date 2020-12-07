@@ -8,6 +8,7 @@ import javafx.fxml.FXMLLoader;
 import javafx.scene.Node;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
+import javafx.scene.control.Button;
 import javafx.scene.control.ProgressBar;
 import javafx.scene.control.TextArea;
 import javafx.scene.control.Label;
@@ -16,6 +17,7 @@ import javafx.scene.input.KeyCode;
 import javafx.scene.input.KeyEvent;
 import javafx.scene.input.MouseEvent;
 import javafx.scene.layout.AnchorPane;
+import javafx.scene.text.Text;
 import javafx.stage.Stage;
 import javafx.util.Duration;
 import worldOfZuulGui.Item;
@@ -94,8 +96,10 @@ public class Controller {
                 changeRoom(Room.Kitchen.name(), event);
                 break;
             case "Kitchen":
+            case "Fridge":
                 changeRoom(Room.Entry.name(), event);
                 break;
+
         }
     }
 
@@ -116,9 +120,11 @@ public class Controller {
             case "Kitchen":
                 changeRoom(Room.LivingRoom.name(), event);
                 break;
+            case "Fridge":
             case "Entry":
                 changeRoom(Room.Kitchen.name(), event);
                 break;
+
         }
     }
 
@@ -128,6 +134,38 @@ public class Controller {
     void goToComputerRoom(MouseEvent event) throws IOException {
         changeRoom(Room.Computer.name(), event);
     }
+
+    //Fridge interactions
+
+    @FXML
+    private Button scoreCheck;
+
+    @FXML
+    private Button interactFriesNeutral;
+
+    @FXML
+    private Button interactFriesNegative;
+
+    @FXML
+    private Button interactFriesPositive;
+
+    @FXML
+    private Text hungry;
+
+    @FXML
+    void goToFrigheRoom(MouseEvent event) throws IOException{
+        changeRoom(Room.Fridge.name(),event);
+    }
+
+    @FXML
+    void checkScore(MouseEvent event) throws IOException{
+        scoreCheck.setDisable(true);
+        scoreCheck.setVisible(false);
+        hungry.setVisible(false);
+    }
+
+
+
 
 
     //Bedroom items:

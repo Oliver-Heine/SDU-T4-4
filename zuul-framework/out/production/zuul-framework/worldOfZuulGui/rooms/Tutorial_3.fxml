@@ -46,7 +46,7 @@
             <Font name="Bodoni 72 Oldstyle Book" size="24.0" />
          </font>
       </Text>
-      <Text fill="WHITE" layoutX="302.0" layoutY="307.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Press anywhere to continue">
+      <Text fill="WHITE" layoutX="302.0" layoutY="307.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Press anywhere to continue" textAlignment="CENTER">
          <font>
             <Font name="Bodoni 72 Smallcaps Book" size="18.0" />
          </font>
