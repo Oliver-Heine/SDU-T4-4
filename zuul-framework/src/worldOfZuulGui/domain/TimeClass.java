@@ -113,7 +113,7 @@ public class TimeClass {
             dayNumber++;
             return 10+TimePenalty+" hours and feel refreshed";
         }
-        else if(time>=1 && time<=6){
+        else if(time>=0 && time<=6){
             time+=12+TimePenalty; //sleep 10 hours plus penalty
             lastTimeSlept = time;
             score.changeScore(-0.1);

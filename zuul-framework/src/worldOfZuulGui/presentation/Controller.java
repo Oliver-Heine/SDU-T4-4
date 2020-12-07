@@ -150,7 +150,7 @@ public class Controller{
     Item bath = new Item("You take a nice long bath", 0.05);
 
     //Entrance items:
-    Item door = new Item("You look at the door, and wonder what is outside",0.05);
+    Item door = new Item("You look at the door, and wonder what is outside",-0.05);
 
 
 
