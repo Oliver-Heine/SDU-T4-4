@@ -7,17 +7,15 @@ import java.util.concurrent.Delayed;
 import java.util.concurrent.TimeUnit;
 
 public class Item {
-    private int time;
     private double scoreChange;
     private String interactionMessage;
     private boolean canBeInteractedWith;
 
     StatusScore depressionBar = StatusScore.getInstance();
 
-    public Item(int time, int scoreChange, String interactionMessage) {
-        this.time = time;
-        this.scoreChange = scoreChange;
+    public Item(String interactionMessage) {
         canBeInteractedWith = true;
+        this.interactionMessage = interactionMessage;
     }
 
     public Item(String interactionMessage, double scoreChange){

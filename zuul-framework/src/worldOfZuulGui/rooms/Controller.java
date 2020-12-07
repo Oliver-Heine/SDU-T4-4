@@ -131,7 +131,7 @@ public class Controller {
 
 
     //Bedroom items:
-    Item bed = new Item("You lay in your bed",0.05);
+    Item bed = new Item("You lay in your bed");
     Item computer = new Item("You finished a voice chat with your friends, you feel good",-0.05);
 
     //Livingroom items:
@@ -151,7 +151,11 @@ public class Controller {
     //Bedroom items
     @FXML
     void layInBed(MouseEvent event) throws IOException {
+        String timeSlept;
         simpleItemInteraction(bed,event);
+        timeSlept = time.Sleep(depressionBar);
+        updateScoreText();
+        itemTextBoxShow("You slept "+timeSlept);
     }
 
 
@@ -239,7 +243,7 @@ public class Controller {
 
     //Time
     Timeline timeline = new Timeline(
-            new KeyFrame( Duration.seconds(3),
+            new KeyFrame( Duration.seconds(1),
                     event -> {
                         timeLabel.setText(time.getFullTime());
                         time.addTime();
