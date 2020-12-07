@@ -12,6 +12,10 @@ public class StatusScore {
         return score;
     }
 
+    /**
+     * This method increases the score by the amount given
+     * @param change the amount the score is increased by
+     */
     public void changeScore(double change){
         score += change;
     }
@@ -20,6 +24,10 @@ public class StatusScore {
         this.score = score;
     }
 
+    /**
+     * Method for getting instance of StatusScore Singleton
+     * @return Instance of statusScore
+     */
     public static StatusScore getInstance() {
             if (single_instance == null) {
                 single_instance = new StatusScore();

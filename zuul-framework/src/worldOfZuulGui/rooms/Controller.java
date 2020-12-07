@@ -18,10 +18,16 @@ import javafx.scene.media.MediaPlayer;
 import javafx.stage.Stage;
 import javafx.util.Duration;
 import worldOfZuulGui.Room;
+import worldOfZuulGui.Start;
 import worldOfZuulGui.StatusScore;
 import worldOfZuulGui.TimeClass;
 import javafx.scene.media.MediaView;
+
+import java.io.File;
 import java.io.IOException;
+import java.net.MalformedURLException;
+import java.net.URI;
+import java.net.URISyntaxException;
 import java.net.URL;
 import java.util.ResourceBundle;
 
@@ -45,6 +51,7 @@ public class Controller implements Initializable {
     @FXML
     private MediaPlayer mediaPlayer;
     private Media media;
+    URL MusicLocation;
 
 
     //Change room methods
@@ -187,9 +194,7 @@ public class Controller implements Initializable {
     @Override
     public void initialize(URL url, ResourceBundle resourceBundle) {
 
-        media = new Media (Controller.class.getResource("/TestMusik.wav").toString());
-        mediaPlayer = new MediaPlayer(media);
-        mediaPlayer.play();
+
     }
 }
 
