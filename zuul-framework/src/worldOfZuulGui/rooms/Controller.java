@@ -5,6 +5,7 @@ import javafx.animation.KeyFrame;
 import javafx.animation.Timeline;
 import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
+import javafx.fxml.Initializable;
 import javafx.scene.Node;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
@@ -15,20 +16,30 @@ import javafx.scene.image.ImageView;
 import javafx.scene.input.KeyCode;
 import javafx.scene.input.KeyEvent;
 import javafx.scene.input.MouseEvent;
+import javafx.scene.media.Media;
+import javafx.scene.media.MediaPlayer;
 import javafx.scene.layout.AnchorPane;
 import javafx.stage.Stage;
 import javafx.util.Duration;
 import worldOfZuulGui.Item;
 import worldOfZuulGui.Room;
+import worldOfZuulGui.Start;
 import worldOfZuulGui.StatusScore;
 import worldOfZuulGui.TimeClass;
+import javafx.scene.media.MediaView;
 
+import java.io.File;
 import java.awt.event.ActionEvent;
 import java.io.IOException;
+import java.net.MalformedURLException;
+import java.net.URI;
+import java.net.URISyntaxException;
+import java.net.URL;
+import java.util.ResourceBundle;
 import java.sql.SQLOutput;
 
 
-public class Controller {
+public class Controller implements Initializable {
 
     //Singleton
     StatusScore depressionBar = StatusScore.getInstance();
@@ -41,6 +52,10 @@ public class Controller {
 
     @FXML
     private Label timeLabel;
+    @FXML
+    private MediaPlayer mediaPlayer;
+    private Media media;
+    URL MusicLocation;
 
 
     //Map
@@ -247,6 +262,12 @@ public class Controller {
             )
     );
 
+    @Override
+    public void initialize(URL url, ResourceBundle resourceBundle) {
+
+
+    }
+
     //Method to check if game is over. Java use floating points for doubles and will not hit 0 as it should
     //therefore 0.001 and not 0.
     public void checkIfGameIsOver(MouseEvent event) throws IOException {
@@ -269,3 +290,4 @@ public class Controller {
         }
     }
 }
+
