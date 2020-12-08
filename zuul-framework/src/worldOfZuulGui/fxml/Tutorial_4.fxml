@@ -14,21 +14,36 @@
             <Image url="@../assets/MenuSession/Tutorial-background.png" />
          </image>
       </ImageView>
-      <Text fill="#fffdfd" layoutX="90.0" layoutY="99.0" strokeType="OUTSIDE" strokeWidth="0.0" text="You have the option to press the key M to get a map of your apartment. " textAlignment="JUSTIFY" wrappingWidth="617.22900390625">
-         <font>
-            <Font name="Georgia" size="24.0" />
-         </font>
-      </Text>
-      <Text fx:id="playerTutorial_3Text_2" fill="#fffdfd" layoutX="90.0" layoutY="179.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Furthermore, the game ends after seven days. You can follow the progress of time at the top of the screen. " textAlignment="JUSTIFY" wrappingWidth="617.22900390625">
-         <font>
-            <Font name="Georgia" size="24.0" />
-         </font>
-      </Text>
       <Text fill="WHITE" layoutX="302.0" layoutY="438.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Click anywhere to continue">
          <font>
             <Font name="Georgia" size="14.0" />
          </font>
       </Text>
-      <Button mnemonicParsing="false" onMouseClicked="#startSession" opacity="0.0" prefHeight="600.0" prefWidth="800.0" />
+      <Text fx:id="playerTutorial_3Text_2" fill="#fffdfd" layoutX="91.0" layoutY="30.0" strokeType="OUTSIDE" strokeWidth="0.0" text="You have different options around your apartment marked with a withe border around. Your actions will affect your mental health which you will have to get as high as possible. " textAlignment="JUSTIFY" wrappingWidth="617.22900390625">
+         <font>
+            <Font name="Georgia" size="24.0" />
+         </font>
+      </Text>
+      <ImageView fx:id="mentalHealthTutorial_41" fitHeight="306.0" fitWidth="472.0" layoutX="182.0" layoutY="117.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../assets/MenuSession/InteractionTutorial.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="mentalHealthTutorial_4" fitHeight="157.0" fitWidth="195.0" layoutX="52.0" layoutY="213.0" pickOnBounds="true" preserveRatio="true" rotate="90.0">
+         <image>
+            <Image url="@../assets/MenuSession/Tutorial-Arrow.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="mentalHealthTutorial_42" fitHeight="157.0" fitWidth="195.0" layoutX="224.0" layoutY="228.0" pickOnBounds="true" preserveRatio="true" rotate="179.1">
+         <image>
+            <Image url="@../assets/MenuSession/Tutorial-Arrow.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="mentalHealthTutorial_421" fitHeight="157.0" fitWidth="195.0" layoutX="537.0" layoutY="181.0" pickOnBounds="true" preserveRatio="true" rotate="-90.0">
+         <image>
+            <Image url="@../assets/MenuSession/Tutorial-Arrow.png" />
+         </image>
+      </ImageView>
+      <Button fx:id="nextTutorialFXML" mnemonicParsing="false" onMouseClicked="#startSession" opacity="0.0" prefHeight="600.0" prefWidth="800.0" />
    </children>
 </AnchorPane>

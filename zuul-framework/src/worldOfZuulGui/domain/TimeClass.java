@@ -77,7 +77,7 @@ public class TimeClass {
 
     public static TimeClass getInstance() {
         if (single_instance == null) {
-            single_instance = new TimeClass(0,1,"Monday");
+            single_instance = new TimeClass(7,1,"Monday");
         }
         return single_instance;
     }

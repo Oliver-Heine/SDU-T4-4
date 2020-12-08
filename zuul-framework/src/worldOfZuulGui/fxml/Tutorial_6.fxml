@@ -14,12 +14,12 @@
             <Image url="@../assets/MenuSession/Tutorial-background.png" />
          </image>
       </ImageView>
-      <Text fill="#fffdfd" layoutX="91.0" layoutY="82.0" strokeType="OUTSIDE" strokeWidth="0.0" text="The year is 2020. The world is on lockdown. Something we haven’t before. " textAlignment="JUSTIFY" wrappingWidth="617.22900390625">
+      <Text fill="#fffdfd" layoutX="90.0" layoutY="99.0" strokeType="OUTSIDE" strokeWidth="0.0" text="You have the option to press the key M to get a map of your apartment. " textAlignment="JUSTIFY" wrappingWidth="617.22900390625">
          <font>
             <Font name="Georgia" size="24.0" />
          </font>
       </Text>
-      <Text fill="#fffdfd" layoutX="91.0" layoutY="156.0" strokeType="OUTSIDE" strokeWidth="0.0" text="A new and unknown virus has arisen. It is still unknown what caused the virus to appear but in its short time, it has changed the way that mankind acts daily. It has changed the world-state from normal… to a global pandemic. " textAlignment="JUSTIFY" wrappingWidth="617.22900390625">
+      <Text fx:id="playerTutorial_3Text_2" fill="#fffdfd" layoutX="90.0" layoutY="179.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Furthermore, the game ends after seven days. You can follow the progress of time at the top of the screen. " textAlignment="JUSTIFY" wrappingWidth="617.22900390625">
          <font>
             <Font name="Georgia" size="24.0" />
          </font>
@@ -27,11 +27,6 @@
       <Text fill="WHITE" layoutX="302.0" layoutY="438.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Click anywhere to continue">
          <font>
             <Font name="Georgia" size="14.0" />
-         </font>
-      </Text>
-      <Text fill="#fffdfd" layoutX="90.0" layoutY="310.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Despite the unknown one thing is for certain researchers around the world are doing everything in their power to make this go away. " textAlignment="JUSTIFY" wrappingWidth="617.22900390625">
-         <font>
-            <Font name="Georgia" size="24.0" />
          </font>
       </Text>
       <Button mnemonicParsing="false" onMouseClicked="#startSession" opacity="0.0" prefHeight="600.0" prefWidth="800.0" />

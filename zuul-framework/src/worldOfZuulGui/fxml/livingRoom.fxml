@@ -52,7 +52,7 @@
          <children>
             <TextArea fx:id="itemInformation" editable="false" prefHeight="200.0" prefWidth="200.0" text="Test" wrapText="true">
             <font>
-               <Font name="Georgia" size="13.0"/>
+               <Font name="Georgia" size="13.0" />
             </font></TextArea>
             <Button layoutX="7.0" layoutY="206.0" mnemonicParsing="false" onMouseClicked="#hideTextBox" prefHeight="25.0" prefWidth="183.0" text="OK">
             <font>
