@@ -12,7 +12,9 @@ public enum Room {
     Tutorial("Tutorial.fxml"),
     Tutorial_2("Tutorial_2.fxml"),
     Tutorial_3("Tutorial_3.fxml"),
-    Tutorial_4("Tutorial_4.fxml"),
+    Tutorial_4("Tutorial_3.fxml"),
+    Tutorial_5("Tutorial_5.fxml"),
+    Tutorial_6("Tutorial_6.fxml"),
     gameLost("gameLost.fxml"),
     gameWon("gameWon.fxml"),
     Fridge("fridge.fxml");
