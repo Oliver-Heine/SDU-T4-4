@@ -52,7 +52,7 @@
             <Button layoutX="7.0" layoutY="206.0" mnemonicParsing="false" onMouseClicked="#hideTextBoxFridge" prefHeight="25.0" prefWidth="183.0" text="OK" />
          </children>
       </AnchorPane>
-      <AnchorPane fx:id="fridgeEnterPromptBox" prefHeight="600.0" prefWidth="800.0" visible="false">
+      <AnchorPane fx:id="fridgeEnterPromptBox" prefHeight="600.0" prefWidth="800.0">
          <children>
             <Text fx:id="hungry" layoutX="222.0" layoutY="355.0" strokeType="OUTSIDE" strokeWidth="0.0" text="You are hungry, eat somthing stupid" textAlignment="CENTER" wrappingWidth="355.13671875">
                <font>
