@@ -35,25 +35,59 @@
             <Image url="@../assets/MenuSession/Tutorial-Arrow.png" />
          </image>
       </ImageView>
+      <ImageView fx:id="timeTutorial" fitHeight="157.0" fitWidth="195.0" layoutX="275.0" layoutY="15.0" pickOnBounds="true" preserveRatio="true" visible="false">
+         <image>
+            <Image url="@../assets/MenuSession/Tutorial-Arrow.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="moveBetweenRoomsTutorial_4" fitHeight="157.0" fitWidth="195.0" layoutX="603.0" layoutY="15.0" pickOnBounds="true" preserveRatio="true" visible="false">
+         <image>
+            <Image url="@../assets/MenuSession/Tutorial-Arrow.png" />
+         </image>
+      </ImageView>
+      <Button fx:id="moveBetweenRoomsTutorial" layoutX="672.0" layoutY="12.0" mnemonicParsing="false" prefHeight="27.0" prefWidth="123.0" text="Kitchen" visible="false">
+         <font>
+            <Font name="Georgia" size="13.0" />
+         </font>
+      </Button>
+      <Button fx:id="moveBetweenRoomsTutorial_2" layoutX="538.0" layoutY="12.0" mnemonicParsing="false" prefHeight="27.0" prefWidth="123.0" text="Bedroom" visible="false">
+         <font>
+            <Font name="Georgia" size="13.0" />
+         </font>
+      </Button>
       <ProgressBar fx:id="mentalHealthTutorial_5" layoutX="45.0" layoutY="11.0" prefHeight="33.0" prefWidth="131.0" progress="0.5" visible="false" />
-      <Text fill="#fffdfd" layoutX="90.0" layoutY="99.0" strokeType="OUTSIDE" strokeWidth="0.0" text="You have to manage your mental health. It is represented by a progress bar on the top left corner.  " textAlignment="JUSTIFY" wrappingWidth="617.22900390625">
+      <Text fill="#fffdfd" layoutX="90.0" layoutY="85.0" strokeType="OUTSIDE" strokeWidth="0.0" text="You have to manage your mental health. It is represented by a progress bar on the top left corner.  " textAlignment="JUSTIFY" wrappingWidth="617.22900390625">
          <font>
             <Font name="Georgia" size="24.0" />
          </font>
       </Text>
-      <Text fx:id="playerTutorial_3Text_2" fill="#fffdfd" layoutX="90.0" layoutY="179.0" strokeType="OUTSIDE" strokeWidth="0.0" text="You have different options around your apartment. Your actions will affect your mental health which you will have to get as high as possible. " textAlignment="JUSTIFY" visible="false" wrappingWidth="617.22900390625">
+      <Text fx:id="playerTutorial_3Text_2" fill="#fffdfd" layoutX="90.0" layoutY="154.0" strokeType="OUTSIDE" strokeWidth="0.0" text="You have different options around your apartment. Your actions will affect your mental health which you will have to get as high as possible. " textAlignment="JUSTIFY" visible="false" wrappingWidth="617.22900390625">
          <font>
             <Font name="Georgia" size="24.0" />
          </font>
       </Text>
-
-      <Text fill="WHITE" layoutX="302.0" layoutY="307.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Press anywhere to continue" textAlignment="CENTER">
+      <Text fx:id="moveBetweenRoomsTutorial_3" fill="#fffdfd" layoutX="93.0" layoutY="250.0" strokeType="OUTSIDE" strokeWidth="0.0" text="You can change the room by pressing one of the buttons on the top right corner. The text represents the direction you will go" textAlignment="JUSTIFY" visible="false" wrappingWidth="617.22900390625">
+         <font>
+            <Font name="Georgia" size="24.0" />
+         </font>
+      </Text>
+      <Text fx:id="timeTutorial_1" disable="true" fill="#fffdfd" layoutX="90.0" layoutY="344.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Lastly, you have to consider the time. It will change by itself. Your interactions with items will affect the time of the day differently." textAlignment="JUSTIFY" visible="false" wrappingWidth="617.22900390625">
+         <font>
+            <Font name="Georgia" size="24.0" />
+         </font>
+      </Text>
+      <Text fill="WHITE" layoutX="302.0" layoutY="438.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Click anywhere to continue">
          <font>
             <Font name="Georgia" size="14.0" />
          </font>
       </Text>
       <Button fx:id="showMentalHealthTutorialButton" mnemonicParsing="false" onMouseClicked="#showMentalHealthTutorial" opacity="0.0" prefHeight="600.0" prefWidth="800.0" />
       <Button fx:id="hideMentalHealthTutorialButton" disable="true" mnemonicParsing="false" onMouseClicked="#hideMentalHealthTutorial" opacity="0.0" prefHeight="600.0" prefWidth="800.0" />
-      <Button fx:id="nextTutorialFXML" disable="true" mnemonicParsing="false" onMouseClicked="#startSession" opacity="0.0" prefHeight="600.0" prefWidth="800.0" />
+      <Button fx:id="nextTutorialButton" disable="true" mnemonicParsing="false" onMouseClicked="#getNextTutorialSession" opacity="0.0" prefHeight="600.0" prefWidth="800.0" />
+      <Button fx:id="showMoveBetweenRoomsTutorial" disable="true" mnemonicParsing="false" onMouseClicked="#showMoveBetweenRoomsTutorial" opacity="0.0" prefHeight="600.0" prefWidth="800.0" />
+      <Button fx:id="hideMoveBetweenRoomsTutorial" disable="true" mnemonicParsing="false" onMouseClicked="#hideMoveBetweenRoomsTutorial" opacity="0.0" prefHeight="600.0" prefWidth="800.0" />
+      <Button fx:id="showTimeTutorial" disable="true" mnemonicParsing="false" opacity="0.0" prefHeight="600.0" prefWidth="800.0" />
+      <Button fx:id="hideTimeTutorial" disable="true" mnemonicParsing="false" opacity="0.0" prefHeight="600.0" prefWidth="800.0" />
+      <Button fx:id="nextTutorialFXML" disable="true" mnemonicParsing="false" opacity="0.0" prefHeight="600.0" prefWidth="800.0" />
    </children>
 </AnchorPane>

@@ -31,7 +31,28 @@ public class MenuController extends Controller {
     private ImageView mentalHealthTutorial_4;
 
     @FXML
+    private ImageView moveBetweenRoomsTutorial_4;
+
+    @FXML
+    private ImageView timeTutorial;
+
+    @FXML
     private ProgressBar mentalHealthTutorial_5;
+
+    @FXML
+    private Text timeTutorial_1;
+
+    @FXML
+    private Text playerTutorial_3Text_2;
+
+    @FXML
+    private Text moveBetweenRoomsTutorial_3;
+
+    @FXML
+    private Button moveBetweenRoomsTutorial;
+
+    @FXML
+    private Button moveBetweenRoomsTutorial_2;
 
     @FXML
     private Button showMentalHealthTutorialButton;
@@ -40,10 +61,22 @@ public class MenuController extends Controller {
     private Button hideMentalHealthTutorialButton;
 
     @FXML
-    private Button nextTutorialFXML;
+    private Button nextTutorialButton;
 
     @FXML
-    private Text playerTutorial_3Text_2;
+    private Button showMoveBetweenRoomsTutorial;
+
+    @FXML
+    private Button hideMoveBetweenRoomsTutorial;
+
+    @FXML
+    private Button showTimeTutorial;
+
+    @FXML
+    private Button hideTimeTutorial;
+
+    @FXML
+    private Button nextTutorialFXML;
 
     //Makes the mentalHealthTutorial visible, the showButton unavailable and the next available
     @FXML
@@ -67,7 +100,32 @@ public class MenuController extends Controller {
         mentalHealthTutorial_4.setVisible(false);
         mentalHealthTutorial_5.setVisible(false);
         playerTutorial_3Text_2.setVisible(true);
-        nextTutorialFXML.setDisable(false);
+        nextTutorialButton.setDisable(false);
+
+    }
+
+    @FXML
+    void getNextTutorialSession(MouseEvent event){
+        showMentalHealthTutorialButton.setDisable(false);
+    }
+
+    @FXML
+    void showMoveBetweenRoomsTutorial(MouseEvent event){
+        mentalHealthTutorial.setVisible(true);
+        moveBetweenRoomsTutorial.setVisible(true);
+        moveBetweenRoomsTutorial_2.setVisible(true);
+        moveBetweenRoomsTutorial_3.setVisible(true);
+        moveBetweenRoomsTutorial_4.setVisible(true);
+        showMentalHealthTutorialButton.setDisable(true);
+        hideMentalHealthTutorialButton.setDisable(false);
+    }
+
+    @FXML
+    void hideMoveBetweenRoomsTutorial(MouseEvent event){
+        moveBetweenRoomsTutorial.setVisible(false);
+        moveBetweenRoomsTutorial_2.setVisible(false);
+        moveBetweenRoomsTutorial_3.setVisible(false);
+        moveBetweenRoomsTutorial_4.setVisible(false);
     }
 
     @FXML
