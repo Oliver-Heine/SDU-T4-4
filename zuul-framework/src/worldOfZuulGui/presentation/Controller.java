@@ -137,12 +137,12 @@ public class Controller{
 
 
     //Bedroom items:
-    Item bed = new Item("You lay in your bed");
+    Item bed = new Item();
     Item computer = new Item("You finished a voice chat with your friends, you feel good",-0.05);
 
     //Livingroom items:
     Item tv = new Item("You watch some tv",-0.05);
-    Item book = new Item("You read you for a while",0.05);
+    Item book = new Item("You read in a book for some time",0.05);
     Item window = new Item("You stare out the window, sad that you can't go outside",-0.05);
 
     //Bathroom items:
@@ -157,11 +157,13 @@ public class Controller{
     //Bedroom items
     @FXML
     void layInBed(MouseEvent event) throws IOException {
-        String timeSlept;
-        simpleItemInteraction(bed,event);
-        timeSlept = time.Sleep(depressionBar);
-        updateScoreText();
-        itemTextBoxShow("You slept "+timeSlept);
+        if(bed.getCanBeInteractedWith()){
+            String timeSlept;
+            simpleItemInteraction(bed,event);
+            timeSlept = time.Sleep(depressionBar);
+            updateScoreText();
+            itemTextBoxShow("You slept "+timeSlept);
+        }
     }
 
 
