@@ -19,7 +19,13 @@
             <Font name="Georgia" size="24.0" />
          </font>
       </Text>
-      <Button layoutX="202.0" layoutY="392.0" mnemonicParsing="false" onMouseClicked="#startSession" text="Back to menu" />
-      <Button layoutX="522.0" layoutY="392.0" mnemonicParsing="false" onMouseClicked="#skipTutorial" prefHeight="27.0" prefWidth="75.0" text="Restart" />
+      <Button layoutX="202.0" layoutY="392.0" mnemonicParsing="false" onMouseClicked="#startSession" text="Back to menu">
+      <font>
+         <Font name="Georgia" size="13.0" />
+      </font></Button>
+      <Button layoutX="522.0" layoutY="392.0" mnemonicParsing="false" onMouseClicked="#skipTutorial" prefHeight="27.0" prefWidth="75.0" text="Restart">
+      <font>
+         <Font name="Georgia" size="13.0" />
+      </font></Button>
    </children>
 </AnchorPane>

@@ -25,7 +25,7 @@
             <Font name="Georgia" size="24.0" />
          </font>
       </Text>
-      <Text fill="WHITE" layoutX="302.0" layoutY="438.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Press anywhere to continue">
+      <Text fill="WHITE" layoutX="302.0" layoutY="438.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Click anywhere to continue">
          <font>
             <Font name="Georgia" size="14.0" />
          </font>

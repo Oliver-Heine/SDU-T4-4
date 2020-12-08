@@ -32,18 +32,30 @@
          </image>
       </ImageView>
       <ProgressBar fx:id="progressBar" layoutX="45.0" layoutY="11.0" prefHeight="33.0" prefWidth="131.0" progress="0.5" />
-      <Button layoutX="670.0" layoutY="14.0" mnemonicParsing="false" onMouseClicked="#goNextRoom" prefHeight="27.0" prefWidth="123.0" text="Entry" />
-      <Button layoutX="531.0" layoutY="14.0" mnemonicParsing="false" onMouseClicked="#goPrevRoom" prefHeight="27.0" prefWidth="123.0" text="Living Room" />
-      <Button layoutX="180.0" layoutY="317.0" mnemonicParsing="false" opacity="0.0" prefHeight="186.0" prefWidth="94.0" text="Fridge" />
+      <Button layoutX="670.0" layoutY="14.0" mnemonicParsing="false" onMouseClicked="#goNextRoom" prefHeight="27.0" prefWidth="123.0" text="Entry">
+      <font>
+         <Font name="Georgia" size="13.0" />
+      </font></Button>
+      <Button layoutX="531.0" layoutY="14.0" mnemonicParsing="false" onMouseClicked="#goPrevRoom" prefHeight="27.0" prefWidth="123.0" text="Living Room">
+      <font>
+         <Font name="Georgia" size="13.0" />
+      </font></Button>
+      <Button layoutX="180.0" layoutY="317.0" mnemonicParsing="false" opacity="0.0" prefHeight="186.0" prefWidth="94.0" text="Fridge"/>
       <Label fx:id="timeLabel" layoutX="246.0" layoutY="11.0" prefHeight="33.0" prefWidth="258.0" text="Label">
          <font>
-            <Font size="18.0" />
+            <Font name="Georgia" size="13.0" />
          </font>
       </Label>
       <AnchorPane fx:id="textBox" layoutX="313.0" layoutY="211.0" prefHeight="235.0" prefWidth="200.0" visible="false">
          <children>
-            <TextArea fx:id="itemInformation" editable="false" prefHeight="200.0" prefWidth="200.0" text="Test" wrapText="true" />
-            <Button layoutX="7.0" layoutY="206.0" mnemonicParsing="false" onMouseClicked="#hideTextBox" prefHeight="25.0" prefWidth="183.0" text="OK" />
+            <TextArea fx:id="itemInformation" editable="false" prefHeight="200.0" prefWidth="200.0" text="Test" wrapText="true">
+            <font>
+               <Font name="Georgia" size="13.0" />
+            </font></TextArea>
+            <Button layoutX="7.0" layoutY="206.0" mnemonicParsing="false" onMouseClicked="#hideTextBox" prefHeight="25.0" prefWidth="183.0" text="OK">
+            <font>
+               <Font name="Georgia" size="13.0" />
+            </font></Button>
          </children>
       </AnchorPane>   </children>
 </AnchorPane>

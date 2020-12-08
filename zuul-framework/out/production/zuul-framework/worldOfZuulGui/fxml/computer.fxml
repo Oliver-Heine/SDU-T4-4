@@ -27,12 +27,22 @@
          </image>
       </ImageView>
       <ProgressBar fx:id="progressBar" layoutX="45.0" layoutY="11.0" prefHeight="33.0" prefWidth="131.0" progress="0.5" />
-      <Button layoutX="709.0" layoutY="219.0" mnemonicParsing="false" onMouseClicked="#goPrevRoom" prefHeight="141.0" prefWidth="84.0" text="Back" />
-      <Button layoutX="42.0" layoutY="118.0" mnemonicParsing="false" onMouseClicked="#showComputerInfo" prefHeight="132.0" prefWidth="52.0" text="INFO" />
+      <Button layoutX="709.0" layoutY="219.0" mnemonicParsing="false" onMouseClicked="#goPrevRoom" prefHeight="141.0" prefWidth="84.0" text="Back">
+      <font>
+         <Font name="Georgia" size="13.0" />
+      </font></Button>
+      <Button layoutX="42.0" layoutY="118.0" mnemonicParsing="false" onMouseClicked="#showComputerInfo" prefHeight="132.0" prefWidth="52.0" text="INFO">
+      <font>
+         <Font name="Georgia" size="13.0" />
+      </font></Button>
       <Label fx:id="timeLabel" layoutX="246.0" layoutY="11.0" prefHeight="33.0" prefWidth="258.0" text="Label">
          <font>
-            <Font size="18.0" />
+            <Font name="Georgia" size="13.0" />
          </font>
       </Label>
-      <TextArea fx:id="textAreaComputer" layoutX="180.0" layoutY="148.0" prefHeight="250.0" prefWidth="490.0" promptText="ere" text="Test" visible="false" />   </children>
+      <TextArea fx:id="textAreaComputer" layoutX="180.0" layoutY="148.0" prefHeight="250.0" prefWidth="490.0" promptText="ere" text="Test" visible="false">
+      <font>
+         <Font name="Georgia" size="13.0" />
+      </font></TextArea>
+   </children>
 </AnchorPane>

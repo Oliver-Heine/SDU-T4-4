@@ -34,17 +34,29 @@
       <ProgressBar fx:id="progressBar" layoutX="45.0" layoutY="11.0" prefHeight="33.0" prefWidth="131.0" progress="0.5" />
         <Button layoutX="529.0" layoutY="306.0" mnemonicParsing="false" onMouseClicked="#goToComputerRoom" opacity="0.0" prefHeight="93.0" prefWidth="100.0" text="Computer" />
       <Button layoutX="42.0" layoutY="282.0" mnemonicParsing="false" onMouseClicked="#layInBed" opacity="0.0" prefHeight="222.0" prefWidth="336.0" rotate="20.6" text="Bed" />
-      <Button layoutX="670.0" layoutY="14.0" mnemonicParsing="false" onMouseClicked="#goNextRoom" prefHeight="27.0" prefWidth="123.0" text="Living Room" />
-      <Button layoutX="531.0" layoutY="14.0" mnemonicParsing="false" onMouseClicked="#goPrevRoom" prefHeight="27.0" prefWidth="123.0" text="Bathroom" />
+      <Button layoutX="670.0" layoutY="14.0" mnemonicParsing="false" onMouseClicked="#goNextRoom" prefHeight="27.0" prefWidth="123.0" text="Living Room">
+        <font>
+            <Font name="Georgia" size="13.0" />
+        </font></Button>
+      <Button layoutX="531.0" layoutY="14.0" mnemonicParsing="false" onMouseClicked="#goPrevRoom" prefHeight="27.0" prefWidth="123.0" text="Bathroom">
+        <font>
+            <Font name="Georgia" size="13.0" />
+        </font></Button>
       <Label fx:id="timeLabel" layoutX="246.0" layoutY="11.0" prefHeight="33.0" prefWidth="258.0" text="Label">
-         <font>
-            <Font size="18.0" />
-         </font>
+          <font>
+              <Font name="Georgia" size="13.0" />
+          </font>
       </Label>
       <AnchorPane fx:id="textBox" layoutX="303.0" layoutY="201.0" prefHeight="235.0" prefWidth="200.0" visible="false">
          <children>
-            <TextArea fx:id="itemInformation" editable="false" prefHeight="200.0" prefWidth="200.0" text="Test" wrapText="true" />
-            <Button layoutX="7.0" layoutY="206.0" mnemonicParsing="false" onMouseClicked="#hideTextBox" prefHeight="25.0" prefWidth="183.0" text="OK" />
+            <TextArea fx:id="itemInformation" editable="false" prefHeight="200.0" prefWidth="200.0" text="Test" wrapText="true">
+             <font>
+                 <Font name="Georgia" size="13.0" />
+             </font></TextArea>
+            <Button layoutX="7.0" layoutY="206.0" mnemonicParsing="false" onMouseClicked="#hideTextBox" prefHeight="25.0" prefWidth="183.0" text="OK">
+             <font>
+                 <Font name="Georgia" size="13.0" />
+             </font></Button>
          </children>
       </AnchorPane>
     </children>
