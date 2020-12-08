@@ -8,6 +8,7 @@ import javafx.fxml.FXMLLoader;
 import javafx.scene.Node;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
+import javafx.scene.control.Button;
 import javafx.scene.control.ProgressBar;
 import javafx.scene.control.TextArea;
 import javafx.scene.control.Label;
@@ -18,6 +19,7 @@ import javafx.scene.input.MouseEvent;
 import javafx.scene.media.Media;
 import javafx.scene.media.MediaPlayer;
 import javafx.scene.layout.AnchorPane;
+import javafx.scene.text.Text;
 import javafx.stage.Stage;
 import javafx.util.Duration;
 import worldOfZuulGui.domain.Item;
@@ -100,8 +102,10 @@ public class Controller{
                 changeRoom(Room.Kitchen.name(), event);
                 break;
             case "Kitchen":
+            case "Fridge":
                 changeRoom(Room.Entry.name(), event);
                 break;
+
         }
     }
 
@@ -122,9 +126,11 @@ public class Controller{
             case "Kitchen":
                 changeRoom(Room.LivingRoom.name(), event);
                 break;
+            case "Fridge":
             case "Entry":
                 changeRoom(Room.Kitchen.name(), event);
                 break;
+
         }
     }
 
@@ -133,6 +139,153 @@ public class Controller{
     @FXML
     void goToComputerRoom(MouseEvent event) throws IOException {
         changeRoom(Room.Computer.name(), event);
+    }
+
+    //Fridge interactions
+
+    //fries
+    @FXML
+    private Button interactFriesNeutral;
+    @FXML
+    private Button interactFriesNegative;
+    @FXML
+    private Button interactFriesPositive;
+    //chicken
+    @FXML
+    private Button interactChickenNeutral;
+    @FXML
+    private Button interactChickenNegative;
+    @FXML
+    private Button interactChickenPositive;
+    //beer
+    @FXML
+    private Button interactBeerNeutral;
+    @FXML
+    private Button interactBeerNegative;
+    @FXML
+    private Button interactBeerPositive;
+    //water
+    @FXML
+    private Button interactWaterNeutral;
+    @FXML
+    private Button interactWaterNegative;
+    @FXML
+    private Button interactWaterPositive;
+
+    @FXML
+    private AnchorPane fridgeEnterPromptBox;
+
+    @FXML
+    void goToFrigheRoom(MouseEvent event) throws IOException{
+        changeRoom(Room.Fridge.name(),event);
+    }
+
+    @FXML
+    void checkScore(MouseEvent event) throws IOException{
+        fridgeEnterPromptBox.setVisible(false);
+        fridgeEnterPromptBox.setDisable(true);
+        if (0.4 < depressionBar.getScore() && depressionBar.getScore() < 0.6) {
+            interactFriesNeutral.setDisable(false);
+            interactChickenNeutral.setDisable(false);
+            interactBeerNeutral.setDisable(false);
+            interactWaterNeutral.setDisable(false);
+        }
+        if (0.6 <= depressionBar.getScore()) {
+            interactFriesPositive.setDisable(false);
+            interactChickenPositive.setDisable(false);
+            interactBeerPositive.setDisable(false);
+            interactWaterPositive.setDisable(false);
+        }
+        if (0.4 >= depressionBar.getScore()) {
+            interactFriesNegative.setDisable(false);
+            interactChickenNegative.setDisable(false);
+            interactBeerNegative.setDisable(false);
+            interactWaterNegative.setDisable(false);
+        }
+    }
+
+    //kitchen items:
+    //fries
+    Item friesNeutral = new Item("you it some fries you feel a bit bad",-0.05);
+    Item friesPositive = new Item("You know fries ain't good for you so you only take some",0.0);
+    Item friesNegative = new Item("you seem in a bad mood so you eat til you almost explode",-0.1);
+    //chicken
+    Item chickenNeutral = new Item("You make a satisfying meal out of a good chicken, you feel satisfied",0.05);
+    Item chickenPositive = new Item("You make a perfect meal and feel amazing",0.1);
+    Item chickenNegative = new Item("Because you feel bad you do not want to make a meal" +
+            " but you still have to eat, so you make one, but you haven't been paying attention so the chicken is burnt." +
+            " you feel very sad and still hungry",-0.1);
+    //beer
+    Item beerNeutral = new Item("You drink a cold one but have a very neutral mood so it does not affect your mood",0.0);
+    Item beerPositive = new Item("You drink one and remember the Boys/girls and feel nostalgia, and a bit happy",0.5);
+    Item beerNegative = new Item("You drink one and wonder if this covid19 will ever be over, and this lonely feeling will ever go away",-0.1);
+    //water
+    Item waterNeutral = new Item("it is water it is what you would expect",0.0);
+    Item waterPositive = new Item("You drink water because you know it is good for you and you want to stay healthy, " +
+            "so you feel energizes",0.1);
+    Item waterNegative = new Item("YOU DRINK WATER AND WATER IS ALWAYS YOUR FRIEND",0.1);
+
+
+    //kitchen use items
+    //Fries
+    @FXML
+    void useNeutralFries(MouseEvent event)throws IOException {
+        simpleItemInteraction(friesNeutral,event);
+    }
+    @FXML
+    void useNegativeFries(MouseEvent event)throws IOException {
+        simpleItemInteraction(friesNegative,event);
+    }
+    @FXML
+    void usePositiveFries(MouseEvent event)throws IOException {
+        simpleItemInteraction(friesPositive,event);
+    }
+    //chicken
+    @FXML
+    void useNeutralChicken(MouseEvent event)throws IOException {
+        simpleItemInteraction(chickenNeutral,event);
+    }
+    @FXML
+    void useNegativeChicken(MouseEvent event)throws IOException {
+        simpleItemInteraction(chickenNegative,event);
+    }
+    @FXML
+    void usePositiveChicken(MouseEvent event)throws IOException {
+        simpleItemInteraction(chickenPositive,event);
+    }
+    //beer
+    @FXML
+    void useNeutralBeer(MouseEvent event)throws IOException {
+        simpleItemInteraction(beerNeutral,event);
+    }
+    @FXML
+    void useNegativeBeer(MouseEvent event)throws IOException {
+        simpleItemInteraction(beerNegative,event);
+    }
+    @FXML
+    void usePositiveBeer(MouseEvent event)throws IOException {
+        simpleItemInteraction(beerPositive,event);
+    }
+    //water
+    @FXML
+    void useNeutralWater(MouseEvent event)throws IOException {
+        simpleItemInteraction(waterNeutral,event);
+    }
+    @FXML
+    void useNegativeWater(MouseEvent event)throws IOException {
+        simpleItemInteraction(waterNegative,event);
+    }
+    @FXML
+    void usePositiveWater(MouseEvent event)throws IOException {
+        simpleItemInteraction(waterPositive,event);
+    }
+
+    //fridge close
+    @FXML
+    void hideTextBoxFridge(MouseEvent event) throws IOException {
+        textBox.setVisible(false);
+        checkIfGameIsOver(event);
+        changeRoom(Room.Kitchen.name(), event);
     }
 
 
