@@ -38,6 +38,7 @@ public class Controller{
     TimeClass time = TimeClass.getInstance();
 
 
+
     //Game information
     @FXML
     private ProgressBar progressBar;
@@ -50,6 +51,18 @@ public class Controller{
     private Media media;
     URL MusicLocation;
 
+    //Images
+    @FXML
+    private ImageView WorkImage;
+
+    @FXML
+    private ImageView NewsImage;
+
+    @FXML
+    private ImageView ChatImage;
+
+    @FXML
+    private ImageView HomeScreen;
 
     //Map
     @FXML
@@ -134,11 +147,13 @@ public class Controller{
         }
     }
 
+    //Computer room
 
     //Computer room button
     @FXML
     void goToComputerRoom(MouseEvent event) throws IOException {
         changeRoom(Room.Computer.name(), event);
+
     }
 
     //Fridge interactions
@@ -305,6 +320,12 @@ public class Controller{
     //Entrance items:
     Item door = new Item("You look at the door, and wonder what is outside",-0.05, 1);
 
+    //Pc Screen items
+    Item work = new Item();
+    Item chat = new Item();
+    Item news = new Item();
+    Item onOff = new Item();
+
 
 
     //Bedroom items
@@ -321,24 +342,6 @@ public class Controller{
     }
 
 
-    //Computer room
-    @FXML
-    private TextArea textAreaComputer;
-
-    @FXML
-    void showComputerInfo(MouseEvent event) throws IOException {
-        textAreaComputer.setText(computer.isItemInteractionMessage());
-        if(textAreaComputer.isVisible()){
-            textAreaComputer.setVisible(false);
-        } else{
-            textAreaComputer.setVisible(true);
-        }
-        if(textAreaComputer.isVisible()){
-            computer.changeScore();
-        }
-        updateScoreText();
-        checkIfGameIsOver(event);
-    }
 
 
     //Bathroom items
@@ -440,5 +443,120 @@ public class Controller{
 
         }
     }
+
+    //Computer sub items
+    @FXML
+    private Button ButtonNews;
+
+    @FXML
+    private Button ButtonWork;
+
+    @FXML
+    private Button ButtonVideoChat;
+
+    boolean pcOnOff = true;
+    @FXML
+    void ComputerOnOff(MouseEvent event) throws IOException {
+        ChatImage.setVisible(false);
+        WorkImage.setVisible(false);
+        NewsImage.setVisible(false);
+
+        if (onOff.getCanBeInteractedWith()){
+            if(HomeScreen.isVisible()){
+                HomeScreen.setVisible(false);
+            } else{
+                HomeScreen.setVisible(true);
+            }
+            updateScoreText();
+            checkIfGameIsOver(event);
+            SetVisibleImagePc();
+            onOff.changeScore();
+        }
+        else{
+            changeRoom(Room.Bedroom.name(), event);
+        }
+
+    }
+
+    public void SetVisibleImagePc() {
+        ButtonWork.setVisible(false);
+        ButtonNews.setVisible(false);
+        ButtonVideoChat.setVisible(false);
+        double score = depressionBar.getScore();
+        if(score<0.2){
+            ButtonNews.setVisible(true);
+        }else if(0.2<=score && score<0.5){
+            ButtonNews.setVisible(true);
+            ButtonWork.setVisible(true);
+        }else {
+            ButtonWork.setVisible(true);
+            ButtonNews.setVisible(true);
+            ButtonVideoChat.setVisible(true);
+        }
+    }
+
+    @FXML
+    void NewsClicked(MouseEvent event) throws IOException {
+        if (news.getCanBeInteractedWith()){
+            HomeScreen.setVisible(false);
+            SetVisibleImagePc();
+            ChatImage.setVisible(false);
+            WorkImage.setVisible(false);
+            if (!NewsImage.isVisible()) {
+                NewsImage.setVisible(true);
+                news.changeScore(-0.05);
+                updateScoreText();
+            }
+            else {
+                NewsImage.setVisible(false);
+                HomeScreen.setVisible(true);
+            }
+            checkIfGameIsOver(event);
+        }
+    }
+
+    @FXML
+    void VideoChatClicked(MouseEvent event) throws IOException {
+        if (chat.getCanBeInteractedWith()){
+            HomeScreen.setVisible(false);
+            SetVisibleImagePc();
+            WorkImage.setVisible(false);
+            NewsImage.setVisible(false);
+            if (!ChatImage.isVisible()) {
+                ChatImage.setVisible(true);
+                chat.changeScore(0.05);
+            }
+            else {
+                ChatImage.setVisible(false);
+                HomeScreen.setVisible(true);
+            }
+            updateScoreText();
+            checkIfGameIsOver(event);
+        }
+    }
+
+    @FXML
+    void WorkClicked(MouseEvent event) throws IOException {
+        if (work.getCanBeInteractedWith()){
+        HomeScreen.setVisible(false);
+        SetVisibleImagePc();
+        ChatImage.setVisible(false);
+        NewsImage.setVisible(false);
+        if (!WorkImage.isVisible()) {
+            WorkImage.setVisible(true);
+            if (depressionBar.getScore() >= 0.5) {
+                work.changeScore(0.02);
+            } else {
+                work.changeScore(-0.02);
+            }
+        } else {
+            WorkImage.setVisible(false);
+            HomeScreen.setVisible(true);
+        }
+        updateScoreText();
+        checkIfGameIsOver(event);
+        }
+    }
 }
+
 
