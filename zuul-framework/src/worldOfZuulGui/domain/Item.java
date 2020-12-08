@@ -6,6 +6,7 @@ public class Item {
     private double scoreChange;
     private String interactionMessage;
     private boolean canBeInteractedWith;
+    private int timeChange;
 
     StatusScore depressionBar = StatusScore.getInstance();
 
@@ -18,9 +19,10 @@ public class Item {
         canBeInteractedWith = true;
     }
 
-    public Item(String interactionMessage, double scoreChange){
+    public Item(String interactionMessage, double scoreChange, int timeChange){
         this.scoreChange = scoreChange;
         this.interactionMessage = interactionMessage;
+        this.timeChange = timeChange;
         canBeInteractedWith = true;
     }
 
@@ -33,7 +35,11 @@ public class Item {
             canBeInteractedWith = false;
     }
 
-    public String getItemInteractionMessage() {
+    public int getTimeChange() {
+        return timeChange;
+    }
+
+    public String isItemInteractionMessage() {
         return interactionMessage;
     }
 

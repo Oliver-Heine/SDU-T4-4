@@ -138,19 +138,19 @@ public class Controller{
 
     //Bedroom items:
     Item bed = new Item();
-    Item computer = new Item("You finished a voice chat with your friends, you feel good",-0.05);
+    Item computer = new Item("You finished a voice chat with your friends, you feel good",-0.05, 0);
 
     //Livingroom items:
-    Item tv = new Item("You watch some tv",-0.05);
-    Item book = new Item("You read in a book for some time",0.05);
-    Item window = new Item("You stare out the window, sad that you can't go outside",-0.05);
+    Item tv = new Item("You watch some tv",-0.05, 2);
+    Item book = new Item("You read in a book for some time",0.05, 1);
+    Item window = new Item("You stare out the window, sad that you can't go outside",-0.05, 0);
 
     //Bathroom items:
-    Item toilet = new Item("You use the toilet",0.05);
-    Item bath = new Item("You take a nice long bath", 0.05);
+    Item toilet = new Item("You use the toilet",0.05, 0);
+    Item bath = new Item("You take a nice long bath", 0.05, 1);
 
     //Entrance items:
-    Item door = new Item("You look at the door, and wonder what is outside",-0.05);
+    Item door = new Item("You look at the door, and wonder what is outside",-0.05, 1);
 
 
 
@@ -161,6 +161,7 @@ public class Controller{
             String timeSlept;
             simpleItemInteraction(bed,event);
             timeSlept = time.Sleep(depressionBar);
+            timeLabel.setText(time.getFullTime());
             updateScoreText();
             itemTextBoxShow("You slept "+timeSlept);
         }
@@ -173,7 +174,7 @@ public class Controller{
 
     @FXML
     void showComputerInfo(MouseEvent event) throws IOException {
-        textAreaComputer.setText(computer.getItemInteractionMessage());
+        textAreaComputer.setText(computer.isItemInteractionMessage());
         if(textAreaComputer.isVisible()){
             textAreaComputer.setVisible(false);
         } else{
@@ -190,8 +191,8 @@ public class Controller{
     //Bathroom items
     @FXML
     void useToilet(MouseEvent event) throws IOException {
+        time.timePasses(10);
         simpleItemInteraction(toilet,event);
-
     }
 
     @FXML
@@ -278,9 +279,12 @@ public class Controller{
 
     public void simpleItemInteraction(Item item, MouseEvent event) throws IOException {
         if(item.getCanBeInteractedWith()) {
+            time.timePasses(item.getTimeChange());
+            timeLabel.setText(time.getFullTime());
             item.changeScore();
             updateScoreText();
-            itemTextBoxShow(item.getItemInteractionMessage());
+            itemTextBoxShow(item.isItemInteractionMessage());
+
         }
     }
 }

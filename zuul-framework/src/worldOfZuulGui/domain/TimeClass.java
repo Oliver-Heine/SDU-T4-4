@@ -8,7 +8,6 @@ public class TimeClass {
     private int time;
     private int dayNumber;
     private String dayName;
-    private int lastTimeSlept;
     private static String TimeString="";
     private static TimeClass single_instance = null;
     private boolean timeOut = false;
@@ -89,41 +88,47 @@ public class TimeClass {
 
     public String Sleep(StatusScore score){
         double ScoreNow = score.getScore();
-        int TimePenalty;
+        int timePenalty;
         if(ScoreNow<0.1){
-            TimePenalty = 5;
+            timePenalty = 5;
         }else if(0.1<=ScoreNow && ScoreNow<0.4){
-            TimePenalty = 3;
+            timePenalty = 3;
         }else if(0.5<=ScoreNow && ScoreNow<0.7){
-            TimePenalty = 1;
+            timePenalty = 1;
         }else {
-            TimePenalty = 0;
+            timePenalty = 0;
         }
 
         if (time>=20 && time<=22){
-            time=6 + TimePenalty; //sleep 8 hours plus penalty
-            dayNumber++;
-            lastTimeSlept = time;
+            timePasses(6 + timePenalty);
             score.changeScore(0.05);
-            return 8 + TimePenalty +" hours and feel refreshed";
+            return 8 + timePenalty +" hours and feel refreshed";
         }
         else if(time>=23 && time<=24){
-            time=10+TimePenalty; //sleep 10 hours plus penalty
-            lastTimeSlept = time;
+            timePasses(10+timePenalty);
             dayNumber++;
-            return 10+TimePenalty+" hours and feel refreshed";
+            return 10+timePenalty+" hours and feel refreshed";
         }
         else if(time>=0 && time<=6){
-            time+=12+TimePenalty; //sleep 10 hours plus penalty
-            lastTimeSlept = time;
+            timePasses(12+timePenalty); //sleep 10 hours plus penalty
             score.changeScore(-0.1);
-            return 12+TimePenalty+" hours and don't want to wake up, because you feel lazy.";
+            return 12+timePenalty+" hours and don't want to wake up, because you feel lazy.";
         }
         else{
             score.changeScore(-0.2);
             return 0+" hours since you are not tired.";
         }
+    }
 
+    public void timePasses(int timePassing){
+        int currentTime = time;
+        currentTime = currentTime + timePassing;
+        if(currentTime > 24){
+            time = currentTime - 24;
+            dayNumber++;
+        } else {
+            time = currentTime;
+        }
     }
 
     public void resetTime(){
