@@ -46,11 +46,8 @@
             <Font name="Georgia" size="24.0" />
          </font>
       </Text>
-<<<<<<< HEAD:zuul-framework/src/worldOfZuulGui/fxml/Tutorial_3.fxml
-      <Text fill="WHITE" layoutX="302.0" layoutY="438.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Press anywhere to continue">
-=======
+
       <Text fill="WHITE" layoutX="302.0" layoutY="307.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Press anywhere to continue" textAlignment="CENTER">
->>>>>>> Fridge:zuul-framework/src/worldOfZuulGui/rooms/Tutorial_3.fxml
          <font>
             <Font name="Georgia" size="14.0" />
          </font>
