@@ -19,11 +19,11 @@
             <Font name="Georgia" size="24.0" />
          </font>
       </Text>
-      <Button mnemonicParsing="false" onMouseClicked="#startSession" opacity="0.0" prefHeight="600.0" prefWidth="800.0" text="Button" />
       <Text fill="WHITE" layoutX="205.0" layoutY="153.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Welcome to Game of Life during a pandemic" textAlignment="CENTER" wrappingWidth="375.22900390625">
          <font>
             <Font name="Georgia" size="24.0" />
          </font>
       </Text>
+      <Button mnemonicParsing="false" onMouseClicked="#startSession" opacity="0.0" prefHeight="600.0" prefWidth="800.0" text="Button" />
    </children>
 </AnchorPane>

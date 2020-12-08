@@ -14,7 +14,6 @@
             <Image url="@../assets/MenuSession/Tutorial-background.png" />
          </image>
       </ImageView>
-      <Button mnemonicParsing="false" onMouseClicked="#startSession" opacity="0.0" prefHeight="600.0" prefWidth="800.0" />
       <Text fill="#fffdfd" layoutX="91.0" layoutY="82.0" strokeType="OUTSIDE" strokeWidth="0.0" text="You are one out of many who are affected by the lockdown. A young adult who lives in an apartment on your own. " textAlignment="JUSTIFY" wrappingWidth="617.22900390625">
          <font>
             <Font name="Georgia" size="24.0" />
@@ -30,5 +29,6 @@
             <Font name="Georgia" size="14.0" />
          </font>
       </Text>
+      <Button mnemonicParsing="false" onMouseClicked="#startSession" opacity="0.0" prefHeight="600.0" prefWidth="800.0" />
    </children>
 </AnchorPane>
