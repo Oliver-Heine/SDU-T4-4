@@ -392,7 +392,7 @@ public class Controller{
     public void changeRoom(String roomName, MouseEvent event) throws IOException, NullPointerException {
         Node node = (Node) event.getSource();
         Stage thisStage = (Stage)node.getScene().getWindow();
-        Parent root = FXMLLoader.load(getClass().getResource("../fxml/" + roomName +".fxml"));
+        Parent root = FXMLLoader.load(getClass().getResource("./fxml/" + roomName +".fxml"));
         thisStage.setTitle(roomName);
         thisStage.setScene(new Scene(root));
         timeline.stop();

@@ -18,7 +18,7 @@ public class Start extends Application {
     @Override
     public void start(Stage primaryStage) throws Exception{
 
-        Parent root = FXMLLoader.load(getClass().getResource( "../fxml/" + Room.StartScreen.name() + ".fxml"));
+        Parent root = FXMLLoader.load(getClass().getResource( "./fxml/" + Room.StartScreen.name() + ".fxml"));
 
         Media media = new Media(new File("./resources/music/TestMusik.wav").toURI().toString());
         mediaPlayer = new MediaPlayer(media);
