@@ -9,6 +9,10 @@ public class Item {
 
     StatusScore depressionBar = StatusScore.getInstance();
 
+    public Item() {
+        canBeInteractedWith = true;
+    }
+
     public Item(String interactionMessage) {
         canBeInteractedWith = true;
         this.interactionMessage = interactionMessage;
@@ -27,6 +31,10 @@ public class Item {
     public void changeScore(){
             depressionBar.changeScore(scoreChange);
             canBeInteractedWith = false;
+    }
+    public void changeScore(double score){
+        depressionBar.changeScore(score);
+        canBeInteractedWith = false;
     }
 
     public String getItemInteractionMessage() {

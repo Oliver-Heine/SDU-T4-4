@@ -34,4 +34,5 @@ public class StatusScore {
             }
             return single_instance;
     }
+
 }

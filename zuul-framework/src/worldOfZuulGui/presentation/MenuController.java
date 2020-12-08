@@ -118,24 +118,5 @@ public class MenuController extends Controller {
 
     }
 
-/*
-    TimeClass time = TimeClass.getInstance();
-
-    @FXML
-    void initialize() {
-        switchScenes.setCycleCount(Animation.INDEFINITE);
-        switchScenes.play();
-    }
-
-
-    Timeline switchScenes = new Timeline(
-            new KeyFrame(Duration.seconds(5),
-                    new EventHandler<ActionEvent>() {
-
-                        @Override
-                        public void handle(ActionEvent event) {
-
-                        }
-                    }));*/
 
 }
