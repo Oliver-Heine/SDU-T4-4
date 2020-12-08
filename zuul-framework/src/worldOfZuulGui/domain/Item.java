@@ -19,10 +19,6 @@ public class Item {
         this.interactionMessage = interactionMessage;
     }
 
-    public Item() {
-        canBeInteractedWith = true;
-    }
-
     public Item(String interactionMessage, double scoreChange, int timeChange){
         this.scoreChange = scoreChange;
         this.interactionMessage = interactionMessage;
