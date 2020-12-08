@@ -14,7 +14,8 @@ public enum Room {
     Tutorial_3("Tutorial_3.fxml"),
     Tutorial_4("Tutorial_4.fxml"),
     gameLost("gameLost.fxml"),
-    gameWon("gameWon.fxml");
+    gameWon("gameWon.fxml"),
+    Fridge("fridge.fxml");
 
     private String fxml;
 
