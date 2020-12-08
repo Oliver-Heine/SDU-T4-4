@@ -232,7 +232,7 @@ public class Controller{
             " you feel very sad and still hungry",-0.1,2);
     //beer
     Item beerNeutral = new Item("You drink a cold one but have a very neutral mood so it does not affect your mood",0.0,0);
-    Item beerPositive = new Item("You drink one and remember the Boys/girls and feel nostalgia, and a bit happy",0.5,2);
+    Item beerPositive = new Item("You drink one and remember the Boys/girls and feel nostalgia, and a bit happy",0.05,2);
     Item beerNegative = new Item("You drink one and wonder if this covid19 will ever be over, and this lonely feeling will ever go away",-0.1,3);
     //water
     Item waterNeutral = new Item("it is water it is what you would expect",0.0,0);
@@ -347,7 +347,7 @@ public class Controller{
     //Bathroom items
     @FXML
     void useToilet(MouseEvent event) throws IOException {
-        time.timePasses(10);
+        time.timePasses(toilet.getTimeChange());
         simpleItemInteraction(toilet,event);
     }
 
