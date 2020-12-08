@@ -15,18 +15,113 @@ Controller <|-- StatusScore
 Controller <|-- Item
 
 
+class TimeClass{
+time: int
+dayNumber: int
+dayName: String
+TimeString: String
+single_instance: TimeClass
+getTime():void
+getFullTime():
+setTime(): void
+getDayNumber():
+getDayName():
+addTime():void
+timeChecker():
+dayChecker():
+getInstance():
+getTimeString():
+}
 
+class Start extends Application {
+start(): void
+root: Parent
+media: Media (File(pathname).toURI().toString()
+mediaPlayer: MediaPlayer(media)
+mediaPlayer.setAutoplay(boolean):
+mediaPlayer.setCycleCount():
+scene1: Scene(root)
+main(args: String[])
+}
 
 enum Room {
+fxml: String
 Entry
 Kitchen
 Computer
 LivingRoom
 Bedroom
 Bathroom
-menu
-gameOver
+Computer
+StartMenu
+StartScreen
+Tutorial
+Tutorial_2
+Tutorial_3
+Tutorial_4
+gameWon
+gameLost
 getFxml()
 }
 
+Class StatusScore {
+score: double
+single_instance: StatusScore
+getScore():
+changeScore(change):
+setScore(score):
+getInstance(): StatusScore
+}
+
+Class Item {
+time: int
+scoreChange: double
+interactionMessage: String
+canBeInteractedWith: boolean
+depressionBar: StatusScore
+getScoreChange():
+changeScore():
+getInteractionMessage():
+getCanBeInteracedWith():
+}
+
+Class Controller{
+depressionBar: StatusScore.getInstance():
+time: TimeClass.getInstance():
+progressBar: ProgressBar
+timeLabel: Label
+map: ImageView
+showmMap(KeyEvent event): void
+hideMap(KeyEvent event): void
+textBox: AnchorPane
+itemInformation: TextArea
+hideTextBox(MouseEvent event): void
+itemTextBoxShow(String itemInfo): void
+goNextRoom(MouseEvent event): void
+goPrevRoom(MouseEvent event): void
+goToComputerRoom(MouseEvent event): void
+bed: Item
+computer: Item
+tv: Item
+book: Item
+window: Item
+toilet: Item
+bath: Item
+door: Item
+layInBed(MouseEvent event): void
+textAreaComputer: TextArea
+showComputerInfo(MouseEvent event): void
+useToilet(MouseEvent event): void
+useBath(MouseEvent event): void
+useTV(MouseEvent event): void
+readBook(MouseEvent event): void
+lookOutWindow(MouseEvent event): void
+exitDoor(MouseEvent event): void
+initialize(): void
+changeRoom(String roomName, MouseEvent event): void
+updateScoreText(): void
+timeline: Timeline
+checkIfGameIsOver(MouseEvent event): void
+simpleItemInteraction(Item item, MouseEvent event): void
+}
 @enduml
