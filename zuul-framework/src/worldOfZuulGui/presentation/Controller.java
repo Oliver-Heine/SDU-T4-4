@@ -176,7 +176,7 @@ public class Controller{
     private AnchorPane fridgeEnterPromptBox;
 
     @FXML
-    void goToFrigheRoom(MouseEvent event) throws IOException{
+    void goToFridgeRoom(MouseEvent event) throws IOException{
         changeRoom(Room.Fridge.name(),event);
     }
 

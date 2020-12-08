@@ -28,10 +28,10 @@
          </image>
       </ImageView>
       <ProgressBar fx:id="progressBar" layoutX="45.0" layoutY="11.0" prefHeight="33.0" prefWidth="131.0" progress="0.5" />
-      <Button fx:id="goBackKitchen" layoutX="504.0" layoutY="7.0" mnemonicParsing="false" onMouseClicked="#goPrevRoom" prefHeight="42.0" prefWidth="202.0" text="Kitchen" />
+      <Button fx:id="goBackKitchen" layoutX="670.0" layoutY="14.0" mnemonicParsing="false" onMouseClicked="#goPrevRoom" prefHeight="27.0" prefWidth="123.0" text="Kitchen" />
       <Label fx:id="timeLabel" layoutX="246.0" layoutY="11.0" prefHeight="33.0" prefWidth="258.0" text="Label">
          <font>
-            <Font size="18.0" />
+            <Font name="Georgia" size="13.0" />
          </font>
       </Label>
       <Button fx:id="interactFriesNeutral" disable="true" layoutX="561.0" layoutY="419.0" mnemonicParsing="false" onMouseClicked="#useNeutralFries" opacity="0.0" prefHeight="167.0" prefWidth="131.0" text="friesNeutral" />
@@ -52,7 +52,7 @@
             <Button layoutX="7.0" layoutY="206.0" mnemonicParsing="false" onMouseClicked="#hideTextBoxFridge" prefHeight="25.0" prefWidth="183.0" text="OK" />
          </children>
       </AnchorPane>
-      <AnchorPane fx:id="fridgeEnterPromptBox" prefHeight="600.0" prefWidth="800.0">
+      <AnchorPane fx:id="fridgeEnterPromptBox" prefHeight="600.0" prefWidth="800.0" visible="false">
          <children>
             <Text fx:id="hungry" layoutX="222.0" layoutY="355.0" strokeType="OUTSIDE" strokeWidth="0.0" text="You are hungry, eat somthing stupid" textAlignment="CENTER" wrappingWidth="355.13671875">
                <font>
