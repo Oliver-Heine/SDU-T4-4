@@ -208,17 +208,17 @@ public class Controller{
     //fries
     Item friesNeutral = new Item("you it some fries you feel a bit bad",-0.05,0);
     Item friesPositive = new Item("You know fries ain't good for you so you only take some",0.0,0);
-    Item friesNegative = new Item("you seem in a bad mood so you eat til you almost explode",-0.1,0);
+    Item friesNegative = new Item("you seem in a bad mood so you eat til you almost explode",-0.1,4);
     //chicken
-    Item chickenNeutral = new Item("You make a satisfying meal out of a good chicken, you feel satisfied",0.05,0);
-    Item chickenPositive = new Item("You make a perfect meal and feel amazing",0.1,0);
+    Item chickenNeutral = new Item("You make a satisfying meal out of a good chicken, you feel satisfied",0.05,2);
+    Item chickenPositive = new Item("You make a perfect meal and feel amazing",0.1,3);
     Item chickenNegative = new Item("Because you feel bad you do not want to make a meal" +
             " but you still have to eat, so you make one, but you haven't been paying attention so the chicken is burnt." +
-            " you feel very sad and still hungry",-0.1,0);
+            " you feel very sad and still hungry",-0.1,2);
     //beer
     Item beerNeutral = new Item("You drink a cold one but have a very neutral mood so it does not affect your mood",0.0,0);
-    Item beerPositive = new Item("You drink one and remember the Boys/girls and feel nostalgia, and a bit happy",0.5,0);
-    Item beerNegative = new Item("You drink one and wonder if this covid19 will ever be over, and this lonely feeling will ever go away",-0.1,0);
+    Item beerPositive = new Item("You drink one and remember the Boys/girls and feel nostalgia, and a bit happy",0.5,2);
+    Item beerNegative = new Item("You drink one and wonder if this covid19 will ever be over, and this lonely feeling will ever go away",-0.1,3);
     //water
     Item waterNeutral = new Item("it is water it is what you would expect",0.0,0);
     Item waterPositive = new Item("You drink water because you know it is good for you and you want to stay healthy, " +
