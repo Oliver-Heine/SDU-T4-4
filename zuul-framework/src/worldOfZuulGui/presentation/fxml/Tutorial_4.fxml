@@ -19,7 +19,7 @@
             <Font name="Georgia" size="14.0" />
          </font>
       </Text>
-      <Text fx:id="playerTutorial_3Text_2" fill="#fffdfd" layoutX="91.0" layoutY="30.0" strokeType="OUTSIDE" strokeWidth="0.0" text="You have different options around your apartment marked with a withe border around. Your actions will affect your mental health which you will have to get as high as possible. " textAlignment="JUSTIFY" wrappingWidth="617.22900390625">
+      <Text fx:id="playerTutorial_3Text_2" fill="#fffdfd" layoutX="91.0" layoutY="30.0" strokeType="OUTSIDE" strokeWidth="0.0" text="You have different options around your apartment marked with a white border around. Your actions will affect your mental health which you will have to get as high as possible. " textAlignment="JUSTIFY" wrappingWidth="617.22900390625">
          <font>
             <Font name="Georgia" size="24.0" />
          </font>
