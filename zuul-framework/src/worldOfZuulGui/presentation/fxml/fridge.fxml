@@ -54,12 +54,12 @@
       </AnchorPane>
       <AnchorPane fx:id="fridgeEnterPromptBox" prefHeight="600.0" prefWidth="800.0">
          <children>
-            <Text fx:id="hungry" layoutX="222.0" layoutY="355.0" strokeType="OUTSIDE" strokeWidth="0.0" text="You are hungry, eat somthing stupid" textAlignment="CENTER" wrappingWidth="355.13671875">
+            <Text fx:id="hungry" layoutX="222.0" layoutY="342.0" strokeType="OUTSIDE" strokeWidth="0.0" text="You feel hungry might as well eat somthing" textAlignment="CENTER" wrappingWidth="355.13671875">
                <font>
                   <Font size="40.0" />
                </font>
             </Text>
-            <Button fx:id="scoreCheck" layoutX="354.0" layoutY="420.0" mnemonicParsing="false" onMouseClicked="#checkScore" prefHeight="50.0" prefWidth="93.0" text="Okay" />
+            <Button fx:id="scoreCheck" layoutX="354.0" layoutY="445.0" mnemonicParsing="false" onMouseClicked="#checkScore" prefHeight="50.0" prefWidth="93.0" text="Okay" />
          </children></AnchorPane>
    </children>
 </AnchorPane>

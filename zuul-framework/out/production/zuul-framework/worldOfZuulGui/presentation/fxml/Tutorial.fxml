@@ -14,7 +14,7 @@
             <Image url="@../assets/MenuSession/Tutorial-background.png" />
          </image>
       </ImageView>
-      <Text fill="#fffdfd" layoutX="91.0" layoutY="82.0" strokeType="OUTSIDE" strokeWidth="0.0" text="The year is 2020. The world is on lockdown. Something we haven’t before. " textAlignment="JUSTIFY" wrappingWidth="617.22900390625">
+      <Text fill="#fffdfd" layoutX="91.0" layoutY="82.0" strokeType="OUTSIDE" strokeWidth="0.0" text="The year is 2020. The world is on lockdown. Something we haven’t seen before. " textAlignment="JUSTIFY" wrappingWidth="617.22900390625">
          <font>
             <Font name="Georgia" size="24.0" />
          </font>

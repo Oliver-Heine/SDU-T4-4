@@ -229,13 +229,13 @@ public class Controller{
     Item chickenPositive = new Item("You made a delicious meal and now you feel amazeballs",0.1,3);
     Item chickenNegative = new Item("You made chicken. Good job",0.05,2);
     //beer
-    Item beerNeutral = new Item("You drink a cold one but seeing as your mood is neither good nor bad, it doesn't affect your mood",0.0,0);
-    Item beerPositive = new Item("You drink a beer and remember the good old days and feel nostalic and a bit happy",0.05,2);
-    Item beerNegative = new Item("You drink one and wonder if this covid situation will ever be over, and this lonely feeling will ever go away..",-0.1,3);
+    Item beerNeutral = new Item("You drank a cold beer but seeing as your mood is neither good nor bad, it doesn't affect your mood",0.0,0);
+    Item beerPositive = new Item("You drank a cold beer and remember the good old days and feel nostalgic and a bit happy",0.05,2);
+    Item beerNegative = new Item("You drank a cold beer and wonder if this covid situation will ever be over, and this lonely feeling will ever go away..",-0.1,3);
     //water
-    Item waterNeutral = new Item("You drink water, and water is always your friend",0.0,0);
-    Item waterPositive = new Item("You drink water because you know it is good for you and you want to stay healthy and happy",0.1,0);
-    Item waterNegative = new Item("You drink water, and water is always your friend",0.1,0);
+    Item waterNeutral = new Item("You drank water, and water is always your friend",0.0,0);
+    Item waterPositive = new Item("You drank water, because you know it is good for you and you want to stay healthy and happy",0.1,0);
+    Item waterNegative = new Item("You drank water, and water is always your friend",0.1,0);
 
 
     //kitchen use items

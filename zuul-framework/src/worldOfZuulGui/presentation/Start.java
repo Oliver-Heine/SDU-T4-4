@@ -20,7 +20,7 @@ public class Start extends Application {
 
         Parent root = FXMLLoader.load(getClass().getResource( "./fxml/" + Room.StartScreen.name() + ".fxml"));
 
-        Media media = new Media(new File("./resources/music/TestMusik.wav").toURI().toString());
+        Media media = new Media(new File("./resources/music/TestMusic.wav").toURI().toString());
         mediaPlayer = new MediaPlayer(media);
         mediaPlayer.setAutoPlay(true);
         mediaPlayer.setCycleCount(MediaPlayer.INDEFINITE);

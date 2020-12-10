@@ -44,12 +44,17 @@
             <Font name="Georgia" size="13.0" />
          </font>
       </Button>
-      <Text fill="#fffdfd" layoutX="93.0" layoutY="100.0" strokeType="OUTSIDE" strokeWidth="0.0" text="You can change the room by pressing one of the buttons on the top right corner. The text represents the direction you will go" textAlignment="JUSTIFY" wrappingWidth="617.22900390625">
+      <Text fx:id="moveBetweenRoomsTutorial_3" fill="#fffdfd" layoutX="93.0" layoutY="100.0" strokeType="OUTSIDE" strokeWidth="0.0" text="You can change the room by pressing one of the buttons on the top right corner. The text represents the direction you will go" textAlignment="JUSTIFY" wrappingWidth="617.22900390625">
          <font>
             <Font name="Georgia" size="24.0" />
          </font>
       </Text>
-      <Text fx:id="timeTutorial_3" disable="true" fill="#fffdfd" layoutX="90.0" layoutY="220.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Lastly, you have to consider the time. It will change by itself. Your interactions with items will affect the time of the day differently." textAlignment="JUSTIFY" visible="false" wrappingWidth="617.22900390625">
+      <Text fx:id="timeTutorial_3" disable="true" fill="#fffdfd" layoutX="93.0" layoutY="100.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Lastly, you have to consider the time. It will change by itself. Your interactions with items will affect the time of the day differently." textAlignment="JUSTIFY" visible="false" wrappingWidth="617.22900390625">
+         <font>
+            <Font name="Georgia" size="24.0" />
+         </font>
+      </Text>
+      <Text fx:id="timeTutorial_4" fill="#fffdfd" layoutX="93.0" layoutY="210.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Furthermore, the game ends after seven days. You can follow the progress of time at the top of the screen. " textAlignment="JUSTIFY" visible="false" wrappingWidth="617.22900390625">
          <font>
             <Font name="Georgia" size="24.0" />
          </font>
