@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ProgressBar?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="worldOfZuulGui.presentation.Controller">
+   <children>
+      <ImageView fx:id="ChatDiscord" fitHeight="600.0" fitWidth="814.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../assets/Rooms/computerRoom.jpg" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="33.0" fitWidth="36.0" layoutX="8.0" layoutY="11.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../assets/Sad-Smiley.jpg" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="33.0" fitWidth="36.0" layoutX="182.0" layoutY="11.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../assets/Happy-Smiley.jpg" />
+         </image>
+      </ImageView>
+      <ProgressBar fx:id="progressBar" layoutX="45.0" layoutY="11.0" prefHeight="33.0" prefWidth="131.0" progress="0.5" />
+      <Button layoutX="14.0" layoutY="118.0" mnemonicParsing="false" onMouseClicked="#ComputerOnOff" prefHeight="52.0" prefWidth="120.0" text="On/Off" />
+      <Label fx:id="timeLabel" layoutX="246.0" layoutY="11.0" prefHeight="33.0" prefWidth="258.0" text="Label">
+         <font>
+            <Font name="Georgia" size="13.0" />
+         </font>
+      </Label>
+      <TextArea fx:id="textAreaComputer" layoutX="180.0" layoutY="148.0" prefHeight="250.0" prefWidth="490.0" promptText="ere" text="Test" visible="false" />
+      <Button fx:id="ButtonNews" layoutX="14.0" layoutY="185.0" mnemonicParsing="false" onMouseClicked="#NewsClicked" prefHeight="52.0" prefWidth="120.0" text="News" visible="false" />
+      <Button fx:id="ButtonWork" layoutX="14.0" layoutY="247.0" mnemonicParsing="false" onMouseClicked="#WorkClicked" prefHeight="52.0" prefWidth="120.0" text="Work" visible="false" />
+      <Button fx:id="ButtonVideoChat" layoutX="14.0" layoutY="309.0" mnemonicParsing="false" onMouseClicked="#VideoChatClicked" prefHeight="52.0" prefWidth="120.0" text="Video Chat" visible="false" />
+      <ImageView fx:id="WorkImage" fitHeight="391.0" fitWidth="534.0" layoutX="152.0" layoutY="133.0" pickOnBounds="true" preserveRatio="true" visible="false">
+         <image>
+            <Image url="@../assets/Rooms/Work.jpg" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="NewsImage" fitHeight="394.0" fitWidth="527.0" layoutX="162.0" layoutY="76.0" pickOnBounds="true" preserveRatio="true" scaleY="1.16" visible="false">
+         <image>
+            <Image url="@../assets/Rooms/Corona-Page.jpg" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="ChatImage" fitHeight="293.0" fitWidth="474.0" layoutX="188.0" layoutY="127.0" pickOnBounds="true" preserveRatio="true" scaleX="1.14" visible="false">
+         <image>
+            <Image url="@../assets/Rooms/ChatDiscord.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="HomeScreen" fitHeight="287.0" fitWidth="525.0" layoutX="163.0" layoutY="133.0" pickOnBounds="true" preserveRatio="true" scaleX="1.04" visible="false">
+         <image>
+            <Image url="@../assets/Rooms/HomeScreen.png" />
+         </image>
+      </ImageView>   </children>
+</AnchorPane>
