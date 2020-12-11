@@ -29,8 +29,6 @@ public class Start extends Application {
         primaryStage.setScene(scene1);
         primaryStage.setTitle("StartScreen");
         primaryStage.show();
-
-
     }
 
     public static void main(String[] args) {

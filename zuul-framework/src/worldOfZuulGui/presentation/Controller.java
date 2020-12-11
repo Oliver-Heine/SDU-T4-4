@@ -38,7 +38,6 @@ public class Controller{
     TimeClass time = TimeClass.getInstance();
 
 
-
     //Game information
     @FXML
     private ProgressBar progressBar;
@@ -147,7 +146,6 @@ public class Controller{
         }
     }
 
-    //Computer room
 
     //Computer room button
     @FXML
@@ -156,7 +154,6 @@ public class Controller{
 
     }
 
-    //Fridge interactions
 
     //fries
     @FXML
@@ -324,7 +321,6 @@ public class Controller{
     Item onOff = new Item();
 
 
-
     //Bedroom items
     @FXML
     void layInBed(MouseEvent event) throws IOException {
@@ -337,8 +333,6 @@ public class Controller{
             itemTextBoxShow("You slept "+timeSlept);
         }
     }
-
-
 
 
     //Bathroom items
@@ -378,7 +372,7 @@ public class Controller{
     }
 
 
-    //Initializing the scoreText
+    //Initializing the scoreText and time
     @FXML
     void initialize() {
     progressBar.setProgress(depressionBar.getScore());
@@ -420,7 +414,7 @@ public class Controller{
         if(depressionBar.getScore() >= 1){
             changeRoom(Room.gameWon.name(), event);
             depressionBar.setScore(0.5); //Resets the point-system after end game
-            time.resetTime();
+            time.resetTime(); //Resets time after the end game
 
         }else if(depressionBar.getScore() <= 0.001||time.isTimeOut()){
             changeRoom(Room.gameLost.name(), event);
@@ -429,7 +423,7 @@ public class Controller{
         }
     }
 
-
+    //Simple item interaction method
     public void simpleItemInteraction(Item item, MouseEvent event) throws IOException {
         if(item.getCanBeInteractedWith()) {
             time.timePasses(item.getTimeChange());
