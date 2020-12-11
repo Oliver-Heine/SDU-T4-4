@@ -54,7 +54,7 @@
       </AnchorPane>
       <AnchorPane fx:id="fridgeEnterPromptBox" prefHeight="600.0" prefWidth="800.0">
          <children>
-            <Text fx:id="hungry" layoutX="222.0" layoutY="286.0" strokeType="OUTSIDE" strokeWidth="0.0" text="You feel hungry might as well eat somthing" textAlignment="CENTER" wrappingWidth="355.13671875">
+            <Text fx:id="hungry" layoutX="222.0" layoutY="286.0" strokeType="OUTSIDE" strokeWidth="0.0" text="You feel hungry, you might as well eat somthing" textAlignment="CENTER" wrappingWidth="355.13671875">
                <font>
                   <Font size="40.0" />
                </font>

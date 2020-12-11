@@ -504,11 +504,10 @@ public class Controller{
                 news.changeScore(-0.05);
                 updateScoreText();
             }
-            else {
-                NewsImage.setVisible(false);
-                HomeScreen.setVisible(true);
-            }
             checkIfGameIsOver(event);
+        }else{
+            NewsImage.setVisible(false);
+            HomeScreen.setVisible(true);
         }
     }
 
@@ -523,12 +522,12 @@ public class Controller{
                 ChatImage.setVisible(true);
                 chat.changeScore(0.05);
             }
-            else {
-                ChatImage.setVisible(false);
-                HomeScreen.setVisible(true);
-            }
             updateScoreText();
             checkIfGameIsOver(event);
+        }
+        else{
+            ChatImage.setVisible(false);
+            HomeScreen.setVisible(true);
         }
     }
 
@@ -546,12 +545,12 @@ public class Controller{
             } else {
                 work.changeScore(-0.02);
             }
-        } else {
-            WorkImage.setVisible(false);
-            HomeScreen.setVisible(true);
         }
         updateScoreText();
         checkIfGameIsOver(event);
+        } else{
+            WorkImage.setVisible(false);
+            HomeScreen.setVisible(true);
         }
     }
 }
