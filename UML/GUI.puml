@@ -8,11 +8,11 @@ class Controller
 class Item
 
 
-Start <|-- Controller
-Controller <|-- Room
-Controller <|-- TimeClass
-Controller <|-- StatusScore
-Controller <|-- Item
+Start --> Controller
+Controller --> Room
+Controller --> TimeClass
+Controller --> StatusScore
+Controller --> Item
 
 
 class TimeClass{
