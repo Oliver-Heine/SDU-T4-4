@@ -16,36 +16,36 @@ Controller <|-- Item
 
 
 class TimeClass{
-time: int
-dayNumber: int
-dayName: String
-TimeString: String
-single_instance: TimeClass
-getTime():void
-getFullTime():
-setTime(): void
-getDayNumber():
-getDayName():
-addTime():void
-timeChecker():
-dayChecker():
-getInstance():
-getTimeString():
+-time: int
+-dayNumber: int
+-dayName: String
+-TimeString: String
+-single_instance: TimeClass
+-timeOut: boolean
+TimeClass(int,int,String)
++getTime(): int
++getFullTime(): int,dayChecker(int)
++setTime(int): void
++getDayNumber(): int
++getDayName(): String
++addTime():void
++timeChecker(): void
++dayChecker(int): String
++isTimeOut(): boolean
++getInstance(): TimeClass
++getTimeString(): String
++Sleep(StatusScore): String
++timePasses(int): void
++resetTime(): void
 }
 
 class Start extends Application {
-start(): void
-root: Parent
-media: Media (File(pathname).toURI().toString()
-mediaPlayer: MediaPlayer(media)
-mediaPlayer.setAutoplay(boolean):
-mediaPlayer.setCycleCount():
-scene1: Scene(root)
-main(args: String[])
+mediaPlayer: MediaPlayer
++start(Stage): void
++main(args: String[])
 }
 
 enum Room {
-fxml: String
 Entry
 Kitchen
 Computer
@@ -53,75 +53,155 @@ LivingRoom
 Bedroom
 Bathroom
 Computer
+Fridge
 StartMenu
 StartScreen
 Tutorial
 Tutorial_2
 Tutorial_3
 Tutorial_4
+Tutorial_5
+Tutorial_6
 gameWon
 gameLost
-getFxml()
 }
 
 Class StatusScore {
-score: double
-single_instance: StatusScore
-getScore():
-changeScore(change):
-setScore(score):
-getInstance(): StatusScore
+-score: double
+-single_instance: StatusScore
+-StatusScore(): double
++getScore(): double
++changeScore(double): void
++setScore(double): void
++getInstance(): StatusScore
 }
 
 Class Item {
-time: int
-scoreChange: double
-interactionMessage: String
-canBeInteractedWith: boolean
-depressionBar: StatusScore
-getScoreChange():
-changeScore():
-getInteractionMessage():
-getCanBeInteracedWith():
+-scoreChange: double
+-interactionMessage: String
+-canBeInteractedWith: boolean
+-timeChange: int
+depressionBar: StatusScore.getInstance():
++Item(String)
++Item(String,double,int)
++getScoreChange(): double
++changeScore(): void
++changeScore(double score): void
++getTimeChange(): double
++isItemInteractionMessage(): String
++getCanBeInteracedWith(): boolean
 }
 
 Class Controller{
 depressionBar: StatusScore.getInstance():
 time: TimeClass.getInstance():
-progressBar: ProgressBar
-timeLabel: Label
-map: ImageView
-showmMap(KeyEvent event): void
-hideMap(KeyEvent event): void
-textBox: AnchorPane
-itemInformation: TextArea
-hideTextBox(MouseEvent event): void
-itemTextBoxShow(String itemInfo): void
-goNextRoom(MouseEvent event): void
-goPrevRoom(MouseEvent event): void
-goToComputerRoom(MouseEvent event): void
-bed: Item
-computer: Item
-tv: Item
-book: Item
-window: Item
-toilet: Item
-bath: Item
-door: Item
-layInBed(MouseEvent event): void
-textAreaComputer: TextArea
-showComputerInfo(MouseEvent event): void
-useToilet(MouseEvent event): void
-useBath(MouseEvent event): void
-useTV(MouseEvent event): void
-readBook(MouseEvent event): void
-lookOutWindow(MouseEvent event): void
-exitDoor(MouseEvent event): void
+-progressBar: ProgressBar
+-timeLabel: Label
+-mediaPlayer: MediaPlayer
+-media: Media
+MusicLocation: URL
+-WorkImage: ImageView
+-NewsImage: ImageView
+-ChatImage: ImageView
+-HomeScreen:: ImageView
+-map: ImageView
+showmMap(KeyEvent): void
+hideMap(KeyEvent): void
+-textBox: AnchorPane
+-itemInformation: TextArea
+hideTextBox(MouseEvent): void
++itemTextBoxShow(String): void
+goNextRoom(MouseEvent): void
+goPrevRoom(MouseEvent): void
+goToComputerRoom(MouseEvent): void
+-interactFriesNeutral:Button
+-interactFriesNegative:Button
+-interactFriesNeutral:Button
+-interactChickenNeutral:Button
+-interactChickenNegative:Button
+-interactChickenPositive:Button
+-interactBeerNeutral:Button
+-interactBeerPositive:Button
+-interactBeerNegative:Button
+-interactWaterNeutral:Button
+-interactWaterNegative:Button
+-interactWaterPositive:Button
+-fridgeEnterPromtBox: AnchorPane
+goToFridgeRoom(MouseEvent): void
+checkScore(MouseEvent): void
+friesNeutral: Item(String,double,int)
+friesNegative: Item(String,double,int)
+friesPositive: Item(String,double,int)
+chickenNeutral: Item(String,double,int)
+chickenPositive: Item(String,double,int)
+chickenNegative: Item(String,double,int)
+waterNeutral: Item(String,double,int)
+waterNegative: Item(String,double,int)
+waterPositive: Item(String,double,int)
+useNeutralFries(MouseEvent): void
+useNegativeFries(MouseEvent): void
+usePositive(MouseEvent): void
+useNeutralChicken(MouseEvent): void
+useNegativeChicken(MouseEvent): void
+usePositiveChicken(MouseEvent): void
+useNeutralBeer(MouseEvent): void
+useNegativeBeer(MouseEvent): void
+usePositiveBeer(MouseEvent): void
+useNeutralWater(MouseEvent): void
+useNegativeWater(MouseEvent): void
+usePositiveWater(MouseEvent): void
+hideTextBoxFridge(MouseEvent): void
+bed: Item(String,double,int)
+computer: Item(String,double,int)
+tv: Item(String,double,int)
+book: Item(String,double,int)
+window: Item(String,double,int)
+toilet: Item(String,double,int)
+bath: Item(String,double,int)
+door: Item(String,double,int)
+work: Item(String,double,int)
+chat: Item(String,double,int)
+news: Item(String,double,int)
+onOff: Item(String,double,int)
+layInBed(MouseEvent): void
+useToilet(MouseEvent): void
+useBath(MouseEvent): void
+useTV(MouseEvent): void
+readBook(MouseEvent): void
+lookOutWindow(MouseEvent): void
+exitDoor(MouseEvent): void
 initialize(): void
-changeRoom(String roomName, MouseEvent event): void
-updateScoreText(): void
+changeRoom(String, MouseEvent): void
++updateScoreText(): void
 timeline: Timeline
-checkIfGameIsOver(MouseEvent event): void
-simpleItemInteraction(Item item, MouseEvent event): void
++checkIfGameIsOver(MouseEvent): void
++simpleItemInteraction(Item item, MouseEvent event): void
+-ButtonNews: Button
+-ButtonWork: Button
+-ButtonVideoChat: Button
+pcOnOff: boolean
+ComputerOnOff(MouseEvent): void
++SetVisibleImagePc(): void
+NewsClicked(MouseEvent): void
+VideoChatClicked(MouseEvent): void
+WorkClicked(MouseEvent): void
+}
+
+Class MenuController extends Controller{
+-moveBetweenRoomsTutorial_4: ImageView
+-timeTutorial_2:ImageView
+-timeTutorial: ImageView
+-mentalHealthTutorial: ImageView
+-moveBetweenRoomsTutorial: Button
+-moveBetweenRoomsTutorial_2: Button
+-hideMoveBetweenRoomsTutorialButton: Button
+-nextTutorialFXML: Button
+-timeTutorial_3: Text
+-timeTutorial_4 : Text
+-moveBetweenRoomsTutorial_3: Text
+hideMoveBetweenRoomsTutorialButton(MouseEvent): void
+skipTutorial(MouseEvent):void
+startSession(MouseEvent):void
+initialize(): void
 }
 @enduml
