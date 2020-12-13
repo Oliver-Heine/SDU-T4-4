@@ -12,11 +12,12 @@ Room <|-- Item
 Item <|-- Items
 Item <|-- StatusScore
 Command <|-- CommandWord
+
 Class Command{
 
 }
 
-Class CommandWord{
+Class CommandWord {
 
 }
 
@@ -28,7 +29,7 @@ Class Game{
 
 }
 
-Class Item{
+Class Item #4169E1{
 
 }
 
@@ -44,11 +45,15 @@ Class Start{
 
 }
 
-Class StatusScore{
+Class StatusScore #4169E1{
 
 }
 
-Class TimeClass{
+Class TimeClass #4169E1{
+
+}
+
+Class Items #4169E1{
 
 }
 @enduml
