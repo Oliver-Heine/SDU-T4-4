@@ -36,3 +36,24 @@ Class Item #4169E1{
 Class Parser{
 
 }
+
+Class Room{
+
+}
+
+Class Start{
+
+}
+
+Class StatusScore #4169E1{
+
+}
+
+Class TimeClass #4169E1{
+
+}
+
+Class Items #4169E1{
+
+}
+@enduml
