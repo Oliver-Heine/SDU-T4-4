@@ -1,0 +1,54 @@
+@startuml
+
+Start <|-- Game
+Game <|-- Command
+Game <|-- Room
+Game <|-- Parser
+Game <|-- TimeClass
+Parser <|-- Command
+CommandWords <|-- Parser
+CommandWords <|-- CommandWord
+Room <|-- Item
+Item <|-- Items
+Item <|-- StatusScore
+Command <|-- CommandWord
+Class Command{
+
+}
+
+Class CommandWord{
+
+}
+
+Class CommandWords{
+
+}
+
+Class Game{
+
+}
+
+Class Item{
+
+}
+
+Class Parser{
+
+}
+
+Class Room{
+
+}
+
+Class Start{
+
+}
+
+Class StatusScore{
+
+}
+
+Class TimeClass{
+
+}
+@enduml
