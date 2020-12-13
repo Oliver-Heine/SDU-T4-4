@@ -1,0 +1,39 @@
+@startuml
+
+class Start
+class StatusScore
+enum Room
+class TimeClass
+class Controller
+class Item
+
+
+Start --> Controller
+Controller --> Room
+Controller --> TimeClass
+Controller --> StatusScore
+Controller --> Item
+
+
+class TimeClass{
+}
+
+class Start extends Application {
+}
+
+enum Room {
+
+}
+
+Class StatusScore {
+}
+
+Class Item {
+}
+
+Class Controller{
+}
+
+Class MenuController extends Controller{
+}
+@enduml
