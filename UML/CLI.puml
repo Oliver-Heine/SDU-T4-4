@@ -12,48 +12,53 @@ class StatusScore
 class Item
 class Items
 
-Start <|-- Game
-Game <|-- Command
-Game <|-- Room
-Game <|-- Parser
-Game <|-- TimeClass
-Parser <|-- Command
-CommandWords <|-- Parser
-CommandWords <|-- CommandWord
-Room <|-- Item
-Item <|-- Items
-Item <|-- StatusScore
-Command <|-- CommandWord
+Start --> Game
+Game --> Command
+Game --> Item
+Game --> Items
+Game --> Room
+Game --> Parser
+Game --> TimeClass
+Game --> StatusScore
+Parser --> Command
+Parser --> CommandWords
+CommandWords --> CommandWord
+Room --> Items
+Item --> StatusScore
+Items --> Item
+Command --> CommandWord
+TimeClass --> StatusScore
 
 class Start{
 main(args: String[])
 }
 
 class Game{
-Parser: parser
-room: Room
-Game()
-createRooms():void
-play():void
-printwelcome():void
-processCommand(Command):boolean
-printHelp():void
-goRoom(Command):void
-quit(Command):boolean
+parser: Parser
+currentRoom: Room
+createRooms(): void
+play(): void
+printWelcome(): void
+processCommand(command: Command): boolean
+printHelp(): void
+goRoom(command: Command): void
+quit(Command command): boolean
+interactItem(command Command): void
 }
 
-class TimeClass{
+class TimeClass #4169E1{
 time: int
 dayNumber: int
 dayName: String
-addTime():void
-timeChecker():
+addTime(): void
+timeChecker(): void
+dayChecker: void
 getTime():void
 sleep():void
-gameEnd():
+gameEnd(): boolean
 }
 
-class StatusScore{
+class StatusScore #4169E1{
 Score: int
 ChangeScore(int)
 setScore()
@@ -61,30 +66,30 @@ getScore()
 gameOver()
 }
 
-class Item {
-Name: String
+class Item #4169E1{
+itemName: String
 interactionMessage: String
 StatusScoreChange: int
+getItemName(): String
 itemInteraction(): void
-Item (String,String,int)
 }
 
-Class Items{
-Array(Items)<>
-Items(Item[])
-printItems():String
-getItems: Item[]
+Class Items #4169E1{
+itemsArray: Item[]
+printItems(): String
+getItemsArray(): Item[]
 }
 
 Class Room{
 description: String
-exits: Hashmap<String,Room>
-Room(String)
-setExit(String,Room): Void
+exits: Hashmap<String, Room>
+getRoomId(): int
+setExit(direction: String, neighbor: Room): Void
 getShortDescription(): String
 getLongDescription(): String
-getExit(String): Room
-getItem(String): Item
+getExitString(): String
+getExit(direction: String): Room
+getItems(): Items
 }
 
 Enum CommandWord{
@@ -94,13 +99,12 @@ HELP
 UNKNOWN
 INTERACT
 TIME
-toString()
+toString(): String
 }
 
 class Command{
 commandWord: CommandWord
 secondWord: String
-command(CommandWord, String)
 getCommandWord(): CommandWord
 getSecondWord(): String
 isUnkown(): boolean
@@ -110,16 +114,14 @@ hasSecondWord(): boolean
 class Parser{
 commands: CommandWords
 reader: Scanner
-Parser()
 getCommand(): Command
 showCommands(): Void
 }
 
 class CommandWords{
-commands: CommandWords
-reader: Scanner
-Parser()
-getCommand(): Command
-showCommands():Void
+validCommands: Hashmap<String, CommandWord>
+getCommandWord(commandWord: String): CommandWord
+isCommand(aString: String): boolean
+showAll(): void
 }
 @enduml
